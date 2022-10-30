@@ -1,0 +1,21 @@
+Circuit: * C:\Users\lukas\git\nadiav2\Sensorknoten\SensorknotenPcb\Simulationen\Draft2.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Thu Aug 15 08:06:10 2019
+Total elapsed time: 0.168 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 33049
+traniter = 33046
+tranpoints = 16524
+accept = 13188
+rejected = 3336
+matrix size = 2
+fillins = 0
+solver = Normal
+Matrix Compiler1: 54 bytes object code size  0.1/0.1/[0.0]
+Matrix Compiler2: 116 bytes object code size  0.1/0.2/[0.1]
+

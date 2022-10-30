@@ -1,0 +1,210 @@
+EESchema Schematic File Version 4
+LIBS:SensorknotenPcb-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 11 12
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R901
+U 1 1 5BB286AB
+P 2350 1750
+AR Path="/5C03B583/5BB2C674/5BB286AB" Ref="R901"  Part="1" 
+AR Path="/5C03B583/5BB2BE83/5BB286AB" Ref="R801"  Part="1" 
+AR Path="/5C03B583/5BB2CC98/5BB286AB" Ref="R1001"  Part="1" 
+AR Path="/5C03B583/5BB2D3AA/5BB286AB" Ref="R1101"  Part="1" 
+F 0 "R1001" V 2550 1700 50  0000 L CNN
+F 1 "560k" V 2450 1700 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 2280 1750 50  0001 C CNN
+F 3 "~" H 2350 1750 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "manf"
+F 5 "RC0805FR-07560KL" H 0   0   50  0001 C CNN "part-num"
+	1    2350 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R903
+U 1 1 5BB33C2A
+P 2600 2000
+AR Path="/5C03B583/5BB2C674/5BB33C2A" Ref="R903"  Part="1" 
+AR Path="/5C03B583/5BB2BE83/5BB33C2A" Ref="R803"  Part="1" 
+AR Path="/5C03B583/5BB2CC98/5BB33C2A" Ref="R1003"  Part="1" 
+AR Path="/5C03B583/5BB2D3AA/5BB33C2A" Ref="R1103"  Part="1" 
+F 0 "R1003" H 2670 2046 50  0000 L CNN
+F 1 "560k" H 2670 1955 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 2530 2000 50  0001 C CNN
+F 3 "~" H 2600 2000 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "manf"
+F 5 "RC0805FR-07560KL" H 0   0   50  0001 C CNN "part-num"
+	1    2600 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0901
+U 1 1 5BB33C2B
+P 2600 2250
+AR Path="/5C03B583/5BB2C674/5BB33C2B" Ref="#PWR0901"  Part="1" 
+AR Path="/5C03B583/5BB2BE83/5BB33C2B" Ref="#PWR0801"  Part="1" 
+AR Path="/5C03B583/5BB2CC98/5BB33C2B" Ref="#PWR01001"  Part="1" 
+AR Path="/5C03B583/5BB2D3AA/5BB33C2B" Ref="#PWR01101"  Part="1" 
+F 0 "#PWR01101" H 2600 2000 50  0001 C CNN
+F 1 "GNDA" H 2605 2077 50  0000 C CNN
+F 2 "" H 2600 2250 50  0001 C CNN
+F 3 "" H 2600 2250 50  0001 C CNN
+	1    2600 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2150 2600 2200
+Wire Wire Line
+	2500 1750 2600 1750
+Wire Wire Line
+	2600 1750 2600 1850
+$Comp
+L Device:D_Zener D901
+U 1 1 5BB33C2C
+P 2950 2000
+AR Path="/5C03B583/5BB2C674/5BB33C2C" Ref="D901"  Part="1" 
+AR Path="/5C03B583/5BB2BE83/5BB33C2C" Ref="D801"  Part="1" 
+AR Path="/5C03B583/5BB2CC98/5BB33C2C" Ref="D1001"  Part="1" 
+AR Path="/5C03B583/5BB2D3AA/5BB33C2C" Ref="D1101"  Part="1" 
+F 0 "D1001" V 2904 2079 50  0000 L CNN
+F 1 "24V" V 2995 2079 50  0000 L CNN
+F 2 "Diodes_SMD:D_SOD-323F" H 2950 2000 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/nexperia-usa-inc/BZX84J-B24115/1727-2134-1-ND/5221782" H 2950 2000 50  0001 C CNN
+F 4 "BZX84J-B24,115" H 2950 2000 50  0001 C CNN "part-num"
+F 5 "Nexperia USA Inc." H 2950 2000 50  0001 C CNN "manf"
+	1    2950 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2950 1750 2950 1850
+Wire Wire Line
+	2600 1750 2950 1750
+Wire Wire Line
+	2950 2150 2950 2200
+Wire Wire Line
+	2600 2200 2950 2200
+Connection ~ 2600 2200
+Wire Wire Line
+	2600 2200 2600 2250
+Wire Wire Line
+	2950 1750 3050 1750
+Connection ~ 2950 1750
+$Comp
+L Device:R R902
+U 1 1 5BB33C2D
+P 3200 1750
+AR Path="/5C03B583/5BB2C674/5BB33C2D" Ref="R902"  Part="1" 
+AR Path="/5C03B583/5BB2BE83/5BB33C2D" Ref="R802"  Part="1" 
+AR Path="/5C03B583/5BB2CC98/5BB33C2D" Ref="R1002"  Part="1" 
+AR Path="/5C03B583/5BB2D3AA/5BB33C2D" Ref="R1102"  Part="1" 
+F 0 "R1002" V 2993 1750 50  0000 C CNN
+F 1 "560k" V 3084 1750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3130 1750 50  0001 C CNN
+F 3 "~" H 3200 1750 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "manf"
+F 5 "RC0805FR-07560KL" H 0   0   50  0001 C CNN "part-num"
+	1    3200 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R904
+U 1 1 5BB286DA
+P 3450 2000
+AR Path="/5C03B583/5BB2C674/5BB286DA" Ref="R904"  Part="1" 
+AR Path="/5C03B583/5BB2BE83/5BB286DA" Ref="R804"  Part="1" 
+AR Path="/5C03B583/5BB2CC98/5BB286DA" Ref="R1004"  Part="1" 
+AR Path="/5C03B583/5BB2D3AA/5BB286DA" Ref="R1104"  Part="1" 
+F 0 "R1004" H 3380 1954 50  0000 R CNN
+F 1 "43k" H 3380 2045 50  0000 R CNN
+F 2 "Resistors_SMD:R_0805" V 3380 2000 50  0001 C CNN
+F 3 "~" H 3450 2000 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "manf"
+F 5 "RC0805FR-0743KL" H 0   0   50  0001 C CNN "part-num"
+	1    3450 2000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3350 1750 3450 1750
+Wire Wire Line
+	3450 1750 3450 1850
+Wire Wire Line
+	2950 2200 3450 2200
+Wire Wire Line
+	3450 2200 3450 2150
+Connection ~ 2950 2200
+$Comp
+L Device:C C902
+U 1 1 5BB33C2F
+P 3800 2000
+AR Path="/5C03B583/5BB2C674/5BB33C2F" Ref="C902"  Part="1" 
+AR Path="/5C03B583/5BB2BE83/5BB33C2F" Ref="C802"  Part="1" 
+AR Path="/5C03B583/5BB2CC98/5BB33C2F" Ref="C1002"  Part="1" 
+AR Path="/5C03B583/5BB2D3AA/5BB33C2F" Ref="C1102"  Part="1" 
+F 0 "C1002" H 3915 2046 50  0000 L CNN
+F 1 "47nF" H 3915 1955 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 3838 1850 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/wurth-electronics-inc/885012207070/732-8059-1-ND/5454686" H 3800 2000 50  0001 C CNN
+F 4 "885012207070" H -650 -500 50  0001 C CNN "part-num"
+F 5 "Wurth Electronics Inc." H -650 -500 50  0001 C CNN "manf"
+	1    3800 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 1750 3800 1750
+Wire Wire Line
+	3800 1850 3800 1750
+Connection ~ 3800 1750
+Wire Wire Line
+	3800 1750 4050 1750
+Wire Wire Line
+	3800 2150 3800 2200
+Wire Wire Line
+	3800 2200 3450 2200
+Connection ~ 3450 2200
+Connection ~ 3450 1750
+Wire Wire Line
+	2050 1750 2200 1750
+$Comp
+L Device:C C901
+U 1 1 5BB286FA
+P 3200 1400
+AR Path="/5C03B583/5BB2C674/5BB286FA" Ref="C901"  Part="1" 
+AR Path="/5C03B583/5BB2BE83/5BB286FA" Ref="C801"  Part="1" 
+AR Path="/5C03B583/5BB2CC98/5BB286FA" Ref="C1001"  Part="1" 
+AR Path="/5C03B583/5BB2D3AA/5BB286FA" Ref="C1101"  Part="1" 
+F 0 "C1001" V 3450 1350 50  0000 L CNN
+F 1 "3.9nF" V 3350 1350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3238 1250 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/samsung-electro-mechanics/CL10B392KB8NNNC/1276-2051-1-ND/3890137" H 3200 1400 50  0001 C CNN
+F 4 "CL10B392KB8NNNC" H -1250 -1100 50  0001 C CNN "part-num"
+F 5 "Samsung Electro-Mechanics" H -1250 -1100 50  0001 C CNN "manf"
+	1    3200 1400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3050 1400 2950 1400
+Wire Wire Line
+	2950 1400 2950 1750
+Wire Wire Line
+	3350 1400 3450 1400
+Wire Wire Line
+	3450 1400 3450 1750
+Text Notes 3300 1300 0    50   ~ 0
+Optional\n
+Connection ~ 2600 1750
+Text HLabel 2050 1750 0    50   Input ~ 0
+AnalogIn
+Text HLabel 4050 1750 2    50   Output ~ 0
+AnalogOut
+$EndSCHEMATC

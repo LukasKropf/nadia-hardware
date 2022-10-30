@@ -1,0 +1,822 @@
+EESchema Schematic File Version 4
+LIBS:SensorknotenPcb-cache
+EELAYER 26 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 9 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x08_Male J?
+U 1 1 5CAEDD5F
+P 2700 2950
+F 0 "J?" H 2806 3428 50  0000 C CNN
+F 1 "Phoenix_1843855" H 2806 3337 50  0000 C CNN
+F 2 "Connectors_Phoenix:PhoenixContact_MC-GF_08x3.50mm_Angled_ThreadedFlange" H 2700 2950 50  0001 C CNN
+F 3 "https://www.digikey.ch/products/de?keywords=1843855" H 2700 2950 50  0001 C CNN
+F 4 "1843855" H 2700 2950 50  0001 C CNN "part-num"
+F 5 "Phoenix Contact" H 2700 2950 50  0001 C CNN "manf"
+	1    2700 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 3350 3100 3350
+Wire Wire Line
+	3100 3350 3100 3450
+Wire Wire Line
+	2900 2650 3250 2650
+Wire Wire Line
+	2900 2750 3250 2750
+Wire Wire Line
+	2900 2850 3250 2850
+Wire Wire Line
+	2900 2950 3250 2950
+Wire Wire Line
+	2900 3050 3250 3050
+Wire Wire Line
+	2900 3150 3250 3150
+Wire Wire Line
+	2900 3250 3250 3250
+$Comp
+L 74xx:74HC7014 U?
+U 1 1 5CAEDD71
+P 6950 2650
+F 0 "U?" H 6950 2967 50  0000 C CNN
+F 1 "74HC7014D-118" H 6950 2876 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 6950 2650 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC7014.pdf" H 6950 2650 50  0001 C CNN
+F 4 "Nexperia USA inc." H 1500 -4250 50  0001 C CNN "manf"
+F 5 "74HC7014D-118" H 1500 -4250 50  0001 C CNN "part-num"
+	1    6950 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CAEDD78
+P 3100 3450
+F 0 "#PWR?" H 3100 3200 50  0001 C CNN
+F 1 "GND" H 3105 3277 50  0000 C CNN
+F 2 "" H 3100 3450 50  0001 C CNN
+F 3 "" H 3100 3450 50  0001 C CNN
+	1    3100 3450
+	1    0    0    -1  
+$EndComp
+Text Label 3250 2650 0    50   ~ 0
+Din0
+Text Label 3250 2750 0    50   ~ 0
+Din1
+Text Label 3250 2850 0    50   ~ 0
+Din2
+Text Label 3250 2950 0    50   ~ 0
+Din3
+Text Label 3250 3050 0    50   ~ 0
+Din4
+$Comp
+L 74xx:74HC7014 U?
+U 7 1 5CAEDD85
+P 13500 3200
+F 0 "U?" H 13730 3246 50  0000 L CNN
+F 1 "74HC7014D-118" H 13730 3155 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 13500 3200 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC7014.pdf" H 13500 3200 50  0001 C CNN
+F 4 "74HC7014D-118" H 13500 3200 50  0001 C CNN "part-num"
+F 5 "Nexperia USA inc." H 13500 3200 50  0001 C CNN "manf"
+	7    13500 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CAEDD8C
+P 13500 3700
+F 0 "#PWR?" H 13500 3450 50  0001 C CNN
+F 1 "GND" H 13505 3527 50  0000 C CNN
+F 2 "" H 13500 3700 50  0001 C CNN
+F 3 "" H 13500 3700 50  0001 C CNN
+	1    13500 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5CAEDD92
+P 13500 2500
+F 0 "#PWR?" H 13500 2350 50  0001 C CNN
+F 1 "+3.3V" H 13515 2673 50  0000 C CNN
+F 2 "" H 13500 2500 50  0001 C CNN
+F 3 "" H 13500 2500 50  0001 C CNN
+	1    13500 2500
+	1    0    0    -1  
+$EndComp
+Text Label 4300 2650 2    50   ~ 0
+Din0
+Wire Wire Line
+	13500 2500 13500 2600
+Wire Wire Line
+	13500 2600 12900 2600
+Wire Wire Line
+	12900 2600 12900 3000
+Connection ~ 13500 2600
+Wire Wire Line
+	13500 2600 13500 2700
+$Comp
+L Device:C C?
+U 1 1 5CAEDDA0
+P 12900 3150
+F 0 "C?" H 13015 3196 50  0000 L CNN
+F 1 "10µF" H 13015 3105 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 12938 3000 50  0001 C CNN
+F 3 "~" H 12900 3150 50  0001 C CNN
+F 4 "CL21B106KOQNNNE" H 10100 -2850 50  0001 C CNN "part-num"
+F 5 "Samsung Electro-Mechannics" H 10100 -2850 50  0001 C CNN "manf"
+	1    12900 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CAEDDA7
+P 12900 3700
+F 0 "#PWR?" H 12900 3450 50  0001 C CNN
+F 1 "GND" H 12905 3527 50  0000 C CNN
+F 2 "" H 12900 3700 50  0001 C CNN
+F 3 "" H 12900 3700 50  0001 C CNN
+	1    12900 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12900 3300 12900 3700
+Text HLabel 7600 3650 2    50   Output ~ 0
+DigitalIn1
+Text HLabel 7550 4750 2    50   Output ~ 0
+DigitalIn2
+Text HLabel 12000 2650 2    50   Output ~ 0
+DigitalIn3
+Text HLabel 12000 3650 2    50   Output ~ 0
+DigitalIn4
+Text HLabel 12000 4750 2    50   Output ~ 0
+DigitalIn5
+Text HLabel 7600 2650 2    50   Output ~ 0
+DigitalIn0
+Wire Wire Line
+	7250 2650 7600 2650
+$Comp
+L 74xx:74HC7014 U?
+U 2 1 5CAEDDB7
+P 7000 3650
+F 0 "U?" H 7000 3967 50  0000 C CNN
+F 1 "74HC7014D-118" H 7000 3876 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 7000 3650 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC7014.pdf" H 7000 3650 50  0001 C CNN
+F 4 "Nexperia USA inc." H 1500 -4250 50  0001 C CNN "manf"
+F 5 "74HC7014D-118" H 1500 -4250 50  0001 C CNN "part-num"
+	2    7000 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC7014 U?
+U 3 1 5CAEDDC0
+P 6950 4750
+F 0 "U?" H 6950 5067 50  0000 C CNN
+F 1 "74HC7014D-118" H 6950 4976 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 6950 4750 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC7014.pdf" H 6950 4750 50  0001 C CNN
+F 4 "Nexperia USA inc." H 1500 -4250 50  0001 C CNN "manf"
+F 5 "74HC7014D-118" H 1500 -4250 50  0001 C CNN "part-num"
+	3    6950 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC7014 U?
+U 4 1 5CAEDDC9
+P 11400 2650
+F 0 "U?" H 11400 2967 50  0000 C CNN
+F 1 "74HC7014D-118" H 11400 2876 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 11400 2650 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC7014.pdf" H 11400 2650 50  0001 C CNN
+F 4 "Nexperia USA inc." H 1500 -4250 50  0001 C CNN "manf"
+F 5 "74HC7014D-118" H 1500 -4250 50  0001 C CNN "part-num"
+	4    11400 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC7014 U?
+U 5 1 5CAEDDD2
+P 11400 3650
+F 0 "U?" H 11400 3967 50  0000 C CNN
+F 1 "74HC7014D-118" H 11400 3876 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 11400 3650 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC7014.pdf" H 11400 3650 50  0001 C CNN
+F 4 "Nexperia USA inc." H 1500 -4250 50  0001 C CNN "manf"
+F 5 "74HC7014D-118" H 1500 -4250 50  0001 C CNN "part-num"
+	5    11400 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC7014 U?
+U 6 1 5CAEDDDB
+P 11400 4750
+F 0 "U?" H 11400 5067 50  0000 C CNN
+F 1 "74HC7014D-118" H 11400 4976 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 11400 4750 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC7014.pdf" H 11400 4750 50  0001 C CNN
+F 4 "Nexperia USA inc." H 1500 -4250 50  0001 C CNN "manf"
+F 5 "74HC7014D-118" H 1500 -4250 50  0001 C CNN "part-num"
+	6    11400 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 3650 7600 3650
+Wire Wire Line
+	7550 4750 7250 4750
+Wire Wire Line
+	11700 2650 12000 2650
+Wire Wire Line
+	12000 3650 11700 3650
+Wire Wire Line
+	11700 4750 12000 4750
+Text Label 3250 3150 0    50   ~ 0
+Din5
+NoConn ~ 3250 3250
+$Comp
+L power:GND #PWR?
+U 1 1 5CAEDDE9
+P 5950 3100
+F 0 "#PWR?" H 5950 2850 50  0001 C CNN
+F 1 "GND" H 5955 2927 50  0000 C CNN
+F 2 "" H 5950 3100 50  0001 C CNN
+F 3 "" H 5950 3100 50  0001 C CNN
+	1    5950 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3050 5950 3100
+Wire Wire Line
+	5950 2650 6650 2650
+Wire Wire Line
+	5950 2750 5950 2650
+Connection ~ 5950 2650
+Wire Wire Line
+	5750 2650 5950 2650
+$Comp
+L Device:C C?
+U 1 1 5CAEDDF6
+P 5950 2900
+F 0 "C?" H 6065 2946 50  0000 L CNN
+F 1 "47nF" H 6065 2855 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5988 2750 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/wurth-electronics-inc/885012207070/732-8059-1-ND/5454686" H 5950 2900 50  0001 C CNN
+F 4 "Wurth Electronics Inc." H 900 -4300 50  0001 C CNN "manf"
+F 5 "885012207070" H 900 -4300 50  0001 C CNN "part-num"
+	1    5950 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CAEDDFF
+P 5600 2650
+F 0 "R?" V 5393 2650 50  0000 C CNN
+F 1 "1k" V 5484 2650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5530 2650 50  0001 C CNN
+F 3 "~" H 5600 2650 50  0001 C CNN
+F 4 "Panasonic Electronic Componens" H 1500 -4250 50  0001 C CNN "manf"
+F 5 "ERA-6AEB102V" H 1500 -4250 50  0001 C CNN "part-num"
+	1    5600 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CAEDE06
+P 5200 3100
+F 0 "#PWR?" H 5200 2850 50  0001 C CNN
+F 1 "GND" H 5205 2927 50  0000 C CNN
+F 2 "" H 5200 3100 50  0001 C CNN
+F 3 "" H 5200 3100 50  0001 C CNN
+	1    5200 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2650 5200 2750
+Wire Wire Line
+	5000 2650 5200 2650
+Wire Wire Line
+	5200 2650 5450 2650
+Connection ~ 5200 2650
+Wire Wire Line
+	5200 3050 5200 3100
+$Comp
+L Device:R R?
+U 1 1 5CAEDE13
+P 5200 2900
+F 0 "R?" H 5270 2946 50  0000 L CNN
+F 1 "100k" H 5270 2855 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 5130 2900 50  0001 C CNN
+F 3 "~" H 5200 2900 50  0001 C CNN
+F 4 "Panasonic Electronic Componens" H 1500 -4250 50  0001 C CNN "manf"
+F 5 "ERA-6AEB104V" H 1500 -4250 50  0001 C CNN "part-num"
+	1    5200 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CAEDE1C
+P 4850 2650
+F 0 "R?" V 4650 2600 50  0000 L CNN
+F 1 "560k" V 4750 2600 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 4780 2650 50  0001 C CNN
+F 3 "~" H 4850 2650 50  0001 C CNN
+F 4 "Yageo" H 1500 -4250 50  0001 C CNN "manf"
+F 5 "RC0805FR-07560KL" H 1500 -4250 50  0001 C CNN "part-num"
+	1    4850 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4300 2650 4700 2650
+Text Label 4350 3650 2    50   ~ 0
+Din1
+$Comp
+L power:GND #PWR?
+U 1 1 5CAEDE25
+P 6000 4100
+F 0 "#PWR?" H 6000 3850 50  0001 C CNN
+F 1 "GND" H 6005 3927 50  0000 C CNN
+F 2 "" H 6000 4100 50  0001 C CNN
+F 3 "" H 6000 4100 50  0001 C CNN
+	1    6000 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 4050 6000 4100
+Wire Wire Line
+	6000 3650 6700 3650
+Wire Wire Line
+	6000 3750 6000 3650
+Connection ~ 6000 3650
+Wire Wire Line
+	5800 3650 6000 3650
+$Comp
+L Device:C C?
+U 1 1 5CAEDE32
+P 6000 3900
+F 0 "C?" H 6115 3946 50  0000 L CNN
+F 1 "47nF" H 6115 3855 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 6038 3750 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/wurth-electronics-inc/885012207070/732-8059-1-ND/5454686" H 6000 3900 50  0001 C CNN
+F 4 "Wurth Electronics Inc." H 950 -3300 50  0001 C CNN "manf"
+F 5 "885012207070" H 950 -3300 50  0001 C CNN "part-num"
+	1    6000 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CAEDE3B
+P 5650 3650
+F 0 "R?" V 5443 3650 50  0000 C CNN
+F 1 "1k" V 5534 3650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5580 3650 50  0001 C CNN
+F 3 "~" H 5650 3650 50  0001 C CNN
+F 4 "Panasonic Electronic Componens" H 1500 -4250 50  0001 C CNN "manf"
+F 5 "ERA-6AEB102V" H 1500 -4250 50  0001 C CNN "part-num"
+	1    5650 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CAEDE42
+P 5250 4100
+F 0 "#PWR?" H 5250 3850 50  0001 C CNN
+F 1 "GND" H 5255 3927 50  0000 C CNN
+F 2 "" H 5250 4100 50  0001 C CNN
+F 3 "" H 5250 4100 50  0001 C CNN
+	1    5250 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3650 5250 3750
+Wire Wire Line
+	5050 3650 5250 3650
+Wire Wire Line
+	5250 3650 5500 3650
+Connection ~ 5250 3650
+Wire Wire Line
+	5250 4050 5250 4100
+$Comp
+L Device:R R?
+U 1 1 5CAEDE4F
+P 5250 3900
+F 0 "R?" H 5320 3946 50  0000 L CNN
+F 1 "100k" H 5320 3855 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 5180 3900 50  0001 C CNN
+F 3 "~" H 5250 3900 50  0001 C CNN
+F 4 "Panasonic Electronic Componens" H 1500 -4250 50  0001 C CNN "manf"
+F 5 "ERA-6AEB104V" H 1500 -4250 50  0001 C CNN "part-num"
+	1    5250 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CAEDE58
+P 4900 3650
+F 0 "R?" V 4700 3600 50  0000 L CNN
+F 1 "560k" V 4800 3600 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 4830 3650 50  0001 C CNN
+F 3 "~" H 4900 3650 50  0001 C CNN
+F 4 "Yageo" H 1500 -4250 50  0001 C CNN "manf"
+F 5 "RC0805FR-07560KL" H 1500 -4250 50  0001 C CNN "part-num"
+	1    4900 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 3650 4750 3650
+Text Label 4300 4750 2    50   ~ 0
+Din2
+$Comp
+L power:GND #PWR?
+U 1 1 5CAEDE61
+P 5950 5200
+F 0 "#PWR?" H 5950 4950 50  0001 C CNN
+F 1 "GND" H 5955 5027 50  0000 C CNN
+F 2 "" H 5950 5200 50  0001 C CNN
+F 3 "" H 5950 5200 50  0001 C CNN
+	1    5950 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 5150 5950 5200
+Wire Wire Line
+	5950 4750 6650 4750
+Wire Wire Line
+	5950 4850 5950 4750
+Connection ~ 5950 4750
+Wire Wire Line
+	5750 4750 5950 4750
+$Comp
+L Device:C C?
+U 1 1 5CAEDE6E
+P 5950 5000
+F 0 "C?" H 6065 5046 50  0000 L CNN
+F 1 "47nF" H 6065 4955 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5988 4850 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/wurth-electronics-inc/885012207070/732-8059-1-ND/5454686" H 5950 5000 50  0001 C CNN
+F 4 "Wurth Electronics Inc." H 900 -2200 50  0001 C CNN "manf"
+F 5 "885012207070" H 900 -2200 50  0001 C CNN "part-num"
+	1    5950 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CAEDE77
+P 5600 4750
+F 0 "R?" V 5393 4750 50  0000 C CNN
+F 1 "1k" V 5484 4750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5530 4750 50  0001 C CNN
+F 3 "~" H 5600 4750 50  0001 C CNN
+F 4 "Panasonic Electronic Componens" H 1500 -4250 50  0001 C CNN "manf"
+F 5 "ERA-6AEB102V" H 1500 -4250 50  0001 C CNN "part-num"
+	1    5600 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CAEDE7E
+P 5200 5200
+F 0 "#PWR?" H 5200 4950 50  0001 C CNN
+F 1 "GND" H 5205 5027 50  0000 C CNN
+F 2 "" H 5200 5200 50  0001 C CNN
+F 3 "" H 5200 5200 50  0001 C CNN
+	1    5200 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4750 5200 4850
+Wire Wire Line
+	5000 4750 5200 4750
+Wire Wire Line
+	5200 4750 5450 4750
+Connection ~ 5200 4750
+Wire Wire Line
+	5200 5150 5200 5200
+$Comp
+L Device:R R?
+U 1 1 5CAEDE8B
+P 5200 5000
+F 0 "R?" H 5270 5046 50  0000 L CNN
+F 1 "100k" H 5270 4955 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 5130 5000 50  0001 C CNN
+F 3 "~" H 5200 5000 50  0001 C CNN
+F 4 "Panasonic Electronic Componens" H 1500 -4250 50  0001 C CNN "manf"
+F 5 "ERA-6AEB104V" H 1500 -4250 50  0001 C CNN "part-num"
+	1    5200 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CAEDE94
+P 4850 4750
+F 0 "R?" V 4650 4700 50  0000 L CNN
+F 1 "560k" V 4750 4700 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 4780 4750 50  0001 C CNN
+F 3 "~" H 4850 4750 50  0001 C CNN
+F 4 "Yageo" H 1500 -4250 50  0001 C CNN "manf"
+F 5 "RC0805FR-07560KL" H 1500 -4250 50  0001 C CNN "part-num"
+	1    4850 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4300 4750 4700 4750
+Text Label 8750 2650 2    50   ~ 0
+Din3
+$Comp
+L power:GND #PWR?
+U 1 1 5CAEDE9D
+P 10400 3100
+F 0 "#PWR?" H 10400 2850 50  0001 C CNN
+F 1 "GND" H 10405 2927 50  0000 C CNN
+F 2 "" H 10400 3100 50  0001 C CNN
+F 3 "" H 10400 3100 50  0001 C CNN
+	1    10400 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 3050 10400 3100
+Wire Wire Line
+	10400 2650 11100 2650
+Wire Wire Line
+	10400 2750 10400 2650
+Connection ~ 10400 2650
+Wire Wire Line
+	10200 2650 10400 2650
+$Comp
+L Device:C C?
+U 1 1 5CAEDEAA
+P 10400 2900
+F 0 "C?" H 10515 2946 50  0000 L CNN
+F 1 "47nF" H 10515 2855 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 10438 2750 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/wurth-electronics-inc/885012207070/732-8059-1-ND/5454686" H 10400 2900 50  0001 C CNN
+F 4 "Wurth Electronics Inc." H 5350 -4300 50  0001 C CNN "manf"
+F 5 "885012207070" H 5350 -4300 50  0001 C CNN "part-num"
+	1    10400 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CAEDEB3
+P 10050 2650
+F 0 "R?" V 9843 2650 50  0000 C CNN
+F 1 "1k" V 9934 2650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 9980 2650 50  0001 C CNN
+F 3 "~" H 10050 2650 50  0001 C CNN
+F 4 "Panasonic Electronic Componens" H 1500 -4250 50  0001 C CNN "manf"
+F 5 "ERA-6AEB102V" H 1500 -4250 50  0001 C CNN "part-num"
+	1    10050 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CAEDEBA
+P 9650 3100
+F 0 "#PWR?" H 9650 2850 50  0001 C CNN
+F 1 "GND" H 9655 2927 50  0000 C CNN
+F 2 "" H 9650 3100 50  0001 C CNN
+F 3 "" H 9650 3100 50  0001 C CNN
+	1    9650 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 2650 9650 2750
+Wire Wire Line
+	9450 2650 9650 2650
+Wire Wire Line
+	9650 2650 9900 2650
+Connection ~ 9650 2650
+Wire Wire Line
+	9650 3050 9650 3100
+$Comp
+L Device:R R?
+U 1 1 5CAEDEC7
+P 9650 2900
+F 0 "R?" H 9720 2946 50  0000 L CNN
+F 1 "100k" H 9720 2855 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 9580 2900 50  0001 C CNN
+F 3 "~" H 9650 2900 50  0001 C CNN
+F 4 "Panasonic Electronic Componens" H 1500 -4250 50  0001 C CNN "manf"
+F 5 "ERA-6AEB104V" H 1500 -4250 50  0001 C CNN "part-num"
+	1    9650 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CAEDED0
+P 9300 2650
+F 0 "R?" V 9100 2600 50  0000 L CNN
+F 1 "560k" V 9200 2600 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 9230 2650 50  0001 C CNN
+F 3 "~" H 9300 2650 50  0001 C CNN
+F 4 "Yageo" H 1500 -4250 50  0001 C CNN "manf"
+F 5 "RC0805FR-07560KL" H 1500 -4250 50  0001 C CNN "part-num"
+	1    9300 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8750 2650 9150 2650
+Text Label 8750 3650 2    50   ~ 0
+Din4
+$Comp
+L power:GND #PWR?
+U 1 1 5CAEDED9
+P 10400 4100
+F 0 "#PWR?" H 10400 3850 50  0001 C CNN
+F 1 "GND" H 10405 3927 50  0000 C CNN
+F 2 "" H 10400 4100 50  0001 C CNN
+F 3 "" H 10400 4100 50  0001 C CNN
+	1    10400 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 4050 10400 4100
+Wire Wire Line
+	10400 3650 11100 3650
+Wire Wire Line
+	10400 3750 10400 3650
+Connection ~ 10400 3650
+Wire Wire Line
+	10200 3650 10400 3650
+$Comp
+L Device:C C?
+U 1 1 5CAEDEE6
+P 10400 3900
+F 0 "C?" H 10515 3946 50  0000 L CNN
+F 1 "47nF" H 10515 3855 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 10438 3750 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/wurth-electronics-inc/885012207070/732-8059-1-ND/5454686" H 10400 3900 50  0001 C CNN
+F 4 "Wurth Electronics Inc." H 5350 -3300 50  0001 C CNN "manf"
+F 5 "885012207070" H 5350 -3300 50  0001 C CNN "part-num"
+	1    10400 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CAEDEEF
+P 10050 3650
+F 0 "R?" V 9843 3650 50  0000 C CNN
+F 1 "1k" V 9934 3650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 9980 3650 50  0001 C CNN
+F 3 "~" H 10050 3650 50  0001 C CNN
+F 4 "Panasonic Electronic Componens" H 1500 -4250 50  0001 C CNN "manf"
+F 5 "ERA-6AEB102V" H 1500 -4250 50  0001 C CNN "part-num"
+	1    10050 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CAEDEF6
+P 9650 4100
+F 0 "#PWR?" H 9650 3850 50  0001 C CNN
+F 1 "GND" H 9655 3927 50  0000 C CNN
+F 2 "" H 9650 4100 50  0001 C CNN
+F 3 "" H 9650 4100 50  0001 C CNN
+	1    9650 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 3650 9650 3750
+Wire Wire Line
+	9450 3650 9650 3650
+Wire Wire Line
+	9650 3650 9900 3650
+Connection ~ 9650 3650
+Wire Wire Line
+	9650 4050 9650 4100
+$Comp
+L Device:R R?
+U 1 1 5CAEDF03
+P 9650 3900
+F 0 "R?" H 9720 3946 50  0000 L CNN
+F 1 "100k" H 9720 3855 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 9580 3900 50  0001 C CNN
+F 3 "~" H 9650 3900 50  0001 C CNN
+F 4 "Panasonic Electronic Componens" H 1500 -4250 50  0001 C CNN "manf"
+F 5 "ERA-6AEB104V" H 1500 -4250 50  0001 C CNN "part-num"
+	1    9650 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CAEDF0C
+P 9300 3650
+F 0 "R?" V 9100 3600 50  0000 L CNN
+F 1 "560k" V 9200 3600 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 9230 3650 50  0001 C CNN
+F 3 "~" H 9300 3650 50  0001 C CNN
+F 4 "Yageo" H 1500 -4250 50  0001 C CNN "manf"
+F 5 "RC0805FR-07560KL" H 1500 -4250 50  0001 C CNN "part-num"
+	1    9300 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8750 3650 9150 3650
+Text Label 8750 4750 2    50   ~ 0
+Din5
+$Comp
+L power:GND #PWR?
+U 1 1 5CAEDF15
+P 10400 5200
+F 0 "#PWR?" H 10400 4950 50  0001 C CNN
+F 1 "GND" H 10405 5027 50  0000 C CNN
+F 2 "" H 10400 5200 50  0001 C CNN
+F 3 "" H 10400 5200 50  0001 C CNN
+	1    10400 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 5150 10400 5200
+Wire Wire Line
+	10400 4750 11100 4750
+Wire Wire Line
+	10400 4850 10400 4750
+Connection ~ 10400 4750
+Wire Wire Line
+	10200 4750 10400 4750
+$Comp
+L Device:C C?
+U 1 1 5CAEDF22
+P 10400 5000
+F 0 "C?" H 10515 5046 50  0000 L CNN
+F 1 "47nF" H 10515 4955 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 10438 4850 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/wurth-electronics-inc/885012207070/732-8059-1-ND/5454686" H 10400 5000 50  0001 C CNN
+F 4 "Wurth Electronics Inc." H 5350 -2200 50  0001 C CNN "manf"
+F 5 "885012207070" H 5350 -2200 50  0001 C CNN "part-num"
+	1    10400 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CAEDF2B
+P 10050 4750
+F 0 "R?" V 9843 4750 50  0000 C CNN
+F 1 "1k" V 9934 4750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 9980 4750 50  0001 C CNN
+F 3 "~" H 10050 4750 50  0001 C CNN
+F 4 "Panasonic Electronic Componens" H 1500 -4250 50  0001 C CNN "manf"
+F 5 "ERA-6AEB102V" H 1500 -4250 50  0001 C CNN "part-num"
+	1    10050 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CAEDF32
+P 9650 5200
+F 0 "#PWR?" H 9650 4950 50  0001 C CNN
+F 1 "GND" H 9655 5027 50  0000 C CNN
+F 2 "" H 9650 5200 50  0001 C CNN
+F 3 "" H 9650 5200 50  0001 C CNN
+	1    9650 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 4750 9650 4850
+Wire Wire Line
+	9450 4750 9650 4750
+Wire Wire Line
+	9650 4750 9900 4750
+Connection ~ 9650 4750
+Wire Wire Line
+	9650 5150 9650 5200
+$Comp
+L Device:R R?
+U 1 1 5CAEDF3F
+P 9650 5000
+F 0 "R?" H 9720 5046 50  0000 L CNN
+F 1 "100k" H 9720 4955 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 9580 5000 50  0001 C CNN
+F 3 "~" H 9650 5000 50  0001 C CNN
+F 4 "Panasonic Electronic Componens" H 1500 -4250 50  0001 C CNN "manf"
+F 5 "ERA-6AEB104V" H 1500 -4250 50  0001 C CNN "part-num"
+	1    9650 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CAEDF48
+P 9300 4750
+F 0 "R?" V 9100 4700 50  0000 L CNN
+F 1 "560k" V 9200 4700 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 9230 4750 50  0001 C CNN
+F 3 "~" H 9300 4750 50  0001 C CNN
+F 4 "Yageo" H 1500 -4250 50  0001 C CNN "manf"
+F 5 "RC0805FR-07560KL" H 1500 -4250 50  0001 C CNN "part-num"
+	1    9300 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8750 4750 9150 4750
+Text Notes 2750 4200 0    150  ~ 0
+Stecker \nX12
+$EndSCHEMATC

@@ -1,0 +1,1776 @@
+EESchema Schematic File Version 4
+LIBS:SensorknotenPcb-cache
+EELAYER 26 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 2 8
+Title "NADIA - Sensorknoten V2"
+Date "2018-09-25"
+Rev "V2"
+Comp "BLS AG"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	1300 850  1500 850 
+Text Label 1500 1250 0    65   ~ 0
+USB1.ID
+Wire Wire Line
+	1300 950  1500 950 
+Text Label 1500 1150 0    65   ~ 0
+USB1.D+
+Wire Wire Line
+	1300 1050 1500 1050
+Text Label 1500 1050 0    65   ~ 0
+USB1.D-
+Wire Wire Line
+	1300 1250 1500 1250
+Text Label 1500 850  0    65   ~ 0
+USB1.VBUS
+Text Label 1500 950  0    65   ~ 0
+USB1.VIN
+Wire Wire Line
+	1300 1150 1500 1150
+Text HLabel 1300 1250 0    50   Input ~ 0
+USB1.ID
+Text HLabel 1300 1150 0    50   BiDi ~ 0
+USB1.D+
+Text HLabel 1300 1050 0    50   BiDi ~ 0
+USB1.D-
+Text HLabel 1300 950  0    50   Input ~ 0
+USB1.VIN
+Text HLabel 1300 850  0    50   Input ~ 0
+USB1.VBUS
+$Comp
+L SensorknotenPcb:749013011A T200
+U 1 1 5B879636
+P 9650 3200
+F 0 "T200" H 9500 3050 50  0000 C CNN
+F 1 "749013011A" H 9700 3150 50  0000 C CNN
+F 2 "EigeneFootprints:WE-LAN_PoE_749013011A" H 9850 3325 50  0001 C CNN
+F 3 "http://katalog.we-online.de/pbs/datasheet/749013011A.pdf" H 9850 3325 50  0001 C CNN
+F 4 "749013011A" H -2450 2000 50  0001 C CNN "part-num"
+F 5 "Wurth Electrionik" H -2450 2000 50  0001 C CNN "manf"
+	1    9650 3200
+	1    0    0    1   
+$EndComp
+$Comp
+L myLib:M12-4_D X1
+U 1 1 5B87AC8E
+P 11850 3550
+F 0 "X1" H 12169 3608 60  0000 L CNN
+F 1 "Phoenix_1436550" H 12169 3502 60  0000 L CNN
+F 2 "EigeneFootprints:Phoenix_SACC-DSIV-M12FSD-4CON-L90" H 11390 3880 60  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/phoenix-contact/1436550/277-16526-ND/3607351" H 11490 3980 60  0001 C CNN
+F 4 "1436550" H 11850 4150 60  0001 C CNN "part-num"
+F 5 "Phoenix Conact" H 11850 4050 60  0001 C CNN "manf"
+	1    11850 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11450 3800 11250 3800
+Wire Wire Line
+	11250 3800 11250 3500
+Wire Wire Line
+	11250 3500 10650 3500
+Wire Wire Line
+	11450 3400 11300 3400
+Wire Wire Line
+	11300 3400 11300 3300
+Wire Wire Line
+	11300 3300 10650 3300
+Wire Wire Line
+	11450 3700 11400 3700
+Wire Wire Line
+	11400 3700 11400 3900
+Wire Wire Line
+	11400 3900 10650 3900
+Wire Wire Line
+	11450 3300 11350 3300
+Wire Wire Line
+	11350 3300 11350 3700
+Text Label 10700 3300 0    50   ~ 0
+Tx-
+Text Label 10700 3500 0    50   ~ 0
+Tx+
+Text Label 10700 3700 0    50   ~ 0
+Rx-
+Text Label 10700 3900 0    50   ~ 0
+Rx+
+Wire Wire Line
+	10650 3400 10900 3400
+$Comp
+L Device:C C201
+U 1 1 5B878A6F
+P 10900 4250
+F 0 "C201" H 10550 4350 50  0000 L CNN
+F 1 "22n/200V" H 10450 4250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 10938 4100 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/avx-corporation/08051C223K4T2A/478-9378-1-ND/4901452" H 10900 4250 50  0001 C CNN
+F 4 "08052C223KAT2A" H 10900 4250 50  0001 C CNN "part-num"
+F 5 "AVX Corporation" H 10900 4250 50  0001 C CNN "manf"
+	1    10900 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10650 3800 11050 3800
+$Comp
+L Device:R R204
+U 1 1 5B879FBD
+P 10900 4650
+F 0 "R204" H 10650 4700 50  0000 L CNN
+F 1 "75" H 10650 4600 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 10830 4650 50  0001 C CNN
+F 3 "~" H 10900 4650 50  0001 C CNN
+F 4 "Panasonic Electronic Componens" H -2450 1650 50  0001 C CNN "manf"
+F 5 "ERJ-6ENF75R0V" H -2450 1650 50  0001 C CNN "part-num"
+	1    10900 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10900 4800 10900 4900
+Wire Wire Line
+	10900 4900 11050 4900
+Wire Wire Line
+	11200 4900 11200 4800
+$Comp
+L Device:R R205
+U 1 1 5B87A4E5
+P 11200 4650
+F 0 "R205" H 11270 4696 50  0000 L CNN
+F 1 "75" H 11270 4605 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 11130 4650 50  0001 C CNN
+F 3 "~" H 11200 4650 50  0001 C CNN
+F 4 "Panasonic Electronic Componens" H -2450 1650 50  0001 C CNN "manf"
+F 5 "ERJ-6ENF75R0V" H -2450 1650 50  0001 C CNN "part-num"
+	1    11200 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11200 4400 11200 4500
+$Comp
+L Device:C C203
+U 1 1 5B87AAAF
+P 11050 5150
+F 0 "C203" H 11165 5196 50  0000 L CNN
+F 1 "1n/2kV" H 11165 5105 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Rect_L13.0mm_W4.0mm_P10.00mm_FKS3_FKP3_MKS4" H 11088 5000 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/wima/MKS4U011003C00KSSD/1928-1762-ND/9370670" H 11050 5150 50  0001 C CNN
+F 4 "MKS4U011003C00KSSD" H 11050 5150 50  0001 C CNN "part-num"
+F 5 "WIMA" H 11050 5150 50  0001 C CNN "manf"
+	1    11050 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11050 4900 11050 5000
+Connection ~ 11050 4900
+Wire Wire Line
+	11050 4900 11200 4900
+Wire Wire Line
+	11050 5300 11050 5350
+$Comp
+L power:Earth_Protective #PWR0101
+U 1 1 5B87B33B
+P 11050 5350
+F 0 "#PWR0101" H 11300 5100 50  0001 C CNN
+F 1 "Earth_Protective" H 11500 5200 50  0001 C CNN
+F 2 "" H 11050 5250 50  0001 C CNN
+F 3 "~" H 11050 5250 50  0001 C CNN
+	1    11050 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R200
+U 1 1 5B883D44
+P 7100 2850
+F 0 "R200" H 7170 2896 50  0000 L CNN
+F 1 "49.9 1%" H 7170 2805 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 7030 2850 50  0001 C CNN
+F 3 "~" H 7100 2850 50  0001 C CNN
+F 4 "Panasonic Electronic Componens" H -2450 1950 50  0001 C CNN "manf"
+F 5 "ERJ-6ENF49R9V" H -2450 1950 50  0001 C CNN "part-num"
+	1    7100 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R201
+U 1 1 5B883E10
+P 7450 2850
+F 0 "R201" H 7520 2896 50  0000 L CNN
+F 1 "49.9 1%" H 7520 2805 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 7380 2850 50  0001 C CNN
+F 3 "~" H 7450 2850 50  0001 C CNN
+F 4 "Panasonic Electronic Componens" H -2450 1950 50  0001 C CNN "manf"
+F 5 "ERJ-6ENF49R9V" H -2450 1950 50  0001 C CNN "part-num"
+	1    7450 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R202
+U 1 1 5B883E48
+P 7800 2850
+F 0 "R202" H 7870 2896 50  0000 L CNN
+F 1 "49.9 1%" H 7870 2805 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 7730 2850 50  0001 C CNN
+F 3 "~" H 7800 2850 50  0001 C CNN
+F 4 "Panasonic Electronic Componens" H -2450 1950 50  0001 C CNN "manf"
+F 5 "ERJ-6ENF49R9V" H -2450 1950 50  0001 C CNN "part-num"
+	1    7800 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R203
+U 1 1 5B883E7C
+P 8150 2850
+F 0 "R203" H 8220 2896 50  0000 L CNN
+F 1 "49.9 1%" H 8220 2805 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 8080 2850 50  0001 C CNN
+F 3 "~" H 8150 2850 50  0001 C CNN
+F 4 "Panasonic Electronic Componens" H -2450 1950 50  0001 C CNN "manf"
+F 5 "ERJ-6ENF49R9V" H -2450 1950 50  0001 C CNN "part-num"
+	1    8150 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 2700 7100 2650
+Wire Wire Line
+	7100 2650 7450 2650
+Wire Wire Line
+	7450 2700 7450 2650
+Connection ~ 7450 2650
+Wire Wire Line
+	7450 2650 7800 2650
+Wire Wire Line
+	7800 2700 7800 2650
+Connection ~ 7800 2650
+Wire Wire Line
+	7800 2650 8150 2650
+Wire Wire Line
+	8150 2700 8150 2650
+Connection ~ 8150 2650
+Wire Wire Line
+	8150 2650 8500 2650
+$Comp
+L power:+3.3V #PWR0102
+U 1 1 5B886F10
+P 950 8950
+F 0 "#PWR0102" H 950 8800 50  0001 C CNN
+F 1 "+3.3V" V 965 9078 50  0000 L CNN
+F 2 "" H 950 8950 50  0001 C CNN
+F 3 "" H 950 8950 50  0001 C CNN
+	1    950  8950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 3400 9250 3400
+Wire Wire Line
+	9250 3800 8500 3800
+Wire Wire Line
+	8500 2650 8500 2700
+Connection ~ 8500 3400
+Wire Wire Line
+	8500 3400 8500 3800
+Wire Wire Line
+	9250 3300 7100 3300
+Wire Wire Line
+	9250 3500 7450 3500
+Wire Wire Line
+	9250 3700 8550 3700
+Wire Wire Line
+	9250 3900 8150 3900
+Wire Wire Line
+	7100 3000 7100 3300
+Connection ~ 7100 3300
+Wire Wire Line
+	7100 3300 6900 3300
+Wire Wire Line
+	7450 3000 7450 3500
+Connection ~ 7450 3500
+Wire Wire Line
+	7450 3500 6900 3500
+Wire Wire Line
+	7800 3000 7800 3700
+Connection ~ 7800 3700
+Wire Wire Line
+	7800 3700 6900 3700
+Wire Wire Line
+	8150 3000 8150 3900
+Connection ~ 8150 3900
+Wire Wire Line
+	8150 3900 6900 3900
+$Comp
+L myLib:WE-TVS_824015 D200
+U 1 1 5B8942EE
+P 8350 4550
+F 0 "D200" H 8718 4641 50  0000 L CNN
+F 1 "WE-TVS_5V" H 8718 4550 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6" H 8350 4550 50  0001 L BNN
+F 3 "" H 8350 4550 50  0001 L BNN
+F 4 "824015" H 8718 4459 50  0000 L CNN "part-num"
+F 5 "Wurth Electronics" H 8350 4550 50  0001 C CNN "manf"
+	1    8350 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 4250 8150 3900
+Wire Wire Line
+	8550 4250 8550 3700
+Connection ~ 8550 3700
+Wire Wire Line
+	8550 3700 7800 3700
+Wire Wire Line
+	8150 4850 8150 4900
+Wire Wire Line
+	8550 4850 8550 4950
+Wire Wire Line
+	8550 4950 7450 4950
+Wire Wire Line
+	8350 4850 8350 5000
+$Comp
+L power:GND #PWR0103
+U 1 1 5B8A7ECF
+P 8350 5000
+F 0 "#PWR0103" H 8350 4750 50  0001 C CNN
+F 1 "GND" H 8355 4827 50  0000 C CNN
+F 2 "" H 8350 5000 50  0001 C CNN
+F 3 "" H 8350 5000 50  0001 C CNN
+	1    8350 5000
+	1    0    0    -1  
+$EndComp
+Text Label 6900 3300 0    50   ~ 0
+Td-
+Text Label 6900 3500 0    50   ~ 0
+Td+
+Text Label 6900 3700 0    50   ~ 0
+Rd-
+Text Label 6900 3900 0    50   ~ 0
+Rd+
+Wire Wire Line
+	7100 4900 7100 3300
+Wire Wire Line
+	7100 4900 8150 4900
+Wire Wire Line
+	7450 3500 7450 4950
+Wire Wire Line
+	11400 2850 10900 2850
+Text HLabel 11400 2850 2    50   Output ~ 0
+DataPairT
+Text HLabel 11400 2950 2    50   Output ~ 0
+DataPairR
+Wire Wire Line
+	10900 4400 10900 4500
+$Comp
+L Device:R R206
+U 1 1 5BA1789C
+P 8500 2850
+F 0 "R206" H 8570 2896 50  0000 L CNN
+F 1 "0R" H 8570 2805 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 8430 2850 50  0001 C CNN
+F 3 "~" H 8500 2850 50  0001 C CNN
+F 4 "ERJ-6GEY0R00V" H -2100 1950 50  0001 C CNN "part-num"
+F 5 "Panasonic Electronic Componens" H -2100 1950 50  0001 C CNN "manf"
+	1    8500 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 3000 8500 3400
+Text Notes 950  8500 0    50   ~ 0
+Filter and Bypass
+$Comp
+L Device:Ferrite_Bead L210
+U 1 1 5BB134BB
+P 1350 9000
+F 0 "L210" V 1400 9100 50  0000 C CNN
+F 1 "Ferrite_Bead" V 1500 9050 50  0000 L BNN
+F 2 "Inductors_SMD:L_0603" V 1280 9000 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/murata-electronics-north-america/BLM18PG121SN1D/490-1037-1-ND/584485" H 1350 9000 50  0001 C CNN
+F 4 "BLM18PG121SN1D" V 1600 9050 50  0000 L BNN "part-num"
+F 5 "Murata" H 1350 9000 50  0001 C CNN "manf"
+	1    1350 9000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	950  9000 1200 9000
+Wire Wire Line
+	950  8950 950  9000
+$Comp
+L Device:C C210
+U 1 1 5BB2FCE2
+P 2350 9350
+F 0 "C210" H 2465 9396 50  0000 L CNN
+F 1 "0.1µF" H 2465 9305 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2388 9200 50  0001 C CNN
+F 3 "~" H 2350 9350 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 0   0   50  0001 C CNN "manf"
+F 5 "CL10B104KO8NNNC" H 0   0   50  0001 C CNN "part-num"
+	1    2350 9350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 9000 2350 9200
+Wire Wire Line
+	1500 9000 2350 9000
+Connection ~ 2350 9000
+Wire Wire Line
+	2350 9000 2800 9000
+$Comp
+L power:GND #PWR0124
+U 1 1 5BB3E4AD
+P 2350 9600
+F 0 "#PWR0124" H 2350 9350 50  0001 C CNN
+F 1 "GND" H 2355 9427 50  0000 C CNN
+F 2 "" H 2350 9600 50  0001 C CNN
+F 3 "" H 2350 9600 50  0001 C CNN
+	1    2350 9600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 9500 2350 9600
+$Comp
+L Device:C C211
+U 1 1 5BB41F76
+P 2800 9350
+F 0 "C211" H 2915 9396 50  0000 L CNN
+F 1 "0.1µF" H 2915 9305 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2838 9200 50  0001 C CNN
+F 3 "~" H 2800 9350 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 0   0   50  0001 C CNN "manf"
+F 5 "CL10B104KO8NNNC" H 0   0   50  0001 C CNN "part-num"
+	1    2800 9350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 9000 2800 9200
+$Comp
+L power:GND #PWR0125
+U 1 1 5BB41F7E
+P 2800 9600
+F 0 "#PWR0125" H 2800 9350 50  0001 C CNN
+F 1 "GND" H 2805 9427 50  0000 C CNN
+F 2 "" H 2800 9600 50  0001 C CNN
+F 3 "" H 2800 9600 50  0001 C CNN
+	1    2800 9600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 9500 2800 9600
+$Comp
+L Device:C C212
+U 1 1 5BB43CE2
+P 3250 9350
+F 0 "C212" H 3365 9396 50  0000 L CNN
+F 1 "0.1µF" H 3365 9305 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3288 9200 50  0001 C CNN
+F 3 "~" H 3250 9350 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 0   0   50  0001 C CNN "manf"
+F 5 "CL10B104KO8NNNC" H 0   0   50  0001 C CNN "part-num"
+	1    3250 9350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 9000 3250 9200
+$Comp
+L power:GND #PWR0126
+U 1 1 5BB43CEA
+P 3250 9600
+F 0 "#PWR0126" H 3250 9350 50  0001 C CNN
+F 1 "GND" H 3255 9427 50  0000 C CNN
+F 2 "" H 3250 9600 50  0001 C CNN
+F 3 "" H 3250 9600 50  0001 C CNN
+	1    3250 9600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 9500 3250 9600
+$Comp
+L Device:C C213
+U 1 1 5BB45C06
+P 3650 9350
+F 0 "C213" H 3765 9396 50  0000 L CNN
+F 1 "0.1µF" H 3765 9305 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3688 9200 50  0001 C CNN
+F 3 "~" H 3650 9350 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 0   0   50  0001 C CNN "manf"
+F 5 "CL10B104KO8NNNC" H 0   0   50  0001 C CNN "part-num"
+	1    3650 9350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 9000 3650 9200
+$Comp
+L power:GND #PWR0127
+U 1 1 5BB45C0E
+P 3650 9600
+F 0 "#PWR0127" H 3650 9350 50  0001 C CNN
+F 1 "GND" H 3655 9427 50  0000 C CNN
+F 2 "" H 3650 9600 50  0001 C CNN
+F 3 "" H 3650 9600 50  0001 C CNN
+	1    3650 9600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 9500 3650 9600
+Connection ~ 2800 9000
+Wire Wire Line
+	2800 9000 3250 9000
+Connection ~ 3250 9000
+Connection ~ 3650 9000
+$Comp
+L power:+3.3V #PWR0128
+U 1 1 5BB4DD9E
+P 950 9900
+F 0 "#PWR0128" H 950 9750 50  0001 C CNN
+F 1 "+3.3V" V 965 10028 50  0000 L CNN
+F 2 "" H 950 9900 50  0001 C CNN
+F 3 "" H 950 9900 50  0001 C CNN
+	1    950  9900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  9950 1200 9950
+Wire Wire Line
+	950  9900 950  9950
+$Comp
+L Device:C C214
+U 1 1 5BB5064E
+P 1200 10300
+F 0 "C214" H 1315 10346 50  0000 L CNN
+F 1 "0.1µF" H 1315 10255 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 1238 10150 50  0001 C CNN
+F 3 "~" H 1200 10300 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 0   0   50  0001 C CNN "manf"
+F 5 "CL10B104KO8NNNC" H 0   0   50  0001 C CNN "part-num"
+	1    1200 10300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 9950 1200 10150
+$Comp
+L power:GND #PWR0129
+U 1 1 5BB50656
+P 1200 10550
+F 0 "#PWR0129" H 1200 10300 50  0001 C CNN
+F 1 "GND" H 1205 10377 50  0000 C CNN
+F 2 "" H 1200 10550 50  0001 C CNN
+F 3 "" H 1200 10550 50  0001 C CNN
+	1    1200 10550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 10450 1200 10550
+$Comp
+L Device:C C215
+U 1 1 5BB5065D
+P 1650 10300
+F 0 "C215" H 1765 10346 50  0000 L CNN
+F 1 "0.1µF" H 1765 10255 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 1688 10150 50  0001 C CNN
+F 3 "~" H 1650 10300 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 0   0   50  0001 C CNN "manf"
+F 5 "CL10B104KO8NNNC" H 0   0   50  0001 C CNN "part-num"
+	1    1650 10300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 9950 1650 10150
+$Comp
+L power:GND #PWR0130
+U 1 1 5BB50665
+P 1650 10550
+F 0 "#PWR0130" H 1650 10300 50  0001 C CNN
+F 1 "GND" H 1655 10377 50  0000 C CNN
+F 2 "" H 1650 10550 50  0001 C CNN
+F 3 "" H 1650 10550 50  0001 C CNN
+	1    1650 10550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 10450 1650 10550
+$Comp
+L Device:C C216
+U 1 1 5BB5066C
+P 2100 10300
+F 0 "C216" H 2215 10346 50  0000 L CNN
+F 1 "0.1µF" H 2215 10255 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2138 10150 50  0001 C CNN
+F 3 "~" H 2100 10300 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 0   0   50  0001 C CNN "manf"
+F 5 "CL10B104KO8NNNC" H 0   0   50  0001 C CNN "part-num"
+	1    2100 10300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 9950 2100 10150
+$Comp
+L power:GND #PWR0131
+U 1 1 5BB50674
+P 2100 10550
+F 0 "#PWR0131" H 2100 10300 50  0001 C CNN
+F 1 "GND" H 2105 10377 50  0000 C CNN
+F 2 "" H 2100 10550 50  0001 C CNN
+F 3 "" H 2100 10550 50  0001 C CNN
+	1    2100 10550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 10450 2100 10550
+$Comp
+L Device:C C217
+U 1 1 5BB5067B
+P 2500 10300
+F 0 "C217" H 2615 10346 50  0000 L CNN
+F 1 "0.1µF" H 2615 10255 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2538 10150 50  0001 C CNN
+F 3 "~" H 2500 10300 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 0   0   50  0001 C CNN "manf"
+F 5 "CL10B104KO8NNNC" H 0   0   50  0001 C CNN "part-num"
+	1    2500 10300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 9950 2500 10150
+$Comp
+L power:GND #PWR0132
+U 1 1 5BB50683
+P 2500 10550
+F 0 "#PWR0132" H 2500 10300 50  0001 C CNN
+F 1 "GND" H 2505 10377 50  0000 C CNN
+F 2 "" H 2500 10550 50  0001 C CNN
+F 3 "" H 2500 10550 50  0001 C CNN
+	1    2500 10550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 10450 2500 10550
+Wire Wire Line
+	1200 9950 1650 9950
+Connection ~ 1200 9950
+Connection ~ 1650 9950
+Wire Wire Line
+	1650 9950 2100 9950
+Connection ~ 2100 9950
+Wire Wire Line
+	2100 9950 2500 9950
+$Comp
+L Device:C C218
+U 1 1 5BB564C9
+P 2900 10300
+F 0 "C218" H 3015 10346 50  0000 L CNN
+F 1 "0.1µF" H 3015 10255 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2938 10150 50  0001 C CNN
+F 3 "~" H 2900 10300 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 0   0   50  0001 C CNN "manf"
+F 5 "CL10B104KO8NNNC" H 0   0   50  0001 C CNN "part-num"
+	1    2900 10300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 9950 2900 10150
+$Comp
+L power:GND #PWR0133
+U 1 1 5BB564D1
+P 2900 10550
+F 0 "#PWR0133" H 2900 10300 50  0001 C CNN
+F 1 "GND" H 2905 10377 50  0000 C CNN
+F 2 "" H 2900 10550 50  0001 C CNN
+F 3 "" H 2900 10550 50  0001 C CNN
+	1    2900 10550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 10450 2900 10550
+Wire Wire Line
+	2500 9950 2900 9950
+Connection ~ 2500 9950
+$Comp
+L Device:Ferrite_Bead L211
+U 1 1 5BB6068B
+P 4750 9000
+F 0 "L211" V 4800 9100 50  0000 C CNN
+F 1 "Ferrite_Bead" V 4900 9050 50  0000 L BNN
+F 2 "Inductors_SMD:L_0603" V 4680 9000 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/murata-electronics-north-america/BLM18PG121SN1D/490-1037-1-ND/584485" H 4750 9000 50  0001 C CNN
+F 4 "BLM18PG121SN1D" V 5000 9050 50  0000 L BNN "part-num"
+F 5 "Murata" H 4750 9000 50  0001 C CNN "manf"
+	1    4750 9000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 9000 4600 9000
+$Comp
+L Device:C C207
+U 1 1 5BB60694
+P 5750 9300
+F 0 "C207" H 5865 9346 50  0000 L CNN
+F 1 "0.1µF" H 5865 9255 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5788 9150 50  0001 C CNN
+F 3 "~" H 5750 9300 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 0   0   50  0001 C CNN "manf"
+F 5 "CL10B104KO8NNNC" H 0   0   50  0001 C CNN "part-num"
+	1    5750 9300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 9000 5750 9150
+Wire Wire Line
+	4900 9000 5750 9000
+Connection ~ 5750 9000
+Wire Wire Line
+	5750 9000 6200 9000
+$Comp
+L power:GND #PWR0134
+U 1 1 5BB6069F
+P 5750 9550
+F 0 "#PWR0134" H 5750 9300 50  0001 C CNN
+F 1 "GND" H 5755 9377 50  0000 C CNN
+F 2 "" H 5750 9550 50  0001 C CNN
+F 3 "" H 5750 9550 50  0001 C CNN
+	1    5750 9550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 9450 5750 9550
+Text Label 4350 9000 0    50   ~ 0
+VDDCORE
+Text Label 6200 9000 2    50   ~ 0
+VDDUSBPLL
+$Comp
+L Device:Ferrite_Bead L212
+U 1 1 5BB650D3
+P 5650 9950
+F 0 "L212" V 5700 10050 50  0000 C CNN
+F 1 "Ferrite_Bead" V 5800 10000 50  0000 L BNN
+F 2 "Inductors_SMD:L_0603" V 5580 9950 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/murata-electronics-north-america/BLM18PG121SN1D/490-1037-1-ND/584485" H 5650 9950 50  0001 C CNN
+F 4 "BLM18PG121SN1D" V 5900 10000 50  0000 L BNN "part-num"
+F 5 "Murata" H 5650 9950 50  0001 C CNN "manf"
+	1    5650 9950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4150 9950 4600 9950
+$Comp
+L Device:C C222
+U 1 1 5BB650DB
+P 6450 10300
+F 0 "C222" H 6565 10346 50  0000 L CNN
+F 1 "0.1µF" H 6565 10255 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 6488 10150 50  0001 C CNN
+F 3 "~" H 6450 10300 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 0   0   50  0001 C CNN "manf"
+F 5 "CL10B104KO8NNNC" H 0   0   50  0001 C CNN "part-num"
+	1    6450 10300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 9950 6450 10150
+Wire Wire Line
+	5800 9950 6450 9950
+Connection ~ 6450 9950
+Wire Wire Line
+	6450 9950 6900 9950
+$Comp
+L power:GND #PWR0135
+U 1 1 5BB650E6
+P 6450 10550
+F 0 "#PWR0135" H 6450 10300 50  0001 C CNN
+F 1 "GND" H 6455 10377 50  0000 C CNN
+F 2 "" H 6450 10550 50  0001 C CNN
+F 3 "" H 6450 10550 50  0001 C CNN
+	1    6450 10550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 10450 6450 10550
+Text Label 4150 9950 0    50   ~ 0
+VDDCORE
+Text Label 6900 9950 2    50   ~ 0
+VDDPLL
+$Comp
+L Device:C C219
+U 1 1 5BB7111B
+P 4600 10300
+F 0 "C219" H 4715 10346 50  0000 L CNN
+F 1 "0.1µF" H 4715 10255 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 4638 10150 50  0001 C CNN
+F 3 "~" H 4600 10300 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 0   0   50  0001 C CNN "manf"
+F 5 "CL10B104KO8NNNC" H 0   0   50  0001 C CNN "part-num"
+	1    4600 10300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 9950 4600 10150
+$Comp
+L power:GND #PWR0136
+U 1 1 5BB71123
+P 4600 10550
+F 0 "#PWR0136" H 4600 10300 50  0001 C CNN
+F 1 "GND" H 4605 10377 50  0000 C CNN
+F 2 "" H 4600 10550 50  0001 C CNN
+F 3 "" H 4600 10550 50  0001 C CNN
+	1    4600 10550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 10450 4600 10550
+$Comp
+L Device:C C220
+U 1 1 5BB7112A
+P 5000 10300
+F 0 "C220" H 5115 10346 50  0000 L CNN
+F 1 "0.1µF" H 5115 10255 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5038 10150 50  0001 C CNN
+F 3 "~" H 5000 10300 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 0   0   50  0001 C CNN "manf"
+F 5 "CL10B104KO8NNNC" H 0   0   50  0001 C CNN "part-num"
+	1    5000 10300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 9950 5000 10150
+$Comp
+L power:GND #PWR0137
+U 1 1 5BB71132
+P 5000 10550
+F 0 "#PWR0137" H 5000 10300 50  0001 C CNN
+F 1 "GND" H 5005 10377 50  0000 C CNN
+F 2 "" H 5000 10550 50  0001 C CNN
+F 3 "" H 5000 10550 50  0001 C CNN
+	1    5000 10550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 10450 5000 10550
+$Comp
+L Device:C C221
+U 1 1 5BB71139
+P 5400 10300
+F 0 "C221" H 5515 10346 50  0000 L CNN
+F 1 "0.1µF" H 5515 10255 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5438 10150 50  0001 C CNN
+F 3 "~" H 5400 10300 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 0   0   50  0001 C CNN "manf"
+F 5 "CL10B104KO8NNNC" H 0   0   50  0001 C CNN "part-num"
+	1    5400 10300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 9950 5400 10150
+$Comp
+L power:GND #PWR0138
+U 1 1 5BB71141
+P 5400 10550
+F 0 "#PWR0138" H 5400 10300 50  0001 C CNN
+F 1 "GND" H 5405 10377 50  0000 C CNN
+F 2 "" H 5400 10550 50  0001 C CNN
+F 3 "" H 5400 10550 50  0001 C CNN
+	1    5400 10550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 10450 5400 10550
+Connection ~ 4600 9950
+Wire Wire Line
+	4600 9950 5000 9950
+Connection ~ 5000 9950
+Wire Wire Line
+	5000 9950 5400 9950
+Connection ~ 5400 9950
+Wire Wire Line
+	5400 9950 5500 9950
+Wire Notes Line
+	750  8350 7200 8350
+Wire Notes Line
+	7200 8350 7200 10950
+Wire Notes Line
+	7200 10950 750  10950
+Wire Notes Line
+	750  10950 750  8350
+Text Label 4100 4100 0    50   ~ 0
+Td-
+Text Label 4100 4200 0    50   ~ 0
+Td+
+Text Label 4100 4400 0    50   ~ 0
+Rd-
+Text Label 4100 4500 0    50   ~ 0
+Rd+
+Text Label 4100 5100 0    50   ~ 0
+USB1.D-
+Text Label 4100 5200 0    50   ~ 0
+USB1.D+
+NoConn ~ 1600 4100
+NoConn ~ 1600 4200
+NoConn ~ 1600 4300
+NoConn ~ 1600 4400
+NoConn ~ 1600 4500
+NoConn ~ 1600 4600
+NoConn ~ 1600 4700
+NoConn ~ 1600 4850
+NoConn ~ 1600 4950
+NoConn ~ 1600 5050
+NoConn ~ 1600 5150
+NoConn ~ 1600 5250
+NoConn ~ 1600 5350
+NoConn ~ 1600 5450
+Wire Wire Line
+	10900 3400 10900 4100
+Wire Wire Line
+	11200 3800 11200 4100
+Wire Wire Line
+	10900 3400 10900 2850
+Connection ~ 10900 3400
+Wire Wire Line
+	11050 3800 11050 2950
+Connection ~ 11050 3800
+Wire Wire Line
+	11050 3800 11200 3800
+Wire Wire Line
+	11350 3700 10650 3700
+Wire Wire Line
+	11050 2950 11400 2950
+Text Label 4100 4700 0    50   ~ 0
+nFDX_LED
+Text Label 4100 4800 0    50   ~ 0
+nLNKA_LED
+$Comp
+L power:+3.3V #PWR0139
+U 1 1 5BA5ED6F
+P 1050 6550
+F 0 "#PWR0139" H 1050 6400 50  0001 C CNN
+F 1 "+3.3V" H 1065 6723 50  0000 C CNN
+F 2 "" H 1050 6550 50  0001 C CNN
+F 3 "" H 1050 6550 50  0001 C CNN
+	1    1050 6550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1600 6800
+NoConn ~ 1600 6700
+Wire Wire Line
+	4100 6050 4200 6050
+Wire Wire Line
+	4200 6050 4200 6150
+Wire Wire Line
+	4100 6150 4200 6150
+Connection ~ 4200 6150
+Wire Wire Line
+	4200 6150 4200 6250
+$Comp
+L power:GND #PWR0140
+U 1 1 5BA761A6
+P 4200 6250
+F 0 "#PWR0140" H 4200 6000 50  0001 C CNN
+F 1 "GND" H 4205 6077 50  0000 C CNN
+F 2 "" H 4200 6250 50  0001 C CNN
+F 3 "" H 4200 6250 50  0001 C CNN
+	1    4200 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 5950 4300 5950
+$Comp
+L power:+3.3V #PWR0141
+U 1 1 5BA7B285
+P 4300 5950
+F 0 "#PWR0141" H 4300 5800 50  0001 C CNN
+F 1 "+3.3V" H 4315 6123 50  0000 C CNN
+F 2 "" H 4300 5950 50  0001 C CNN
+F 3 "" H 4300 5950 50  0001 C CNN
+	1    4300 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 6600 1050 6550
+Wire Wire Line
+	1600 6600 1050 6600
+Wire Wire Line
+	4100 5600 5500 5600
+Wire Wire Line
+	4100 5500 5150 5500
+$Comp
+L Device:R R213
+U 1 1 5BAAE0A2
+P 5300 5500
+F 0 "R213" V 5093 5500 50  0000 C CNN
+F 1 "12k 1%" V 5184 5500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5230 5500 50  0001 C CNN
+F 3 "~" H 5300 5500 50  0001 C CNN
+F 4 "ERJ-6ENF1202V" H 0   0   50  0001 C CNN "part-num"
+F 5 "Panasonic Electronic Componens" H 0   0   50  0001 C CNN "manf"
+	1    5300 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R214
+U 1 1 5BAAE125
+P 5650 5600
+F 0 "R214" V 5443 5600 50  0000 C CNN
+F 1 "12k 1%" V 5534 5600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5580 5600 50  0001 C CNN
+F 3 "~" H 5650 5600 50  0001 C CNN
+F 4 "ERJ-6ENF1202V" H 0   0   50  0001 C CNN "part-num"
+F 5 "Panasonic Electronic Componens" H 0   0   50  0001 C CNN "manf"
+	1    5650 5600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5450 5500 5500 5500
+Wire Wire Line
+	5500 5500 5500 5300
+Wire Wire Line
+	5500 5300 5900 5300
+Wire Wire Line
+	5900 5300 5900 5600
+Wire Wire Line
+	5800 5600 5900 5600
+Connection ~ 5900 5600
+Wire Wire Line
+	5900 5600 5900 5750
+$Comp
+L power:GND #PWR0142
+U 1 1 5BACB5BB
+P 5900 5750
+F 0 "#PWR0142" H 5900 5500 50  0001 C CNN
+F 1 "GND" H 5905 5577 50  0000 C CNN
+F 2 "" H 5900 5750 50  0001 C CNN
+F 3 "" H 5900 5750 50  0001 C CNN
+	1    5900 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 5400 4400 5400
+$Comp
+L Device:R R212
+U 1 1 5BAD710F
+P 4550 5400
+F 0 "R212" V 4343 5400 50  0000 C CNN
+F 1 "0R" V 4434 5400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4480 5400 50  0001 C CNN
+F 3 "~" H 4550 5400 50  0001 C CNN
+F 4 "Panasonic Electronic Componens" H 0   0   50  0001 C CNN "manf"
+F 5 "ERJ-6GEY0R00V" H 0   0   50  0001 C CNN "part-num"
+	1    4550 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4700 5400 4900 5400
+Wire Wire Line
+	4900 5400 4900 5250
+$Comp
+L power:+3.3V #PWR0143
+U 1 1 5BADCDE7
+P 4900 5250
+F 0 "#PWR0143" H 4900 5100 50  0001 C CNN
+F 1 "+3.3V" H 4915 5423 50  0000 C CNN
+F 2 "" H 4900 5250 50  0001 C CNN
+F 3 "" H 4900 5250 50  0001 C CNN
+	1    4900 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C204
+U 1 1 5BADE1C5
+P 4450 7500
+F 0 "C204" H 4565 7591 50  0000 L CNN
+F 1 "33pF 50V" H 4565 7500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 4488 7350 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/samsung-electro-mechanics/CL10C330FB8NNNC/1276-2262-1-ND/3890348" H 4450 7500 50  0001 C CNN
+F 4 "CL10C330FB8NNNC" H 4450 7500 50  0001 C CNN "part-num"
+F 5 "Samsung Electro-Mechanics" H 4450 7500 50  0001 C CNN "manf"
+	1    4450 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R215
+U 1 1 5BADE69F
+P 4950 6650
+F 0 "R215" V 4743 6650 50  0000 C CNN
+F 1 "open" V 4834 6650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4880 6650 50  0001 C CNN
+F 3 "~" H 4950 6650 50  0001 C CNN
+F 4 "DNP" H 0   0   50  0001 C CNN "manf"
+F 5 "DNP" H 0   0   50  0001 C CNN "part-num"
+	1    4950 6650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Crystal Y201
+U 1 1 5BADEE66
+P 4950 7100
+F 0 "Y201" H 4950 7368 50  0000 C CNN
+F 1 "25.000MHz 18pF" H 4950 7277 50  0000 C CNN
+F 2 "Crystals:Crystal_SMD_HC49-SD" H 4950 7100 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/abracon-llc/ABLS2-25.000MHZ-D4YF-T/535-9883-1-ND/2001506" H 4950 7100 50  0001 C CNN
+F 4 "ABLS2-25.000MHZ-D4YF-T" H 4950 7100 50  0001 C CNN "part-num"
+F 5 "Abracon LLC" H 4950 7100 50  0001 C CNN "manf"
+	1    4950 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 7750 4450 7650
+Wire Wire Line
+	5450 7750 5450 7650
+Wire Wire Line
+	4800 6650 4450 6650
+Wire Wire Line
+	5100 6650 5450 6650
+Wire Wire Line
+	5450 6650 5450 7100
+Wire Wire Line
+	4450 6650 4450 7100
+Connection ~ 4450 6650
+Wire Wire Line
+	4450 6650 4100 6650
+Wire Wire Line
+	4800 7100 4450 7100
+Connection ~ 4450 7100
+Wire Wire Line
+	4450 7100 4450 7350
+Wire Wire Line
+	5100 7100 5450 7100
+Connection ~ 5450 7100
+Wire Wire Line
+	5450 7100 5450 7350
+Wire Wire Line
+	5450 6650 5450 6350
+Wire Wire Line
+	5450 6350 4450 6350
+Wire Wire Line
+	4450 6350 4450 6550
+Wire Wire Line
+	4450 6550 4100 6550
+Connection ~ 5450 6650
+Text Label 4100 4900 0    50   ~ 0
+nSPD_LED
+Text Notes 7200 850  0    50   ~ 0
+Status LED's
+$Comp
+L power:+3.3V #PWR0144
+U 1 1 5BB2835A
+P 8200 1050
+F 0 "#PWR0144" H 8200 900 50  0001 C CNN
+F 1 "+3.3V" H 8215 1223 50  0000 C CNN
+F 2 "" H 8200 1050 50  0001 C CNN
+F 3 "" H 8200 1050 50  0001 C CNN
+	1    8200 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 1500 8200 1500
+Text Label 6650 1300 0    50   ~ 0
+nFDX_LED
+Text Label 6650 1500 0    50   ~ 0
+nLNKA_LED
+Wire Notes Line
+	6450 700  8450 700 
+Wire Notes Line
+	8450 700  8450 2150
+Wire Notes Line
+	8450 2150 6450 2150
+Wire Notes Line
+	6450 2150 6450 700 
+Wire Wire Line
+	6650 1300 7350 1300
+Wire Wire Line
+	6650 1500 7350 1500
+NoConn ~ 1600 6100
+NoConn ~ 1600 6200
+NoConn ~ 1600 6300
+NoConn ~ 1600 6400
+$Comp
+L power:GND #PWR0145
+U 1 1 5BBEBD54
+P 2800 7300
+F 0 "#PWR0145" H 2800 7050 50  0001 C CNN
+F 1 "GND" H 2805 7127 50  0000 C CNN
+F 2 "" H 2800 7300 50  0001 C CNN
+F 3 "" H 2800 7300 50  0001 C CNN
+	1    2800 7300
+	1    0    0    -1  
+$EndComp
+Text Notes 7500 8500 0    50   ~ 0
+Optional Microwire Serial EEPROM
+$Comp
+L Memory_EEPROM:93AAxxA U230
+U 1 1 5BBECFF0
+P 8600 9900
+F 0 "U230" H 8700 10250 50  0000 C CNN
+F 1 "93AA56A" H 8800 10150 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 8600 9900 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/microchip-technology/93AA56AT-I-SN/93AA56AT-I-SNCT-ND/8637200" H 8600 9900 50  0001 C CNN
+F 4 "93AA56AT-I/SN" H 8600 9900 50  0001 C CNN "part-num"
+F 5 "Microchip Technology" H 8600 9900 50  0001 C CNN "manf"
+	1    8600 9900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 5650 1100 5650
+Wire Wire Line
+	1600 5750 1100 5750
+Wire Wire Line
+	1600 5850 1100 5850
+Wire Wire Line
+	1600 5950 1100 5950
+Text Label 1100 5650 0    50   ~ 0
+EECLK
+Text Label 1100 5750 0    50   ~ 0
+EECS
+Text Label 1100 5850 0    50   ~ 0
+EEDO
+Text Label 1100 5950 0    50   ~ 0
+EEDI
+Wire Wire Line
+	9000 9800 9500 9800
+Wire Wire Line
+	8200 9800 7850 9800
+Wire Wire Line
+	9000 9900 9500 9900
+Wire Wire Line
+	9000 10000 9500 10000
+Text Label 9500 9800 2    50   ~ 0
+EECLK
+Text Label 7500 9800 0    50   ~ 0
+EECS
+Text Label 9500 9900 2    50   ~ 0
+EEDO
+Text Label 9500 10000 2    50   ~ 0
+EEDI
+Wire Wire Line
+	8600 8950 8600 9000
+$Comp
+L power:+3.3V #PWR0146
+U 1 1 5BC71AD2
+P 8600 8950
+F 0 "#PWR0146" H 8600 8800 50  0001 C CNN
+F 1 "+3.3V" H 8615 9123 50  0000 C CNN
+F 2 "" H 8600 8950 50  0001 C CNN
+F 3 "" H 8600 8950 50  0001 C CNN
+	1    8600 8950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 9000 9200 9000
+Wire Wire Line
+	9200 9000 9200 9050
+Connection ~ 8600 9000
+Wire Wire Line
+	8600 9000 8600 9600
+$Comp
+L Device:C C230
+U 1 1 5BC7B498
+P 9200 9200
+F 0 "C230" H 9315 9246 50  0000 L CNN
+F 1 "0.1µF" H 9315 9155 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 9238 9050 50  0001 C CNN
+F 3 "~" H 9200 9200 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 0   0   50  0001 C CNN "manf"
+F 5 "CL10B104KO8NNNC" H 0   0   50  0001 C CNN "part-num"
+	1    9200 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0147
+U 1 1 5BC7B4A0
+P 9200 9400
+F 0 "#PWR0147" H 9200 9150 50  0001 C CNN
+F 1 "GND" H 9205 9227 50  0000 C CNN
+F 2 "" H 9200 9400 50  0001 C CNN
+F 3 "" H 9200 9400 50  0001 C CNN
+	1    9200 9400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 9350 9200 9400
+$Comp
+L power:GND #PWR0148
+U 1 1 5BCC560E
+P 8600 10300
+F 0 "#PWR0148" H 8600 10050 50  0001 C CNN
+F 1 "GND" H 8605 10127 50  0000 C CNN
+F 2 "" H 8600 10300 50  0001 C CNN
+F 3 "" H 8600 10300 50  0001 C CNN
+	1    8600 10300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R230
+U 1 1 5BCC5A2B
+P 7850 10050
+F 0 "R230" H 7920 10096 50  0000 L CNN
+F 1 "10k" H 7920 10005 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 7780 10050 50  0001 C CNN
+F 3 "~" H 7850 10050 50  0001 C CNN
+F 4 "Panasonic Electronic Componens" H 0   0   50  0001 C CNN "manf"
+F 5 "ERJ-6ENF1002V" H 0   0   50  0001 C CNN "part-num"
+	1    7850 10050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 9800 7850 9900
+Connection ~ 7850 9800
+Wire Wire Line
+	7850 9800 7500 9800
+Wire Wire Line
+	7850 10200 7850 10300
+$Comp
+L power:GND #PWR0149
+U 1 1 5BCD86A3
+P 7850 10300
+F 0 "#PWR0149" H 7850 10050 50  0001 C CNN
+F 1 "GND" H 7855 10127 50  0000 C CNN
+F 2 "" H 7850 10300 50  0001 C CNN
+F 3 "" H 7850 10300 50  0001 C CNN
+	1    7850 10300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 10200 8600 10300
+Wire Notes Line
+	7400 8350 9750 8350
+Wire Notes Line
+	9750 8350 9750 10700
+Wire Notes Line
+	9750 10700 7400 10700
+Wire Notes Line
+	7400 10700 7400 8350
+Wire Wire Line
+	3650 9000 3950 9000
+Text Label 3950 9000 2    50   ~ 0
+VDD33A
+Wire Wire Line
+	2150 3350 2150 3150
+Wire Wire Line
+	2150 3150 2250 3150
+Wire Wire Line
+	2250 3150 2250 3350
+Wire Wire Line
+	2150 3150 1850 3150
+Connection ~ 2150 3150
+Text Label 1850 3150 0    50   ~ 0
+VDDCORE
+Wire Wire Line
+	2400 3350 2400 3000
+Wire Wire Line
+	2400 3000 2000 3000
+Text Label 2000 3000 0    50   ~ 0
+VDDUSBPLL
+Wire Wire Line
+	2500 3350 2500 2850
+Wire Wire Line
+	2500 2850 2100 2850
+Text Label 2100 2850 0    50   ~ 0
+VDDPLL
+Wire Wire Line
+	2700 3350 2700 3200
+Wire Wire Line
+	2700 3200 2800 3200
+Wire Wire Line
+	3100 3200 3100 3350
+Wire Wire Line
+	3000 3350 3000 3200
+Connection ~ 3000 3200
+Wire Wire Line
+	3000 3200 3100 3200
+Wire Wire Line
+	2900 3350 2900 3200
+Connection ~ 2900 3200
+Wire Wire Line
+	2900 3200 3000 3200
+Wire Wire Line
+	2800 3350 2800 3200
+Connection ~ 2800 3200
+Wire Wire Line
+	2800 3200 2900 3200
+Wire Wire Line
+	3300 3350 3300 3200
+Wire Wire Line
+	3300 3200 3400 3200
+Wire Wire Line
+	3600 3200 3600 3350
+Connection ~ 3500 3200
+Wire Wire Line
+	3500 3200 3600 3200
+Wire Wire Line
+	3400 3350 3400 3200
+Connection ~ 3400 3200
+Wire Wire Line
+	3400 3200 3500 3200
+Wire Wire Line
+	3500 3200 3500 3350
+Wire Wire Line
+	2700 3200 2700 3100
+Connection ~ 2700 3200
+Wire Wire Line
+	3300 3200 3300 3100
+Wire Wire Line
+	3300 3100 3450 3100
+Connection ~ 3300 3200
+$Comp
+L power:+3.3V #PWR0150
+U 1 1 5BDA9035
+P 2700 3100
+F 0 "#PWR0150" H 2700 2950 50  0001 C CNN
+F 1 "+3.3V" H 2715 3273 50  0000 C CNN
+F 2 "" H 2700 3100 50  0001 C CNN
+F 3 "" H 2700 3100 50  0001 C CNN
+	1    2700 3100
+	1    0    0    -1  
+$EndComp
+Text Label 3450 3100 0    50   ~ 0
+VDD33A
+Wire Notes Line
+	2950 650  6100 650 
+Wire Notes Line
+	6100 650  6100 2200
+Wire Notes Line
+	6100 2200 2950 2200
+Wire Notes Line
+	2950 2200 2950 650 
+Text Notes 3000 750  0    50   ~ 0
+USB Konfiguration\n
+Wire Wire Line
+	4450 1400 4450 1600
+$Comp
+L power:GND #PWR0151
+U 1 1 5BE2416E
+P 4450 1600
+F 0 "#PWR0151" H 4450 1350 50  0001 C CNN
+F 1 "GND" H 4455 1427 50  0000 C CNN
+F 2 "" H 4450 1600 50  0001 C CNN
+F 3 "" H 4450 1600 50  0001 C CNN
+	1    4450 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 1100 4450 950 
+Wire Wire Line
+	4450 950  4750 950 
+Text Label 4750 950  2    50   ~ 0
+USB1.ID
+Wire Notes Line
+	750  2350 750  8200
+Wire Notes Line
+	750  8200 6100 8200
+Wire Notes Line
+	6100 8200 6100 2350
+Wire Notes Line
+	6100 2350 750  2350
+Text Notes 850  2500 0    79   ~ 0
+USB Ethernet PHY
+Wire Wire Line
+	5100 1100 5100 950 
+Wire Wire Line
+	5100 1400 5100 1500
+Wire Wire Line
+	5100 1500 5350 1500
+Wire Wire Line
+	5350 1500 5350 1150
+Wire Wire Line
+	5350 1150 5650 1150
+Wire Wire Line
+	5100 950  5650 950 
+Text Label 5650 1150 2    50   ~ 0
+USB1.VIN
+Text Label 5650 950  2    50   ~ 0
+USB1.VBUS
+Text Notes 3000 2050 0    50   ~ 0
+USB.ID auf GND erzwingt den HOST mode
+Wire Notes Line
+	12950 2350 12950 5650
+Wire Notes Line
+	12950 5650 6450 5650
+Wire Notes Line
+	6450 5650 6450 2350
+Wire Notes Line
+	6450 2350 12950 2350
+Text Notes 6600 2500 0    50   ~ 0
+M12-D & Transformer
+$Comp
+L myLib:LAN9500 U201
+U 1 1 5BF5C50E
+P 2800 5050
+F 0 "U201" H 1900 6600 50  0000 C CNN
+F 1 "LAN9500Ai" H 3700 3100 50  0000 C CNN
+F 2 "EigeneFootprints:QFN50P800X800X120-56N" H 1700 6500 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/00001875C.pdf" H 2800 5050 50  0001 L CNN
+F 4 "LAN9500A-ABZJ-TR" H 2800 5050 50  0001 C CNN "part-num"
+F 5 "Microchip Technology" H 2800 5050 50  0001 C CNN "manf"
+	1    2800 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0107
+U 1 1 5BA0EC32
+P 3250 9000
+F 0 "#FLG0107" H 3250 9075 50  0001 C CNN
+F 1 "PWR_FLAG" H 3250 9174 50  0000 C CNN
+F 2 "" H 3250 9000 50  0001 C CNN
+F 3 "~" H 3250 9000 50  0001 C CNN
+	1    3250 9000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 9000 3650 9000
+$Comp
+L power:PWR_FLAG #FLG0108
+U 1 1 5BA1E611
+P 5750 8900
+F 0 "#FLG0108" H 5750 8975 50  0001 C CNN
+F 1 "PWR_FLAG" H 5750 9074 50  0000 C CNN
+F 2 "" H 5750 8900 50  0001 C CNN
+F 3 "~" H 5750 8900 50  0001 C CNN
+	1    5750 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0109
+U 1 1 5BA1E899
+P 6450 9900
+F 0 "#FLG0109" H 6450 9975 50  0001 C CNN
+F 1 "PWR_FLAG" H 6450 10074 50  0000 C CNN
+F 2 "" H 6450 9900 50  0001 C CNN
+F 3 "~" H 6450 9900 50  0001 C CNN
+	1    6450 9900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 9900 6450 9950
+Wire Wire Line
+	5750 8900 5750 9000
+Wire Wire Line
+	8500 2650 8900 2650
+Connection ~ 8500 2650
+Text Label 9400 2650 2    50   ~ 0
+VDD33A
+Text Label 6650 1700 0    50   ~ 0
+nSPD_LED
+$Comp
+L Device:C C202
+U 1 1 5BAE889E
+P 11200 4250
+F 0 "C202" H 11350 4350 50  0000 L CNN
+F 1 "22n/200V" H 11350 4250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 11238 4100 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/avx-corporation/08051C223K4T2A/478-9378-1-ND/4901452" H 11200 4250 50  0001 C CNN
+F 4 "08052C223KAT2A" H 11200 4250 50  0001 C CNN "part-num"
+F 5 "AVX Corporation" H 11200 4250 50  0001 C CNN "manf"
+	1    11200 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 7750 5450 7750
+$Comp
+L power:GND #PWR0173
+U 1 1 5BB05447
+P 4450 7850
+F 0 "#PWR0173" H 4450 7600 50  0001 C CNN
+F 1 "GND" H 4455 7677 50  0000 C CNN
+F 2 "" H 4450 7850 50  0001 C CNN
+F 3 "" H 4450 7850 50  0001 C CNN
+	1    4450 7850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 7750 4450 7850
+Connection ~ 4450 7750
+Text Notes 4900 7950 0    50   ~ 0
+C1, C2 = 2*CL – 2*Cstray
+$Comp
+L Device:C C205
+U 1 1 5BB1471C
+P 5450 7500
+F 0 "C205" H 5565 7591 50  0000 L CNN
+F 1 "33pF 50V" H 5565 7500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5488 7350 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/samsung-electro-mechanics/CL10C330FB8NNNC/1276-2262-1-ND/3890348" H 5450 7500 50  0001 C CNN
+F 4 "CL10C330FB8NNNC" H 5450 7500 50  0001 C CNN "part-num"
+F 5 "Samsung Electro-Mechanics" H 5450 7500 50  0001 C CNN "manf"
+	1    5450 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R252
+U 1 1 5BABCD01
+P 4450 1250
+F 0 "R252" H 4520 1296 50  0000 L CNN
+F 1 "0R" H 4520 1205 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 4380 1250 50  0001 C CNN
+F 3 "~" H 4450 1250 50  0001 C CNN
+F 4 "ERJ-6GEY0R00V" H -6150 350 50  0001 C CNN "part-num"
+F 5 "Panasonic Electronic Componens" H -6150 350 50  0001 C CNN "manf"
+	1    4450 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R253
+U 1 1 5BABCF2F
+P 5100 1250
+F 0 "R253" H 5170 1296 50  0000 L CNN
+F 1 "0R" H 5170 1205 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 5030 1250 50  0001 C CNN
+F 3 "~" H 5100 1250 50  0001 C CNN
+F 4 "ERJ-6GEY0R00V" H -5500 350 50  0001 C CNN "part-num"
+F 5 "Panasonic Electronic Componens" H -5500 350 50  0001 C CNN "manf"
+	1    5100 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 4150 8650 4150
+Wire Wire Line
+	8350 4150 8350 4250
+Text Label 8650 4150 0    50   ~ 0
+VDD33A
+$Comp
+L power:Earth_Protective #PWR0162
+U 1 1 5C9E2074
+P 12250 3850
+F 0 "#PWR0162" H 12500 3600 50  0001 C CNN
+F 1 "Earth_Protective" H 12700 3700 50  0001 C CNN
+F 2 "" H 12250 3750 50  0001 C CNN
+F 3 "~" H 12250 3750 50  0001 C CNN
+	1    12250 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0164
+U 1 1 5CA66C6D
+P 3350 1050
+F 0 "#PWR0164" H 3350 900 50  0001 C CNN
+F 1 "+5V" H 3365 1223 50  0000 C CNN
+F 2 "" H 3350 1050 50  0001 C CNN
+F 3 "" H 3350 1050 50  0001 C CNN
+	1    3350 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R251
+U 1 1 5CA66CE3
+P 3350 1350
+F 0 "R251" H 3420 1396 50  0000 L CNN
+F 1 "0R" H 3420 1305 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 3280 1350 50  0001 C CNN
+F 3 "~" H 3350 1350 50  0001 C CNN
+F 4 "ERJ-6GEY0R00V" H -7250 450 50  0001 C CNN "part-num"
+F 5 "Panasonic Electronic Componens" H -7250 450 50  0001 C CNN "manf"
+	1    3350 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 950  4150 950 
+Text Label 4150 950  2    50   ~ 0
+USB1.VBUS
+Wire Wire Line
+	3750 950  3750 1600
+Wire Wire Line
+	3750 1600 3350 1600
+Wire Wire Line
+	3350 1600 3350 1500
+Wire Wire Line
+	3350 1050 3350 1200
+Text Notes 3000 1950 0    50   ~ 0
++5V auf USB1.VBUS stellt sie Speisung für den externen USB sicher
+$Comp
+L Device:LED_ARGB D?
+U 1 1 5CD280AE
+P 7900 1500
+AR Path="/5CD280AE" Ref="D?"  Part="1" 
+AR Path="/5B7F9482/5CD280AE" Ref="D260"  Part="1" 
+F 0 "D260" H 7900 1997 50  0000 C CNN
+F 1 "LED_ARGB" H 7900 1906 50  0000 C CNN
+F 2 "LEDs:LED_Cree-PLCC4_3.2x2.8mm_CCW" H 7900 1450 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/cree-inc/CLV1L-FKB-CHMMQEHBB7673673/CLV1L-FKB-CHMMQEHBB7673673CT-ND/7648419" H 7900 1450 50  0001 C CNN
+F 4 "CLV1L-FKB-CHMMQEHBB7673673" H 7900 1500 50  0001 C CNN "part-num"
+F 5 "Cree Inc." H 7900 1500 50  0001 C CNN "manf"
+	1    7900 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R262
+U 1 1 5CD280B8
+P 7500 1700
+AR Path="/5B7F9482/5CD280B8" Ref="R262"  Part="1" 
+AR Path="/5CD280B8" Ref="R?"  Part="1" 
+F 0 "R262" V 7450 1400 50  0000 C CNN
+F 1 "62" V 7384 1700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7430 1700 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/panasonic-electronic-components/ERJ-3GEYJ241V/P240GCT-ND/134760" H 7500 1700 50  0001 C CNN
+F 4 "ERJ-3GEYJ620V" H 7500 1700 50  0001 C CNN "part-num"
+F 5 "Panasonic Electronic Components" H 7500 1700 50  0001 C CNN "manf"
+	1    7500 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R260
+U 1 1 5CD280C1
+P 7500 1300
+AR Path="/5B7F9482/5CD280C1" Ref="R260"  Part="1" 
+AR Path="/5CD280C1" Ref="R?"  Part="1" 
+F 0 "R260" V 7450 1000 50  0000 C CNN
+F 1 "240" V 7384 1300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7430 1300 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/panasonic-electronic-components/ERJ-3GEYJ241V/P240GCT-ND/134760" H 7500 1300 50  0001 C CNN
+F 4 "ERJ-3GEYJ241V" H 7500 1300 50  0001 C CNN "part-num"
+F 5 "Panasonic Electronic Components" H 7500 1300 50  0001 C CNN "manf"
+	1    7500 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R261
+U 1 1 5CD280CB
+P 7500 1500
+AR Path="/5B7F9482/5CD280CB" Ref="R261"  Part="1" 
+AR Path="/5CD280CB" Ref="R?"  Part="1" 
+F 0 "R261" V 7450 1200 50  0000 C CNN
+F 1 "62" V 7384 1500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7430 1500 50  0001 C CNN
+F 3 "https://www.digikey.ch/product-detail/de/panasonic-electronic-components/ERJ-3GEYJ620V/P62GCT-ND/134695" H 7500 1500 50  0001 C CNN
+F 4 "ERJ-3GEYJ620V" H 7500 1500 50  0001 C CNN "part-num"
+F 5 "Panasonic Electronic Components" H 7500 1500 50  0001 C CNN "manf"
+	1    7500 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8200 1050 8200 1500
+Wire Wire Line
+	6650 1700 7350 1700
+Wire Wire Line
+	7650 1300 7700 1300
+Wire Wire Line
+	7700 1500 7650 1500
+Wire Wire Line
+	7650 1700 7700 1700
+$Comp
+L Device:C C206
+U 1 1 5CD47D2C
+P 8900 2850
+F 0 "C206" H 9015 2896 50  0000 L CNN
+F 1 "0.1µF" H 9015 2805 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 8938 2700 50  0001 C CNN
+F 3 "~" H 8900 2850 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 2450 -7450 50  0001 C CNN "manf"
+F 5 "CL10B104KO8NNNC" H 2450 -7450 50  0001 C CNN "part-num"
+	1    8900 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 2700 8900 2650
+Connection ~ 8900 2650
+Wire Wire Line
+	8900 3000 8900 3050
+$Comp
+L power:GND #PWR0163
+U 1 1 5CD68409
+P 8900 3050
+F 0 "#PWR0163" H 8900 2800 50  0001 C CNN
+F 1 "GND" H 8905 2877 50  0000 C CNN
+F 2 "" H 8900 3050 50  0001 C CNN
+F 3 "" H 8900 3050 50  0001 C CNN
+	1    8900 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 2650 9400 2650
+$EndSCHEMATC

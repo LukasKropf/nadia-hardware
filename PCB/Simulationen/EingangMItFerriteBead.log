@@ -1,0 +1,23 @@
+Circuit: * C:\Users\lukas\git\nadiav2\Sensorknoten\SensorknotenPcb\Simulationen\EingangMItFerriteBead.asc
+
+WARNING: Node P is floating.
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Fri Aug 23 20:26:34 2019
+Total elapsed time: 1.184 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 99051
+traniter = 99048
+tranpoints = 49525
+accept = 41072
+rejected = 8453
+matrix size = 7
+fillins = 0
+solver = Normal
+Matrix Compiler1: 330 bytes object code size  0.2/0.2/[0.2]
+Matrix Compiler2: off  [0.1]/0.2/0.2
+

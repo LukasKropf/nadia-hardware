@@ -1,0 +1,1430 @@
+[
+    {
+        "id": "178e8556.9e7c13",
+        "type": "tab",
+        "label": "RS232",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "3d18a35a.595a44",
+        "type": "serial in",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "serial": "bcc2c0b.e996cc",
+        "x": 180,
+        "y": 240,
+        "wires": [
+            [
+                "d512e0e9.3cd97",
+                "32aa902b.5d791"
+            ]
+        ]
+    },
+    {
+        "id": "c7fae945.048618",
+        "type": "serial out",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "serial": "bcc2c0b.e996cc",
+        "x": 580,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "4026dbf8.843f9c",
+        "type": "inject",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "hallo welt_ttyS0",
+        "payloadType": "str",
+        "x": 210,
+        "y": 160,
+        "wires": [
+            [
+                "c7fae945.048618"
+            ]
+        ]
+    },
+    {
+        "id": "d512e0e9.3cd97",
+        "type": "debug",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "8dfad406.413ed",
+        "type": "gpio out",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "state": "OUTPUT",
+        "pin": "GPIO5",
+        "i2cDelay": "0",
+        "i2cAddress": "",
+        "i2cRegister": "",
+        "outputs": 0,
+        "board": "4f938412.1f22c4",
+        "x": 670,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "4887ba43.28ea6c",
+        "type": "inject",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "01",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 170,
+        "y": 340,
+        "wires": [
+            [
+                "3a07ddc1.c7d172"
+            ]
+        ]
+    },
+    {
+        "id": "a5d93a9c.441c",
+        "type": "inject",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "2.5",
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 170,
+        "y": 380,
+        "wires": [
+            [
+                "327a3213.dc2dae"
+            ]
+        ]
+    },
+    {
+        "id": "7ab3f47e.fae2f4",
+        "type": "gpio in",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "state": "INPUT",
+        "pin": "GPIO4",
+        "board": "4f938412.1f22c4",
+        "x": 180,
+        "y": 440,
+        "wires": [
+            [
+                "a3273719.992e9",
+                "561e47a7.b0b33",
+                "2065d510.ef4192"
+            ]
+        ]
+    },
+    {
+        "id": "a3273719.992e9",
+        "type": "debug",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 590,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "e74d625e.67c308",
+        "type": "comment",
+        "z": "178e8556.9e7c13",
+        "name": "DTR",
+        "info": "",
+        "x": 790,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "b841e1a8.dea998",
+        "type": "comment",
+        "z": "178e8556.9e7c13",
+        "name": "CTS",
+        "info": "",
+        "x": 790,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "4407a2c3.5ebca4",
+        "type": "serial in",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "serial": "577e4f47.a6658",
+        "x": 180,
+        "y": 820,
+        "wires": [
+            [
+                "b1dc9319.aae66",
+                "b061d86.f8d3528"
+            ]
+        ]
+    },
+    {
+        "id": "b01846ef.56e54",
+        "type": "serial out",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "serial": "577e4f47.a6658",
+        "x": 580,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "e9efc2a4.5ef2c8",
+        "type": "inject",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "hallo welt_ttyS2",
+        "payloadType": "str",
+        "x": 210,
+        "y": 720,
+        "wires": [
+            [
+                "b01846ef.56e54"
+            ]
+        ]
+    },
+    {
+        "id": "b1dc9319.aae66",
+        "type": "debug",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "182fd16c.3e67d7",
+        "type": "gpio out",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "state": "OUTPUT",
+        "pin": "GPIO47",
+        "i2cDelay": "0",
+        "i2cAddress": "",
+        "i2cRegister": "",
+        "outputs": 0,
+        "board": "4f938412.1f22c4",
+        "x": 670,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "daf1120b.a0bb38",
+        "type": "gpio in",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "state": "INPUT",
+        "pin": "GPIO114",
+        "board": "4f938412.1f22c4",
+        "x": 190,
+        "y": 1000,
+        "wires": [
+            [
+                "f81256b1.a1f9b8",
+                "bfe18292.2e1bf",
+                "45028987.23add"
+            ]
+        ]
+    },
+    {
+        "id": "f81256b1.a1f9b8",
+        "type": "debug",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 590,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "7662977.a19ac68",
+        "type": "comment",
+        "z": "178e8556.9e7c13",
+        "name": "DTR",
+        "info": "",
+        "x": 790,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "a86c7aa6.7f4fd",
+        "type": "comment",
+        "z": "178e8556.9e7c13",
+        "name": "CTS",
+        "info": "",
+        "x": 790,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "556253cb.1d4aac",
+        "type": "serial in",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "serial": "b2567695.221008",
+        "x": 180,
+        "y": 1360,
+        "wires": [
+            [
+                "fe42b5b1.3c73",
+                "910510c0.e9161"
+            ]
+        ]
+    },
+    {
+        "id": "2261acf2.ea634c",
+        "type": "serial out",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "serial": "b2567695.221008",
+        "x": 580,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "a8f43b93.3e4e78",
+        "type": "inject",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "hallo welt_ttyS4",
+        "payloadType": "str",
+        "x": 210,
+        "y": 1260,
+        "wires": [
+            [
+                "2261acf2.ea634c"
+            ]
+        ]
+    },
+    {
+        "id": "fe42b5b1.3c73",
+        "type": "debug",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 590,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "8fad975b.665f58",
+        "type": "gpio out",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "state": "OUTPUT",
+        "pin": "GPIO57",
+        "i2cDelay": "0",
+        "i2cAddress": "",
+        "i2cRegister": "",
+        "outputs": 0,
+        "board": "4f938412.1f22c4",
+        "x": 650,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "b7cc5e12.618c9",
+        "type": "gpio in",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "state": "INPUT",
+        "pin": "GPIO59",
+        "board": "4f938412.1f22c4",
+        "x": 190,
+        "y": 1560,
+        "wires": [
+            [
+                "d9b89b78.144cb",
+                "4f65e1b4.edd078",
+                "cb0f2988.abbf88"
+            ]
+        ]
+    },
+    {
+        "id": "d9b89b78.144cb",
+        "type": "debug",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 590,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "2a559149.796c26",
+        "type": "comment",
+        "z": "178e8556.9e7c13",
+        "name": "DTR",
+        "info": "",
+        "x": 790,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "adc360ed.6cec28",
+        "type": "comment",
+        "z": "178e8556.9e7c13",
+        "name": "CTS",
+        "info": "",
+        "x": 790,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "24972abb.fa8b0e",
+        "type": "gpio out",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "state": "OUTPUT",
+        "pin": "GPIO26",
+        "i2cDelay": "0",
+        "i2cAddress": "",
+        "i2cRegister": "",
+        "outputs": 0,
+        "board": "4f938412.1f22c4",
+        "x": 390,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "ffba916a.aae97",
+        "type": "inject",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 170,
+        "y": 60,
+        "wires": [
+            [
+                "24972abb.fa8b0e"
+            ]
+        ]
+    },
+    {
+        "id": "7c706a09.22dd84",
+        "type": "inject",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 170,
+        "y": 100,
+        "wires": [
+            [
+                "24972abb.fa8b0e"
+            ]
+        ]
+    },
+    {
+        "id": "c2d2482c.f9d45",
+        "type": "gpio out",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "state": "OUTPUT",
+        "pin": "GPIO52",
+        "i2cDelay": "0",
+        "i2cAddress": "",
+        "i2cRegister": "",
+        "outputs": 0,
+        "board": "4f938412.1f22c4",
+        "x": 390,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "4ac64ef8.07ee",
+        "type": "inject",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 170,
+        "y": 640,
+        "wires": [
+            [
+                "c2d2482c.f9d45"
+            ]
+        ]
+    },
+    {
+        "id": "8c3e0c80.2eaf78",
+        "type": "inject",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 170,
+        "y": 680,
+        "wires": [
+            [
+                "c2d2482c.f9d45"
+            ]
+        ]
+    },
+    {
+        "id": "bb1f3ebc.e122f",
+        "type": "gpio out",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "state": "OUTPUT",
+        "pin": "GPIO58",
+        "i2cDelay": "0",
+        "i2cAddress": "",
+        "i2cRegister": "",
+        "outputs": 0,
+        "board": "4f938412.1f22c4",
+        "x": 390,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "6e390eeb.e5e6e8",
+        "type": "inject",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 170,
+        "y": 1180,
+        "wires": [
+            [
+                "bb1f3ebc.e122f"
+            ]
+        ]
+    },
+    {
+        "id": "785a8ea2.018f5",
+        "type": "inject",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 170,
+        "y": 1220,
+        "wires": [
+            [
+                "bb1f3ebc.e122f"
+            ]
+        ]
+    },
+    {
+        "id": "92adcb56.0a43a8",
+        "type": "comment",
+        "z": "178e8556.9e7c13",
+        "name": "Enable",
+        "info": "",
+        "x": 790,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "88b64481.4697f",
+        "type": "comment",
+        "z": "178e8556.9e7c13",
+        "name": "Enable",
+        "info": "",
+        "x": 790,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "21fdc104.038816",
+        "type": "comment",
+        "z": "178e8556.9e7c13",
+        "name": "Enable",
+        "info": "",
+        "x": 790,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "32aa902b.5d791",
+        "type": "function",
+        "z": "178e8556.9e7c13",
+        "name": "Set global TTY0",
+        "func": "if (msg.payload.trim() == \"hallo welt_ttyS0\")\n{\n    global.set('ttys0',true);\n    msg.payload = true;\n}\nelse\n{\n    global.set('ttys0',false);\n    msg.payload = false;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 600,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "561e47a7.b0b33",
+        "type": "function",
+        "z": "178e8556.9e7c13",
+        "name": "Set global ttys0CTS",
+        "func": "let ttys0CTSl = global.get('ttys0CTS') || 0;\n\nglobal.set('ttys0CTS', ++ttys0CTSl);\n\nmsg.glob = ttys0CTSl;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 620,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1b683ada.6ca80d",
+        "type": "function",
+        "z": "178e8556.9e7c13",
+        "name": "Auswertung TTY",
+        "func": "tty = {};\nLED = {};\nLED.R = 0;\nLED.G = 0;\nLED.B = 0;\n\ntty.ttys0 = global.get('ttys0');\ntty.ttys2 = global.get('ttys2');\ntty.ttys4 = global.get('ttys4');\n\ntty.ttys0cts = global.get('ttys0CTS');\ntty.ttys2cts = global.get('ttys2CTS');\ntty.ttys4cts = global.get('ttys4CTS');\n\n\n\n// Zurückseten der Auswertung, damit diese neu beginnen kann.\nglobal.set('ttys0',false);\nglobal.set('ttys2',false);\nglobal.set('ttys4',false);\nglobal.set('ttys0CTS',0);\nglobal.set('ttys2CTS',0);\nglobal.set('ttys4CTS',0);\n\n\n\n\n// Auswertung der Nachrichten. Sind alle da? dann  LED = nicht Rot. \nif (tty.ttys0 && tty.ttys2 && tty.ttys4)\n    LED.R = 0;\nelse\n    LED.R = 1;\n\n// Auswertgung der CTS. werden CTS's emfangen? dann LED = nichr Blau.\nif (tty.ttys0cts > 1 && tty.ttys2cts > 1 && tty.ttys4cts > 1)\n    LED.B = 0;\nelse \n    LED.B = 1;\n    \n// Grünes LED leuchtet nur, die Kommunikation i.O. ist und CTS empfanen werden.\nLED.G = 1 - LED.R - LED.B;\n\nmsg.payload = tty;\n\nreturn [msg,{\"payload\":LED}];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 410,
+        "y": 1740,
+        "wires": [
+            [
+                "7dd2c407.d25954",
+                "385a77fa.86a99",
+                "34a28e79.cd9daa",
+                "b0f1ee5f.33321"
+            ],
+            [
+                "4756da58.7a76ec",
+                "cf4d3365.085008"
+            ]
+        ]
+    },
+    {
+        "id": "f766b6f9.a3f5b",
+        "type": "inject",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 130,
+        "y": 1740,
+        "wires": [
+            [
+                "1b683ada.6ca80d"
+            ]
+        ]
+    },
+    {
+        "id": "7dd2c407.d25954",
+        "type": "debug",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "b061d86.f8d3528",
+        "type": "function",
+        "z": "178e8556.9e7c13",
+        "name": "Set global ttyS2",
+        "func": "if (msg.payload.trim() == \"hallo welt_ttyS2\")\n{\n    global.set('ttys2',true);\n    msg.glob = true;\n}\nelse\n{\n    global.set('ttys2',false);\n    msg.glob = false;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 600,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "910510c0.e9161",
+        "type": "function",
+        "z": "178e8556.9e7c13",
+        "name": "Set global ttyS4",
+        "func": "if (msg.payload.trim() == \"hallo welt_ttyS4\")\n{\n    global.set('ttys4',true);\n    msg.glob = true;\n}\nelse\n{\n    global.set('ttys4',false);\n    msg.glob = false;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 600,
+        "y": 1360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bfe18292.2e1bf",
+        "type": "function",
+        "z": "178e8556.9e7c13",
+        "name": "Set global ttys2CTS",
+        "func": "let ttys2CTSl = global.get('ttys2CTS') || 0;\n\nglobal.set('ttys2CTS', ++ttys2CTSl);\n\nmsg.glob = ttys2CTSl;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 620,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4f65e1b4.edd078",
+        "type": "function",
+        "z": "178e8556.9e7c13",
+        "name": "Set global ttys4CTS",
+        "func": "let ttys4CTSl = global.get('ttys4CTS') || 0;\n\nglobal.set('ttys4CTS', ++ttys4CTSl);\n\nmsg.glob = ttys4CTSl;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 620,
+        "y": 1560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4756da58.7a76ec",
+        "type": "debug",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 1880,
+        "wires": []
+    },
+    {
+        "id": "cf4d3365.085008",
+        "type": "link out",
+        "z": "178e8556.9e7c13",
+        "name": "AuswertungRS232",
+        "links": [
+            "1c418e84.adcd01"
+        ],
+        "x": 575,
+        "y": 1840,
+        "wires": []
+    },
+    {
+        "id": "3a07ddc1.c7d172",
+        "type": "function",
+        "z": "178e8556.9e7c13",
+        "name": "DigitalOutTest",
+        "func": "// Diese funktion ruft sich selber immer wieder auf \n// und toggelt so die Ausgänge vom Sensorknoten\n\n\nfunction sendTrue()\n{\n    msg.payload = true;\n    node.send(msg)\n    setTimeout(sendFalse, 1000);\n}\n\nfunction sendFalse()\n{\n    msg.payload = false;\n    node.send(msg)\n    setTimeout(sendTrue, 1000);\n}\n\nsendTrue();\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 340,
+        "y": 340,
+        "wires": [
+            [
+                "327a3213.dc2dae"
+            ]
+        ]
+    },
+    {
+        "id": "1dd9c836.10ddc",
+        "type": "inject",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "01",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 170,
+        "y": 900,
+        "wires": [
+            [
+                "fe92bbd7.e7e3e"
+            ]
+        ]
+    },
+    {
+        "id": "c1e35891.178c9",
+        "type": "inject",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "2.5",
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 170,
+        "y": 940,
+        "wires": [
+            [
+                "de42ada6.ef2c9"
+            ]
+        ]
+    },
+    {
+        "id": "fe92bbd7.e7e3e",
+        "type": "function",
+        "z": "178e8556.9e7c13",
+        "name": "DigitalOutTest",
+        "func": "// Diese funktion ruft sich selber immer wieder auf \n// und toggelt so die Ausgänge vom Sensorknoten\n\n\nfunction sendTrue()\n{\n    msg.payload = true;\n    node.send(msg)\n    setTimeout(sendFalse, 1000);\n}\n\nfunction sendFalse()\n{\n    msg.payload = false;\n    node.send(msg)\n    setTimeout(sendTrue, 1000);\n}\n\nsendTrue();\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 320,
+        "y": 900,
+        "wires": [
+            [
+                "de42ada6.ef2c9"
+            ]
+        ]
+    },
+    {
+        "id": "f017fcc9.a4cf48",
+        "type": "inject",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "01",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 150,
+        "y": 1440,
+        "wires": [
+            [
+                "76a12c64.b00d24"
+            ]
+        ]
+    },
+    {
+        "id": "3020f3e.a06fe0c",
+        "type": "inject",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "2.5",
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 150,
+        "y": 1480,
+        "wires": [
+            [
+                "ed01df81.f797e"
+            ]
+        ]
+    },
+    {
+        "id": "76a12c64.b00d24",
+        "type": "function",
+        "z": "178e8556.9e7c13",
+        "name": "DigitalOutTest",
+        "func": "// Diese funktion ruft sich selber immer wieder auf \n// und toggelt so die Ausgänge vom Sensorknoten\n\n\nfunction sendTrue()\n{\n    msg.payload = true;\n    node.send(msg)\n    setTimeout(sendFalse, 1000);\n}\n\nfunction sendFalse()\n{\n    msg.payload = false;\n    node.send(msg)\n    setTimeout(sendTrue, 1000);\n}\n\nsendTrue();\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 300,
+        "y": 1440,
+        "wires": [
+            [
+                "ed01df81.f797e"
+            ]
+        ]
+    },
+    {
+        "id": "327a3213.dc2dae",
+        "type": "ui_switch",
+        "z": "178e8556.9e7c13",
+        "name": "ttyS0 DTR",
+        "label": "DTR",
+        "tooltip": "",
+        "group": "f00e5fd9.9fc1b8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "fa-2x fa-toggle-on ",
+        "oncolor": "orange",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "fa-2x fa-toggle-off",
+        "offcolor": "grey",
+        "x": 510,
+        "y": 340,
+        "wires": [
+            [
+                "8dfad406.413ed"
+            ]
+        ]
+    },
+    {
+        "id": "2065d510.ef4192",
+        "type": "ui_led",
+        "z": "178e8556.9e7c13",
+        "order": 3,
+        "group": "f00e5fd9.9fc1b8",
+        "width": 0,
+        "height": 0,
+        "label": "CTS",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#008000",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#808080",
+                "value": "0",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "ttyS0 CTS",
+        "x": 590,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "41fc1875.388b7",
+        "type": "ui_led",
+        "z": "178e8556.9e7c13",
+        "order": 1,
+        "group": "f00e5fd9.9fc1b8",
+        "width": 0,
+        "height": 0,
+        "label": "Kommunikation",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            },
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "ttyS0 Kommunikation ",
+        "x": 1000,
+        "y": 1700,
+        "wires": []
+    },
+    {
+        "id": "70fd7c3.c496284",
+        "type": "ui_led",
+        "z": "178e8556.9e7c13",
+        "order": 1,
+        "group": "5c3d179d.0d423",
+        "width": 0,
+        "height": 0,
+        "label": "Kommunikation",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            },
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "ttyS2 Kommunikation",
+        "x": 1000,
+        "y": 1740,
+        "wires": []
+    },
+    {
+        "id": "2f70e556.164922",
+        "type": "ui_led",
+        "z": "178e8556.9e7c13",
+        "order": 1,
+        "group": "ca4fb671.7a02c8",
+        "width": 0,
+        "height": 0,
+        "label": "Kommunikation",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            },
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "ttyS4 Kommunikation ",
+        "x": 1000,
+        "y": 1780,
+        "wires": []
+    },
+    {
+        "id": "385a77fa.86a99",
+        "type": "change",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.ttys0",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 1700,
+        "wires": [
+            [
+                "41fc1875.388b7"
+            ]
+        ]
+    },
+    {
+        "id": "34a28e79.cd9daa",
+        "type": "change",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.ttys2",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 1740,
+        "wires": [
+            [
+                "70fd7c3.c496284"
+            ]
+        ]
+    },
+    {
+        "id": "b0f1ee5f.33321",
+        "type": "change",
+        "z": "178e8556.9e7c13",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.ttys4",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 1780,
+        "wires": [
+            [
+                "2f70e556.164922"
+            ]
+        ]
+    },
+    {
+        "id": "45028987.23add",
+        "type": "ui_led",
+        "z": "178e8556.9e7c13",
+        "order": 3,
+        "group": "5c3d179d.0d423",
+        "width": 0,
+        "height": 0,
+        "label": "CTS",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#008000",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#808080",
+                "value": "0",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "ttyS2 CTS",
+        "x": 590,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "cb0f2988.abbf88",
+        "type": "ui_led",
+        "z": "178e8556.9e7c13",
+        "order": 3,
+        "group": "ca4fb671.7a02c8",
+        "width": 0,
+        "height": 0,
+        "label": "CTS",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#008000",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#808080",
+                "value": "0",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "ttyS4 CTS",
+        "x": 590,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "de42ada6.ef2c9",
+        "type": "ui_switch",
+        "z": "178e8556.9e7c13",
+        "name": "ttyS0 DTR",
+        "label": "DTR",
+        "tooltip": "",
+        "group": "5c3d179d.0d423",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "fa-2x fa-toggle-on ",
+        "oncolor": "orange",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "fa-2x fa-toggle-off",
+        "offcolor": "grey",
+        "x": 510,
+        "y": 900,
+        "wires": [
+            [
+                "182fd16c.3e67d7"
+            ]
+        ]
+    },
+    {
+        "id": "ed01df81.f797e",
+        "type": "ui_switch",
+        "z": "178e8556.9e7c13",
+        "name": "ttyS4 DTR",
+        "label": "DTR",
+        "tooltip": "",
+        "group": "ca4fb671.7a02c8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "fa-2x fa-toggle-on ",
+        "oncolor": "orange",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "fa-2x fa-toggle-off",
+        "offcolor": "grey",
+        "x": 490,
+        "y": 1440,
+        "wires": [
+            [
+                "8fad975b.665f58"
+            ]
+        ]
+    },
+    {
+        "id": "bcc2c0b.e996cc",
+        "type": "serial-port",
+        "serialport": "/dev/ttyS0",
+        "serialbaud": "300",
+        "databits": "8",
+        "parity": "even",
+        "stopbits": "1",
+        "waitfor": "",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "\\n",
+        "responsetimeout": "5000"
+    },
+    {
+        "id": "4f938412.1f22c4",
+        "type": "ioplugin",
+        "name": "",
+        "username": "",
+        "password": "",
+        "boardType": "beaglebone-io",
+        "serialportName": "",
+        "connectionType": "local",
+        "mqttServer": "",
+        "pubTopic": "",
+        "subTopic": "",
+        "tcpHost": "",
+        "tcpPort": "",
+        "sparkId": "",
+        "sparkToken": "",
+        "beanId": "",
+        "impId": "",
+        "uuid": "",
+        "token": "",
+        "sendUuid": "",
+        "samplingInterval": "500"
+    },
+    {
+        "id": "577e4f47.a6658",
+        "type": "serial-port",
+        "serialport": "/dev/ttyS2",
+        "serialbaud": "300",
+        "databits": "8",
+        "parity": "even",
+        "stopbits": "1",
+        "waitfor": "",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "\\n",
+        "responsetimeout": "5000"
+    },
+    {
+        "id": "b2567695.221008",
+        "type": "serial-port",
+        "serialport": "/dev/ttyS4",
+        "serialbaud": "300",
+        "databits": "8",
+        "parity": "even",
+        "stopbits": "1",
+        "waitfor": "",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "\\n",
+        "responsetimeout": ""
+    },
+    {
+        "id": "f00e5fd9.9fc1b8",
+        "type": "ui_group",
+        "name": "RS232 ttyS0 (X11)",
+        "tab": "8669463f.5dd7d",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "5c3d179d.0d423",
+        "type": "ui_group",
+        "name": "RS232 ttyS2 (X12)",
+        "tab": "8669463f.5dd7d",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "ca4fb671.7a02c8",
+        "type": "ui_group",
+        "name": "RS232 ttyS4 (X13)",
+        "tab": "8669463f.5dd7d",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "8669463f.5dd7d",
+        "type": "ui_tab",
+        "name": "RS232",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    }
+]

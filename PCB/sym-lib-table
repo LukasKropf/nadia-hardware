@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name SensorknotenPcb)(type Legacy)(uri ${KIPRJMOD}/SensorknotenPcb.lib)(options "")(descr ""))
+  (lib (name SensorknotenPcb-rescue)(type Legacy)(uri ${KIPRJMOD}/SensorknotenPcb-rescue.lib)(options "")(descr ""))
+)

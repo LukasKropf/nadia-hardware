@@ -1,0 +1,2286 @@
+[
+    {
+        "id": "2ed86176.a016be",
+        "type": "tab",
+        "label": "Analog Digital LED",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "d43e543f.65a978",
+        "type": "gpio in",
+        "z": "2ed86176.a016be",
+        "name": "DigitalIn0_GPIO116",
+        "state": "INPUT",
+        "pin": "GPIO116",
+        "board": "4f938412.1f22c4",
+        "x": 310,
+        "y": 1080,
+        "wires": [
+            [
+                "20aef849.a98888"
+            ]
+        ]
+    },
+    {
+        "id": "186805c6.04338a",
+        "type": "gpio in",
+        "z": "2ed86176.a016be",
+        "name": "DigitalIn0_GPIO113",
+        "state": "INPUT",
+        "pin": "GPIO113",
+        "board": "4f938412.1f22c4",
+        "x": 310,
+        "y": 1120,
+        "wires": [
+            [
+                "d678b67d.989ea8"
+            ]
+        ]
+    },
+    {
+        "id": "8e7bbc84.cc9ae",
+        "type": "gpio in",
+        "z": "2ed86176.a016be",
+        "name": "DigitalIn0_GPIO112",
+        "state": "INPUT",
+        "pin": "GPIO112",
+        "board": "4f938412.1f22c4",
+        "x": 310,
+        "y": 1160,
+        "wires": [
+            [
+                "7ba1e91b.7416f8"
+            ]
+        ]
+    },
+    {
+        "id": "429359a9.bec428",
+        "type": "gpio in",
+        "z": "2ed86176.a016be",
+        "name": "DigitalIn0_GPIO115",
+        "state": "INPUT",
+        "pin": "GPIO115",
+        "board": "4f938412.1f22c4",
+        "x": 310,
+        "y": 1200,
+        "wires": [
+            [
+                "a810060b.ea0f28"
+            ]
+        ]
+    },
+    {
+        "id": "8dee1a82.7f4578",
+        "type": "gpio in",
+        "z": "2ed86176.a016be",
+        "name": "DigitalIn0_GPIO111",
+        "state": "INPUT",
+        "pin": "GPIO111",
+        "board": "4f938412.1f22c4",
+        "x": 310,
+        "y": 1240,
+        "wires": [
+            [
+                "42572d24.8b0054"
+            ]
+        ]
+    },
+    {
+        "id": "886108f5.d100f8",
+        "type": "inject",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "repeat": "2",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 1480,
+        "wires": [
+            [
+                "a925536e.80a21",
+                "ddb5fbc5.a24a58",
+                "fda4fb12.6b2e88",
+                "17ea5e70.deb2b2",
+                "66242b19.6fd254"
+            ]
+        ]
+    },
+    {
+        "id": "9650b712.9714f8",
+        "type": "debug",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 1270,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "a925536e.80a21",
+        "type": "exec",
+        "z": "2ed86176.a016be",
+        "command": "cat /sys/bus/iio/devices/iio:device0/in_voltage0_raw",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "1",
+        "oldrc": false,
+        "name": "Analog0",
+        "x": 460,
+        "y": 1380,
+        "wires": [
+            [
+                "dd7752a.8ddc6b"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "ddb5fbc5.a24a58",
+        "type": "exec",
+        "z": "2ed86176.a016be",
+        "command": "cat /sys/bus/iio/devices/iio:device0/in_voltage1_raw",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "Analog1",
+        "x": 460,
+        "y": 1440,
+        "wires": [
+            [
+                "f15c8aaa.ca2628"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "fda4fb12.6b2e88",
+        "type": "exec",
+        "z": "2ed86176.a016be",
+        "command": "cat /sys/bus/iio/devices/iio:device0/in_voltage2_raw",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "Analog2",
+        "x": 460,
+        "y": 1500,
+        "wires": [
+            [
+                "a91776ab.90d728"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "17ea5e70.deb2b2",
+        "type": "exec",
+        "z": "2ed86176.a016be",
+        "command": "cat /sys/bus/iio/devices/iio:device0/in_voltage3_raw",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "Analog3",
+        "x": 460,
+        "y": 1560,
+        "wires": [
+            [
+                "f4e58b59.67d118"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "66242b19.6fd254",
+        "type": "exec",
+        "z": "2ed86176.a016be",
+        "command": "cat /sys/bus/iio/devices/iio:device0/in_voltage4_raw",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "Analog4",
+        "x": 460,
+        "y": 1620,
+        "wires": [
+            [
+                "b6b743d6.d46a8"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "b087e20f.9214",
+        "type": "inject",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 270,
+        "y": 640,
+        "wires": [
+            [
+                "57bafb30.3149f4"
+            ]
+        ]
+    },
+    {
+        "id": "25bc6c8.bb3af94",
+        "type": "inject",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 270,
+        "y": 680,
+        "wires": [
+            [
+                "57bafb30.3149f4"
+            ]
+        ]
+    },
+    {
+        "id": "8c05ea7e.2729c8",
+        "type": "gpio out",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "state": "OUTPUT",
+        "pin": "GPIO23",
+        "i2cDelay": "0",
+        "i2cAddress": "",
+        "i2cRegister": "",
+        "outputs": 0,
+        "board": "4f938412.1f22c4",
+        "x": 750,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "6bc9e7cb.c34f08",
+        "type": "inject",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 270,
+        "y": 740,
+        "wires": [
+            [
+                "4544303e.324e4"
+            ]
+        ]
+    },
+    {
+        "id": "2703cb82.7867c4",
+        "type": "inject",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 270,
+        "y": 780,
+        "wires": [
+            [
+                "4544303e.324e4"
+            ]
+        ]
+    },
+    {
+        "id": "ccaa5033.71ba8",
+        "type": "inject",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 270,
+        "y": 840,
+        "wires": [
+            [
+                "e883c229.bd9be8"
+            ]
+        ]
+    },
+    {
+        "id": "c861b1ee.321a",
+        "type": "inject",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 270,
+        "y": 880,
+        "wires": [
+            [
+                "e883c229.bd9be8"
+            ]
+        ]
+    },
+    {
+        "id": "20aef849.a98888",
+        "type": "delay",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "3",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "x": 630,
+        "y": 1080,
+        "wires": [
+            [
+                "37d84037.79b7d",
+                "82b08e02.efefd8"
+            ]
+        ]
+    },
+    {
+        "id": "d678b67d.989ea8",
+        "type": "delay",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "3",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "x": 630,
+        "y": 1120,
+        "wires": [
+            [
+                "e1522343.c97f3",
+                "5e4e40e8.d14568"
+            ]
+        ]
+    },
+    {
+        "id": "7ba1e91b.7416f8",
+        "type": "delay",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "3",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "x": 630,
+        "y": 1160,
+        "wires": [
+            [
+                "bf686ed4.05654",
+                "6e00eb4.2b08614"
+            ]
+        ]
+    },
+    {
+        "id": "a810060b.ea0f28",
+        "type": "delay",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "3",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "x": 630,
+        "y": 1200,
+        "wires": [
+            [
+                "8ac9c9aa.5c8c48",
+                "a48f3bc4.a2e738"
+            ]
+        ]
+    },
+    {
+        "id": "42572d24.8b0054",
+        "type": "delay",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "3",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "x": 630,
+        "y": 1240,
+        "wires": [
+            [
+                "8a8b6b7e.cb2278",
+                "77762fce.4f097"
+            ]
+        ]
+    },
+    {
+        "id": "a9d66cd8.ddbf",
+        "type": "join",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "5",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 850,
+        "y": 1300,
+        "wires": [
+            [
+                "8ba886.b1f66778"
+            ]
+        ]
+    },
+    {
+        "id": "dd7752a.8ddc6b",
+        "type": "change",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "A0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 660,
+        "y": 1360,
+        "wires": [
+            [
+                "a9d66cd8.ddbf",
+                "7aa3dc35.789774"
+            ]
+        ]
+    },
+    {
+        "id": "f15c8aaa.ca2628",
+        "type": "change",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "A1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 660,
+        "y": 1420,
+        "wires": [
+            [
+                "a9d66cd8.ddbf",
+                "7fb5b552.7adf7c"
+            ]
+        ]
+    },
+    {
+        "id": "a91776ab.90d728",
+        "type": "change",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "A2",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 660,
+        "y": 1480,
+        "wires": [
+            [
+                "a9d66cd8.ddbf",
+                "29ed628c.64b236"
+            ]
+        ]
+    },
+    {
+        "id": "f4e58b59.67d118",
+        "type": "change",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "A3",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 660,
+        "y": 1540,
+        "wires": [
+            [
+                "a9d66cd8.ddbf",
+                "b24f5e6d.1f039"
+            ]
+        ]
+    },
+    {
+        "id": "b6b743d6.d46a8",
+        "type": "change",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "A4",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 660,
+        "y": 1600,
+        "wires": [
+            [
+                "a9d66cd8.ddbf",
+                "e5cba87a.f30868"
+            ]
+        ]
+    },
+    {
+        "id": "8ba886.b1f66778",
+        "type": "function",
+        "z": "2ed86176.a016be",
+        "name": "maxDifference",
+        "func": "var a = new Array();\n\na[0] = Number(msg.payload.A0);\na[1] = Number(msg.payload.A1);\na[2] = Number(msg.payload.A2);\na[3] = Number(msg.payload.A3);\na[4] = Number(msg.payload.A4);\n\nmsg.max = Math.max(a[0],a[1],a[2],a[3],a[4])-Math.min(a[0],a[1],a[2],a[3],a[4]);\nglobal.set('AnalogMaxDiff',msg.max);\nmsg.maxVdiv = (msg.max / 83.7).toFixed(2);\nmsg.payload = a;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1000,
+        "y": 1300,
+        "wires": [
+            [
+                "9650b712.9714f8",
+                "f0dadba6.bc8b58"
+            ]
+        ]
+    },
+    {
+        "id": "e4c49347.e67ab",
+        "type": "function",
+        "z": "2ed86176.a016be",
+        "name": "DigitalOutTest",
+        "func": "// Diese funktion ruft sich selber immer wieder auf \n// und toggelt so die Ausgänge vom Sensorknoten\n\n\nfunction sendTrue()\n{\n    msg.payload = true;\n    node.send(msg)\n    setTimeout(sendFalse, 1000);\n}\n\nfunction sendFalse()\n{\n    msg.payload = false;\n    node.send(msg)\n    setTimeout(sendTrue, 1000);\n}\n\nsendTrue();\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 380,
+        "y": 980,
+        "wires": [
+            [
+                "4544303e.324e4"
+            ]
+        ]
+    },
+    {
+        "id": "775f2b91.114644",
+        "type": "inject",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 190,
+        "y": 940,
+        "wires": [
+            [
+                "f8002932.bf1a5",
+                "d83e256e.ea3ff8",
+                "e4c49347.e67ab"
+            ]
+        ]
+    },
+    {
+        "id": "37d84037.79b7d",
+        "type": "function",
+        "z": "2ed86176.a016be",
+        "name": "Set global Digital",
+        "func": "let d0 = global.get('D0') || 0;\n\nglobal.set('D0', ++d0);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 880,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e1522343.c97f3",
+        "type": "function",
+        "z": "2ed86176.a016be",
+        "name": "Set global Digital",
+        "func": "let d1 = global.get('D1') || 0;\n\nglobal.set('D1', ++d1);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 880,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bf686ed4.05654",
+        "type": "function",
+        "z": "2ed86176.a016be",
+        "name": "Set global Digital",
+        "func": "let d0 = global.get('D2') || 0;\n\nglobal.set('D2', ++d0);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 880,
+        "y": 1160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8ac9c9aa.5c8c48",
+        "type": "function",
+        "z": "2ed86176.a016be",
+        "name": "Set global Digital",
+        "func": "let d0 = global.get('D3') || 0;\n\nglobal.set('D3', ++d0);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 880,
+        "y": 1200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8a8b6b7e.cb2278",
+        "type": "function",
+        "z": "2ed86176.a016be",
+        "name": "Set global Digital",
+        "func": "let d0 = global.get('D4') || 0;\n\nglobal.set('D4', ++d0);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 880,
+        "y": 1240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ab124756.f6b8b8",
+        "type": "function",
+        "z": "2ed86176.a016be",
+        "name": "Auswertung Analog Digital",
+        "func": "var d = new Array();\nLED = {};\nLED.R = 0;\nLED.G = 0;\nLED.B = 0;\n\nd[0] = global.get('D0');\nd[1] = global.get('D1');\nd[2] = global.get('D2');\nd[3] = global.get('D3');\nd[4] = global.get('D4');\n\n// Zurückseten der Auswertung, damit diese neu beginnen kann.\nglobal.set('D0',0);\nglobal.set('D1',0);\nglobal.set('D2',0);\nglobal.set('D3',0);\nglobal.set('D4',0);\n\n\n// Ausertung der analgoen Eingänge. Sind alle innerhalb von 20 ADC values, 0.3V?\n// dann  LED = nicht Rot. Vollausschlag = 50V, 4096 Werte = 12.2mV / ADC\n// 20 ADC values = 0.25V = 0.5%\n// 40 ADC values = 0.50V = 1.0%\n// 80 ADC values = 1.00V = 2.0% = -+1%\nif (global.get('AnalogMaxDiff')<80)\n    LED.R = 0;\nelse\n    LED.R = 1;\n\n// Ausertung digitaler Eingänge / Ausgänge dann LED = nichr Blau.\nif (d[0] > 1 && d[1] > 1 &&d[2] > 1 &&d[3] > 1 &&d[4] > 1)\n    LED.B = 0;\nelse \n    LED.B = 1;\n    \n// Grünes LED leuchtet nur, wenn die digitalen Eingägne gezählt werden und\n// wenn die analgoen Eingänge innerhalb der definierten Differenz zueinander sind..\nLED.G = 1 - LED.R - LED.B;\n\nmsg.payload = d;\nmsg.maxDiff = global.get('AnalogMaxDiff');\n\nreturn [msg,{payload:LED}];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 490,
+        "y": 1920,
+        "wires": [
+            [
+                "bc7c0697.0e2138"
+            ],
+            [
+                "d1141a62.f51c18",
+                "2757a295.57ba1e"
+            ]
+        ]
+    },
+    {
+        "id": "5c0b74fb.c884ec",
+        "type": "inject",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 180,
+        "y": 1920,
+        "wires": [
+            [
+                "ab124756.f6b8b8"
+            ]
+        ]
+    },
+    {
+        "id": "bc7c0697.0e2138",
+        "type": "debug",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 690,
+        "y": 1860,
+        "wires": []
+    },
+    {
+        "id": "d1141a62.f51c18",
+        "type": "debug",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 1980,
+        "wires": []
+    },
+    {
+        "id": "2757a295.57ba1e",
+        "type": "link out",
+        "z": "2ed86176.a016be",
+        "name": "AnalogDigitalAuswertung",
+        "links": [
+            "68b48950.31f4"
+        ],
+        "x": 735,
+        "y": 1940,
+        "wires": []
+    },
+    {
+        "id": "639ecfb1.977068",
+        "type": "gpio out",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "state": "OUTPUT",
+        "pin": "GPIO15",
+        "i2cDelay": "0",
+        "i2cAddress": "",
+        "i2cRegister": "",
+        "outputs": 0,
+        "board": "4f938412.1f22c4",
+        "x": 770,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "d927a100.7f11",
+        "type": "inject",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "2",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 250,
+        "y": 280,
+        "wires": [
+            [
+                "639ecfb1.977068"
+            ]
+        ]
+    },
+    {
+        "id": "4d8262a6.29a6f4",
+        "type": "inject",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 250,
+        "y": 320,
+        "wires": [
+            [
+                "639ecfb1.977068"
+            ]
+        ]
+    },
+    {
+        "id": "f32297eb.e04698",
+        "type": "gpio out",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "state": "OUTPUT",
+        "pin": "GPIO14",
+        "i2cDelay": "0",
+        "i2cAddress": "",
+        "i2cRegister": "",
+        "outputs": 0,
+        "board": "4f938412.1f22c4",
+        "x": 770,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "7689734a.23f6a4",
+        "type": "inject",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "3",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 250,
+        "y": 380,
+        "wires": [
+            [
+                "f32297eb.e04698"
+            ]
+        ]
+    },
+    {
+        "id": "7e158e01.4c8df",
+        "type": "inject",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "2",
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 250,
+        "y": 420,
+        "wires": [
+            [
+                "f32297eb.e04698"
+            ]
+        ]
+    },
+    {
+        "id": "630d6174.fb3b68",
+        "type": "gpio out",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "state": "OUTPUT",
+        "pin": "GPIO65",
+        "i2cDelay": "0",
+        "i2cAddress": "",
+        "i2cRegister": "",
+        "outputs": 0,
+        "board": "4f938412.1f22c4",
+        "x": 770,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "e4bc21a0.7f86c8",
+        "type": "inject",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "4",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 250,
+        "y": 480,
+        "wires": [
+            [
+                "630d6174.fb3b68"
+            ]
+        ]
+    },
+    {
+        "id": "b064ca8.90f8eb8",
+        "type": "inject",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "3",
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 250,
+        "y": 520,
+        "wires": [
+            [
+                "630d6174.fb3b68"
+            ]
+        ]
+    },
+    {
+        "id": "750d9cc1.ddd68c",
+        "type": "comment",
+        "z": "2ed86176.a016be",
+        "name": "D110, LED2",
+        "info": "",
+        "x": 240,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "1c418e84.adcd01",
+        "type": "link in",
+        "z": "2ed86176.a016be",
+        "name": "LED2",
+        "links": [
+            "cf4d3365.085008"
+        ],
+        "x": 355,
+        "y": 180,
+        "wires": [
+            [
+                "567a6f2.6ae9e9"
+            ]
+        ]
+    },
+    {
+        "id": "567a6f2.6ae9e9",
+        "type": "function",
+        "z": "2ed86176.a016be",
+        "name": "Switch auf LED",
+        "func": "var R = { payload: msg.payload.R < 1 };\nvar G = { payload: msg.payload.G < 1 };\nvar B = { payload: msg.payload.B < 1 };\n\n\n\nif ((msg.payload.R == 1) && ( msg.payload.G == 1) && msg.payload.B == 1) \n    color = \"white\";\nelse if ((msg.payload.R == 1) && ( msg.payload.B == 1))\n    color = \"purple\";\nelse if ((msg.payload.R == 1) && ( msg.payload.G == 1))\n    color = \"yellow\";\nelse if ((msg.payload.B == 1) && ( msg.payload.G == 1))\n    color = \"cyan\";\nelse if ((msg.payload.R == 1) )\n    color = \"red\";\nelse if ((msg.payload.G == 1) )\n    color = \"green\"; \nelse if ((msg.payload.B == 1) )\n    color = \"blue\";   \nelse \n    color = \"black\"\n\n\nmsg.payload = color;\n\nreturn [msg,R,G,B];\n",
+        "outputs": 4,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 580,
+        "y": 180,
+        "wires": [
+            [
+                "8cb62cfb.ac6c48",
+                "65205c0b.247aa4"
+            ],
+            [
+                "639ecfb1.977068"
+            ],
+            [
+                "f32297eb.e04698"
+            ],
+            [
+                "630d6174.fb3b68"
+            ]
+        ]
+    },
+    {
+        "id": "8cb62cfb.ac6c48",
+        "type": "debug",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "116fcb05.8f2625",
+        "type": "function",
+        "z": "2ed86176.a016be",
+        "name": "LED Test",
+        "func": "LED = {};\nledOnFactor = 2000;\n\nfunction red()\n{\n    LED.R = 1;\n    LED.G = 0;\n    LED.B = 0;\n    node.send({payload:LED})\n}\n\nfunction green()\n{\n    LED.R = 0;\n    LED.G = 1;\n    LED.B = 0;\n    node.send({payload:LED})\n}\n\nfunction blue()\n{\n    LED.R = 0;\n    LED.G = 0;\n    LED.B = 1;\n    node.send({payload:LED})\n}\n\nfunction black()\n{\n    LED.R = 0;\n    LED.G = 0;\n    LED.B = 0;\n    node.send({payload:LED})\n}\n\nfunction white()\n{\n    LED.R = 1;\n    LED.G = 1;\n    LED.B = 1;\n    node.send({payload:LED})\n}\n\nsetTimeout(red,     1*ledOnFactor);\nsetTimeout(green,   2*ledOnFactor);\nsetTimeout(blue,    3*ledOnFactor);\nsetTimeout(white,   4*ledOnFactor);\nsetTimeout(black,   5*ledOnFactor);\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 400,
+        "y": 80,
+        "wires": [
+            [
+                "567a6f2.6ae9e9"
+            ]
+        ]
+    },
+    {
+        "id": "a2e7857.5a53ff8",
+        "type": "inject",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 250,
+        "y": 40,
+        "wires": [
+            [
+                "116fcb05.8f2625",
+                "58d13c8c.119004"
+            ]
+        ]
+    },
+    {
+        "id": "75e33e54.cef0b8",
+        "type": "comment",
+        "z": "2ed86176.a016be",
+        "name": "Rot",
+        "info": "",
+        "x": 950,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "563e3194.685c2",
+        "type": "comment",
+        "z": "2ed86176.a016be",
+        "name": "Grün",
+        "info": "",
+        "x": 950,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "95baced.72c38b",
+        "type": "comment",
+        "z": "2ed86176.a016be",
+        "name": "Blau",
+        "info": "",
+        "x": 952,
+        "y": 494,
+        "wires": []
+    },
+    {
+        "id": "fcbee16a.dc75f",
+        "type": "ui_button",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "group": "65cde0f4.01de2",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "LED 2 Test",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "red",
+        "payloadType": "str",
+        "topic": "",
+        "x": 230,
+        "y": 80,
+        "wires": [
+            [
+                "116fcb05.8f2625"
+            ]
+        ]
+    },
+    {
+        "id": "65205c0b.247aa4",
+        "type": "ui_led",
+        "z": "2ed86176.a016be",
+        "order": 5,
+        "group": "65cde0f4.01de2",
+        "width": 0,
+        "height": 0,
+        "label": "LED 2 - RS232",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "red",
+                "valueType": "str"
+            },
+            {
+                "color": "#008000",
+                "value": "green",
+                "valueType": "str"
+            },
+            {
+                "color": "#0000ff",
+                "value": "blue",
+                "valueType": "str"
+            },
+            {
+                "color": "#000000",
+                "value": "black",
+                "valueType": "str"
+            },
+            {
+                "color": "#ffffff",
+                "value": "white",
+                "valueType": "str"
+            },
+            {
+                "color": "#800080",
+                "value": "purple",
+                "valueType": "str"
+            },
+            {
+                "color": "#ffff00",
+                "value": "yellow",
+                "valueType": "str"
+            },
+            {
+                "color": "#00ffff",
+                "value": "cyan",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "LED 2",
+        "x": 750,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "5b18ed64.61c744",
+        "type": "gpio out",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "state": "OUTPUT",
+        "pin": "GPIO64",
+        "i2cDelay": "0",
+        "i2cAddress": "",
+        "i2cRegister": "",
+        "outputs": 0,
+        "board": "4f938412.1f22c4",
+        "x": 1650,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "53ed1d09.3b5d04",
+        "type": "inject",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 1150,
+        "y": 280,
+        "wires": [
+            [
+                "5b18ed64.61c744"
+            ]
+        ]
+    },
+    {
+        "id": "a8a18a33.f5461",
+        "type": "inject",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 1150,
+        "y": 320,
+        "wires": [
+            [
+                "5b18ed64.61c744"
+            ]
+        ]
+    },
+    {
+        "id": "c1004e54.349ea",
+        "type": "gpio out",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "state": "OUTPUT",
+        "pin": "GPIO46",
+        "i2cDelay": "0",
+        "i2cAddress": "",
+        "i2cRegister": "",
+        "outputs": 0,
+        "board": "4f938412.1f22c4",
+        "x": 1650,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "7eb8a118.e9d8c8",
+        "type": "inject",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 1150,
+        "y": 380,
+        "wires": [
+            [
+                "c1004e54.349ea"
+            ]
+        ]
+    },
+    {
+        "id": "94cb5a69.d097c",
+        "type": "inject",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 1150,
+        "y": 420,
+        "wires": [
+            [
+                "c1004e54.349ea"
+            ]
+        ]
+    },
+    {
+        "id": "6a28f739.c15a48",
+        "type": "gpio out",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "state": "OUTPUT",
+        "pin": "GPIO44",
+        "i2cDelay": "0",
+        "i2cAddress": "",
+        "i2cRegister": "",
+        "outputs": 0,
+        "board": "4f938412.1f22c4",
+        "x": 1650,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "a66e450f.08dd48",
+        "type": "inject",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 1150,
+        "y": 480,
+        "wires": [
+            [
+                "6a28f739.c15a48"
+            ]
+        ]
+    },
+    {
+        "id": "dd92049b.28a258",
+        "type": "inject",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 1150,
+        "y": 520,
+        "wires": [
+            [
+                "6a28f739.c15a48"
+            ]
+        ]
+    },
+    {
+        "id": "ad49a94c.2aa398",
+        "type": "comment",
+        "z": "2ed86176.a016be",
+        "name": "D113, LED1",
+        "info": "",
+        "x": 1140,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "1c884156.16570f",
+        "type": "comment",
+        "z": "2ed86176.a016be",
+        "name": "Rot",
+        "info": "",
+        "x": 1850,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "863f13be.026608",
+        "type": "comment",
+        "z": "2ed86176.a016be",
+        "name": "Grün",
+        "info": "",
+        "x": 1850,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "cad45b45.91f3a8",
+        "type": "comment",
+        "z": "2ed86176.a016be",
+        "name": "Blau",
+        "info": "",
+        "x": 1852,
+        "y": 494,
+        "wires": []
+    },
+    {
+        "id": "62f73e9d.f6ac1",
+        "type": "function",
+        "z": "2ed86176.a016be",
+        "name": "Switch auf LED",
+        "func": "var R = { payload: msg.payload.R < 1 };\nvar G = { payload: msg.payload.G < 1 };\nvar B = { payload: msg.payload.B < 1 };\n\n\n\nif ((msg.payload.R == 1) && ( msg.payload.G == 1) && msg.payload.B == 1) \n    color = \"white\";\nelse if ((msg.payload.R == 1) && ( msg.payload.B == 1))\n    color = \"purple\";\nelse if ((msg.payload.R == 1) && ( msg.payload.G == 1))\n    color = \"yellow\";\nelse if ((msg.payload.B == 1) && ( msg.payload.G == 1))\n    color = \"cyan\";\nelse if ((msg.payload.R == 1) )\n    color = \"red\";\nelse if ((msg.payload.G == 1) )\n    color = \"green\"; \nelse if ((msg.payload.B == 1) )\n    color = \"blue\";   \nelse \n    color = \"black\"\n\n\nmsg.payload = color;\n\nreturn [msg,R,G,B];\n",
+        "outputs": 4,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1480,
+        "y": 200,
+        "wires": [
+            [
+                "5d3a83fe.9191ec",
+                "dd3e6efb.6a292"
+            ],
+            [
+                "5b18ed64.61c744"
+            ],
+            [
+                "c1004e54.349ea"
+            ],
+            [
+                "6a28f739.c15a48"
+            ]
+        ]
+    },
+    {
+        "id": "5d3a83fe.9191ec",
+        "type": "debug",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 1670,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "68b48950.31f4",
+        "type": "link in",
+        "z": "2ed86176.a016be",
+        "name": "LED1",
+        "links": [
+            "2757a295.57ba1e"
+        ],
+        "x": 1195,
+        "y": 200,
+        "wires": [
+            [
+                "62f73e9d.f6ac1"
+            ]
+        ]
+    },
+    {
+        "id": "58ec80a7.385958",
+        "type": "ui_button",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "group": "65cde0f4.01de2",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "LED 1 Test",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "red",
+        "payloadType": "str",
+        "topic": "",
+        "x": 1070,
+        "y": 100,
+        "wires": [
+            [
+                "58d13c8c.119004"
+            ]
+        ]
+    },
+    {
+        "id": "58d13c8c.119004",
+        "type": "function",
+        "z": "2ed86176.a016be",
+        "name": "LED Test",
+        "func": "LED = {};\nledOnFactor = 2000;\n\nfunction red()\n{\n    LED.R = 1;\n    LED.G = 0;\n    LED.B = 0;\n    node.send({payload:LED})\n}\n\nfunction green()\n{\n    LED.R = 0;\n    LED.G = 1;\n    LED.B = 0;\n    node.send({payload:LED})\n}\n\nfunction blue()\n{\n    LED.R = 0;\n    LED.G = 0;\n    LED.B = 1;\n    node.send({payload:LED})\n}\n\nfunction black()\n{\n    LED.R = 0;\n    LED.G = 0;\n    LED.B = 0;\n    node.send({payload:LED})\n}\n\nfunction white()\n{\n    LED.R = 1;\n    LED.G = 1;\n    LED.B = 1;\n    node.send({payload:LED})\n}\n\nsetTimeout(red,     1*ledOnFactor);\nsetTimeout(green,   2*ledOnFactor);\nsetTimeout(blue,    3*ledOnFactor);\nsetTimeout(white,   4*ledOnFactor);\nsetTimeout(black,   5*ledOnFactor);\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1260,
+        "y": 100,
+        "wires": [
+            [
+                "62f73e9d.f6ac1"
+            ]
+        ]
+    },
+    {
+        "id": "82b08e02.efefd8",
+        "type": "ui_led",
+        "z": "2ed86176.a016be",
+        "order": 1,
+        "group": "634019e8.e4fee8",
+        "width": 0,
+        "height": 0,
+        "label": "Din 1",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#008000",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#808080",
+                "value": "0",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "Din 1",
+        "x": 1110,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "5e4e40e8.d14568",
+        "type": "ui_led",
+        "z": "2ed86176.a016be",
+        "order": 2,
+        "group": "634019e8.e4fee8",
+        "width": 0,
+        "height": 0,
+        "label": "Din 2",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#008000",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#808080",
+                "value": "0",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "Din 2",
+        "x": 1110,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "6e00eb4.2b08614",
+        "type": "ui_led",
+        "z": "2ed86176.a016be",
+        "order": 3,
+        "group": "634019e8.e4fee8",
+        "width": 0,
+        "height": 0,
+        "label": "Din 3",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#008000",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#808080",
+                "value": "0",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "Din 3",
+        "x": 1110,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "a48f3bc4.a2e738",
+        "type": "ui_led",
+        "z": "2ed86176.a016be",
+        "order": 4,
+        "group": "634019e8.e4fee8",
+        "width": 0,
+        "height": 0,
+        "label": "Din 4",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#008000",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#808080",
+                "value": "0",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "Din 4",
+        "x": 1110,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "77762fce.4f097",
+        "type": "ui_led",
+        "z": "2ed86176.a016be",
+        "order": 5,
+        "group": "634019e8.e4fee8",
+        "width": 0,
+        "height": 0,
+        "label": "Din 5",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#008000",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#808080",
+                "value": "0",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "Din 5",
+        "x": 1110,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "fab82384.ff9ce",
+        "type": "ui_text",
+        "z": "2ed86176.a016be",
+        "group": "2bf7dcfb.00d414",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Analog 1",
+        "format": "{{msg.payload}} V",
+        "layout": "row-spread",
+        "x": 1280,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "6ea0834f.b384ec",
+        "type": "ui_text",
+        "z": "2ed86176.a016be",
+        "group": "2bf7dcfb.00d414",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Analog 2",
+        "format": "{{msg.payload}} V",
+        "layout": "row-spread",
+        "x": 1280,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "981d2f9b.be15d",
+        "type": "ui_text",
+        "z": "2ed86176.a016be",
+        "group": "2bf7dcfb.00d414",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Analog 3",
+        "format": "{{msg.payload}} V",
+        "layout": "row-spread",
+        "x": 1280,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "51a46042.05cfb8",
+        "type": "ui_text",
+        "z": "2ed86176.a016be",
+        "group": "2bf7dcfb.00d414",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Analog 4",
+        "format": "{{msg.payload}} V",
+        "layout": "row-spread",
+        "x": 1280,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "89eb9517.d6bc1",
+        "type": "ui_text",
+        "z": "2ed86176.a016be",
+        "group": "2bf7dcfb.00d414",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Analog 5",
+        "format": "{{msg.payload}} V",
+        "layout": "row-spread",
+        "x": 1280,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "7aa3dc35.789774",
+        "type": "function",
+        "z": "2ed86176.a016be",
+        "name": "SkaliereRunde",
+        "func": "msg.payload = msg.payload / 83.7\n\nmsg.payload = msg.payload.toFixed(2); \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1000,
+        "y": 1360,
+        "wires": [
+            [
+                "fab82384.ff9ce"
+            ]
+        ]
+    },
+    {
+        "id": "7fb5b552.7adf7c",
+        "type": "function",
+        "z": "2ed86176.a016be",
+        "name": "SkaliereRunde",
+        "func": "msg.payload = msg.payload / 83.7\n\nmsg.payload = msg.payload.toFixed(2); \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1000,
+        "y": 1420,
+        "wires": [
+            [
+                "6ea0834f.b384ec"
+            ]
+        ]
+    },
+    {
+        "id": "29ed628c.64b236",
+        "type": "function",
+        "z": "2ed86176.a016be",
+        "name": "SkaliereRunde",
+        "func": "msg.payload = msg.payload / 83.7\n\nmsg.payload = msg.payload.toFixed(2); \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1000,
+        "y": 1480,
+        "wires": [
+            [
+                "981d2f9b.be15d"
+            ]
+        ]
+    },
+    {
+        "id": "b24f5e6d.1f039",
+        "type": "function",
+        "z": "2ed86176.a016be",
+        "name": "SkaliereRunde",
+        "func": "msg.payload = msg.payload / 83.7\n\nmsg.payload = msg.payload.toFixed(2); \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1000,
+        "y": 1540,
+        "wires": [
+            [
+                "51a46042.05cfb8"
+            ]
+        ]
+    },
+    {
+        "id": "e5cba87a.f30868",
+        "type": "function",
+        "z": "2ed86176.a016be",
+        "name": "SkaliereRunde",
+        "func": "msg.payload = msg.payload / 83.7\n\nmsg.payload = msg.payload.toFixed(2); \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1000,
+        "y": 1600,
+        "wires": [
+            [
+                "89eb9517.d6bc1"
+            ]
+        ]
+    },
+    {
+        "id": "f8002932.bf1a5",
+        "type": "function",
+        "z": "2ed86176.a016be",
+        "name": "DigitalOutTest",
+        "func": "// Diese funktion ruft sich selber immer wieder auf \n// und toggelt so die Ausgänge vom Sensorknoten\n\n\nfunction sendTrue()\n{\n    msg.payload = true;\n    node.send(msg)\n    setTimeout(sendFalse, 1000);\n}\n\nfunction sendFalse()\n{\n    msg.payload = false;\n    node.send(msg)\n    setTimeout(sendTrue, 1000);\n}\n\nsendTrue();\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 380,
+        "y": 940,
+        "wires": [
+            [
+                "57bafb30.3149f4"
+            ]
+        ]
+    },
+    {
+        "id": "d83e256e.ea3ff8",
+        "type": "function",
+        "z": "2ed86176.a016be",
+        "name": "DigitalOutTest",
+        "func": "// Diese funktion ruft sich selber immer wieder auf \n// und toggelt so die Ausgänge vom Sensorknoten\n\n\nfunction sendTrue()\n{\n    msg.payload = true;\n    node.send(msg)\n    setTimeout(sendFalse, 1000);\n}\n\nfunction sendFalse()\n{\n    msg.payload = false;\n    node.send(msg)\n    setTimeout(sendTrue, 1000);\n}\n\nsendTrue();\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 380,
+        "y": 1020,
+        "wires": [
+            [
+                "e883c229.bd9be8"
+            ]
+        ]
+    },
+    {
+        "id": "54b58173.1cfc4",
+        "type": "gpio out",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "state": "OUTPUT",
+        "pin": "GPIO110",
+        "i2cDelay": "0",
+        "i2cAddress": "",
+        "i2cRegister": "",
+        "outputs": 0,
+        "board": "4f938412.1f22c4",
+        "x": 760,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "767042a1.5206dc",
+        "type": "gpio out",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "state": "OUTPUT",
+        "pin": "GPIO50",
+        "i2cDelay": "0",
+        "i2cAddress": "",
+        "i2cRegister": "",
+        "outputs": 0,
+        "board": "4f938412.1f22c4",
+        "x": 750,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "57bafb30.3149f4",
+        "type": "ui_switch",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "label": "Dout 1-2",
+        "tooltip": "",
+        "group": "82ee85d.6e54878",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "fa-2x fa-toggle-on ",
+        "oncolor": "orange",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "fa-2x fa-toggle-off",
+        "offcolor": "grey",
+        "x": 560,
+        "y": 640,
+        "wires": [
+            [
+                "54b58173.1cfc4"
+            ]
+        ]
+    },
+    {
+        "id": "4544303e.324e4",
+        "type": "ui_switch",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "label": "Dout 3-4",
+        "tooltip": "",
+        "group": "82ee85d.6e54878",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "fa-2x fa-toggle-on ",
+        "oncolor": "orange",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "fa-2x fa-toggle-off",
+        "offcolor": "grey",
+        "x": 560,
+        "y": 740,
+        "wires": [
+            [
+                "8c05ea7e.2729c8"
+            ]
+        ]
+    },
+    {
+        "id": "e883c229.bd9be8",
+        "type": "ui_switch",
+        "z": "2ed86176.a016be",
+        "name": "",
+        "label": "Dout 5-6",
+        "tooltip": "",
+        "group": "82ee85d.6e54878",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "fa-2x fa-toggle-on ",
+        "oncolor": "orange",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "fa-2x fa-toggle-off",
+        "offcolor": "grey",
+        "x": 560,
+        "y": 840,
+        "wires": [
+            [
+                "767042a1.5206dc"
+            ]
+        ]
+    },
+    {
+        "id": "f0dadba6.bc8b58",
+        "type": "ui_text",
+        "z": "2ed86176.a016be",
+        "group": "2bf7dcfb.00d414",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Max. Differenz",
+        "format": "{{msg.maxVdiv}} V",
+        "layout": "row-spread",
+        "x": 1300,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "dd3e6efb.6a292",
+        "type": "ui_led",
+        "z": "2ed86176.a016be",
+        "order": 2,
+        "group": "65cde0f4.01de2",
+        "width": 0,
+        "height": 0,
+        "label": "LED 1 - Analog Digital",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "red",
+                "valueType": "str"
+            },
+            {
+                "color": "#008000",
+                "value": "green",
+                "valueType": "str"
+            },
+            {
+                "color": "#0000ff",
+                "value": "blue",
+                "valueType": "str"
+            },
+            {
+                "color": "#000000",
+                "value": "black",
+                "valueType": "str"
+            },
+            {
+                "color": "#ffffff",
+                "value": "white",
+                "valueType": "str"
+            },
+            {
+                "color": "#800080",
+                "value": "purple",
+                "valueType": "str"
+            },
+            {
+                "color": "#ffff00",
+                "value": "yellow",
+                "valueType": "str"
+            },
+            {
+                "color": "#00ffff",
+                "value": "cyan",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "LED 1",
+        "x": 1670,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "4f938412.1f22c4",
+        "type": "ioplugin",
+        "name": "",
+        "username": "",
+        "password": "",
+        "boardType": "beaglebone-io",
+        "serialportName": "",
+        "connectionType": "local",
+        "mqttServer": "",
+        "pubTopic": "",
+        "subTopic": "",
+        "tcpHost": "",
+        "tcpPort": "",
+        "sparkId": "",
+        "sparkToken": "",
+        "beanId": "",
+        "impId": "",
+        "uuid": "",
+        "token": "",
+        "sendUuid": "",
+        "samplingInterval": "500"
+    },
+    {
+        "id": "65cde0f4.01de2",
+        "type": "ui_group",
+        "name": "LED ",
+        "tab": "a67b5603.f12598",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "634019e8.e4fee8",
+        "type": "ui_group",
+        "name": "Digtal In (X21)",
+        "tab": "a67b5603.f12598",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "2bf7dcfb.00d414",
+        "type": "ui_group",
+        "name": "Analog (X22)",
+        "tab": "a67b5603.f12598",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "82ee85d.6e54878",
+        "type": "ui_group",
+        "name": "Digital Out (X23)",
+        "tab": "a67b5603.f12598",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a67b5603.f12598",
+        "type": "ui_tab",
+        "name": "Analog Digital LED",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    }
+]

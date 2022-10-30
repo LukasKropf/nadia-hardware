@@ -1,0 +1,14 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP +3.3VA
+D power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
+$CMP 749013011A
+D LAN-Übertrager WE-LAN PoE
+K PoE
+F http://katalog.we-online.de/pbs/datasheet/749013011A.pdf
+$ENDCMP
+#
+#End Doc Library

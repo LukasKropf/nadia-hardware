@@ -1,0 +1,4318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:\Users\lukas\git\nadiav2\Sensorknoten\SensorknotenPcb\SensorknotenPcb.sch</source>
+    <date>10.09.2019 14:38:12</date>
+    <tool>Eeschema (5.0.2)-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>NADIA - Sensorknoten V2</title>
+        <company>BLS AG</company>
+        <rev>V2</rev>
+        <date>2019-09-10</date>
+        <source>SensorknotenPcb.sch</source>
+        <comment number="1" value="V1.1 StatusLED's hinzugefügt, Labels auf Pocketbeagle Pins geändert"/>
+        <comment number="2" value="V2.0 Finalisierung"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/UsbAndEthernet/" tstamps="/5B7F9482/">
+      <title_block>
+        <title>NADIA - Sensorknoten V2</title>
+        <company>BLS AG</company>
+        <rev>V2</rev>
+        <date>2018-09-25</date>
+        <source>UsbEth.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/PoE und Speisung/" tstamps="/5B7F9562/">
+      <title_block>
+        <title>NADIA - Sensorknoten V2</title>
+        <company>BLS AG</company>
+        <rev>V2</rev>
+        <date>2019-09-10</date>
+        <source>PoePwr.sch</source>
+        <comment number="1" value="V1.0 Testpunkte hinzugefügt"/>
+        <comment number="2" value="V1.1 F301 auf 350mA geändert"/>
+        <comment number="3" value="V2.0 C307 und C308 hinzugefügt"/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/Digitale Ausgänge/" tstamps="/5BBFA11B/">
+      <title_block>
+        <title>NADIA - Sensorknoten V2</title>
+        <company>BLS AG</company>
+        <rev>V2</rev>
+        <date>2019-05-02</date>
+        <source>DigitalOut.sch</source>
+        <comment number="1" value="V1.1 Ausgänge galvanisch voneinander getrennt, TVS mit 45V gewählt"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/RS232GalvIsol_0/" tstamps="/5C9D57EC/">
+      <title_block>
+        <title>NADIA - Sensorknoten V2</title>
+        <company>BLS AG</company>
+        <rev>V2</rev>
+        <date>2019-05-02</date>
+        <source>RS232GalvIsol.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="6" name="/RS232GalvIsol_2/" tstamps="/5CA7F87A/">
+      <title_block>
+        <title>NADIA - Sensorknoten V2</title>
+        <company>BLS AG</company>
+        <rev>V2</rev>
+        <date>2019-05-02</date>
+        <source>RS232GalvIsol.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="7" name="/sheet5CAA8AE_4/" tstamps="/5CAA8AEA/">
+      <title_block>
+        <title>NADIA - Sensorknoten V2</title>
+        <company>BLS AG</company>
+        <rev>V2</rev>
+        <date>2019-05-02</date>
+        <source>RS232GalvIsol.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="8" name="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/">
+      <title_block>
+        <title>NADIA - Sensorknoten V2</title>
+        <company>BLS AG</company>
+        <rev>V2</rev>
+        <date>2018-09-25</date>
+        <source>AnalogDigitalIO.sch</source>
+        <comment number="1" value="V022 Spannungsteiler vervielfacht"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U101">
+      <value>PocketBeagle</value>
+      <footprint>EigeneFootprints:PocketBeagle</footprint>
+      <datasheet>https://github.com/beagleboard/pocketbeagle/wiki/System-Reference-Manual</datasheet>
+      <fields>
+        <field name="manf">GHI Electronics, LLC</field>
+        <field name="part-num">POCKETBEAGLE-SC-569;TSW-118-05-G-D;TSW-118-05-G-D;SLW-118-01-G-D;SLW-118-01-G-D</field>
+      </fields>
+      <libsource lib="myLib" part="PocketBeagle" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BAF5D66</tstamp>
+    </comp>
+    <comp ref="D110">
+      <value>LED_ARGB</value>
+      <footprint>LEDs:LED_Cree-PLCC4_3.2x2.8mm_CCW</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/cree-inc/CLV1L-FKB-CHMMQEHBB7673673/CLV1L-FKB-CHMMQEHBB7673673CT-ND/7648419</datasheet>
+      <fields>
+        <field name="manf">Cree Inc.</field>
+        <field name="part-num">CLV1L-FKB-CHMMQEHBB7673673</field>
+      </fields>
+      <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CBECD0D</tstamp>
+    </comp>
+    <comp ref="R112">
+      <value>62</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/panasonic-electronic-components/ERJ-3GEYJ241V/P240GCT-ND/134760</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Components</field>
+        <field name="part-num">ERJ-3GEYJ620V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CCF991F</tstamp>
+    </comp>
+    <comp ref="R110">
+      <value>240</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/panasonic-electronic-components/ERJ-3GEYJ241V/P240GCT-ND/134760</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Components</field>
+        <field name="part-num">ERJ-3GEYJ241V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CD016B6</tstamp>
+    </comp>
+    <comp ref="R111">
+      <value>62</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/panasonic-electronic-components/ERJ-3GEYJ620V/P62GCT-ND/134695</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Components</field>
+        <field name="part-num">ERJ-3GEYJ620V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CD016F2</tstamp>
+    </comp>
+    <comp ref="D113">
+      <value>LED_ARGB</value>
+      <footprint>LEDs:LED_Cree-PLCC4_3.2x2.8mm_CCW</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/cree-inc/CLV1L-FKB-CHMMQEHBB7673673/CLV1L-FKB-CHMMQEHBB7673673CT-ND/7648419</datasheet>
+      <fields>
+        <field name="manf">Cree Inc.</field>
+        <field name="part-num">CLV1L-FKB-CHMMQEHBB7673673</field>
+      </fields>
+      <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CD0B4CC</tstamp>
+    </comp>
+    <comp ref="R115">
+      <value>62</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/panasonic-electronic-components/ERJ-3GEYJ241V/P240GCT-ND/134760</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Components</field>
+        <field name="part-num">ERJ-3GEYJ620V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CD0B4D7</tstamp>
+    </comp>
+    <comp ref="R113">
+      <value>240</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/panasonic-electronic-components/ERJ-3GEYJ241V/P240GCT-ND/134760</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Components</field>
+        <field name="part-num">ERJ-3GEYJ241V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CD0B4E0</tstamp>
+    </comp>
+    <comp ref="R114">
+      <value>62</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/panasonic-electronic-components/ERJ-3GEYJ620V/P62GCT-ND/134695</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Components</field>
+        <field name="part-num">ERJ-3GEYJ620V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CD0B4EA</tstamp>
+    </comp>
+    <comp ref="T200">
+      <value>749013011A</value>
+      <footprint>EigeneFootprints:WE-LAN_PoE_749013011A</footprint>
+      <datasheet>http://katalog.we-online.de/pbs/datasheet/749013011A.pdf</datasheet>
+      <fields>
+        <field name="manf">Wurth Electrionik</field>
+        <field name="part-num">749013011A</field>
+      </fields>
+      <libsource lib="SensorknotenPcb" part="749013011A" description="LAN-Übertrager WE-LAN PoE"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5B879636</tstamp>
+    </comp>
+    <comp ref="X1">
+      <value>Phoenix_1436550</value>
+      <footprint>EigeneFootprints:Phoenix_SACC-DSIV-M12FSD-4CON-L90</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/phoenix-contact/1436550/277-16526-ND/3607351</datasheet>
+      <fields>
+        <field name="manf">Phoenix Conact</field>
+        <field name="part-num">1436550</field>
+      </fields>
+      <libsource lib="myLib" part="M12-4_D" description=""/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5B87AC8E</tstamp>
+    </comp>
+    <comp ref="C201">
+      <value>22n/200V</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/avx-corporation/08051C223K4T2A/478-9378-1-ND/4901452</datasheet>
+      <fields>
+        <field name="manf">AVX Corporation</field>
+        <field name="part-num">08052C223KAT2A</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5B878A6F</tstamp>
+    </comp>
+    <comp ref="R204">
+      <value>75</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Componens</field>
+        <field name="part-num">ERJ-6ENF75R0V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5B879FBD</tstamp>
+    </comp>
+    <comp ref="R205">
+      <value>75</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Componens</field>
+        <field name="part-num">ERJ-6ENF75R0V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5B87A4E5</tstamp>
+    </comp>
+    <comp ref="C203">
+      <value>1n/2kV</value>
+      <footprint>Capacitors_ThroughHole:C_Rect_L13.0mm_W4.0mm_P10.00mm_FKS3_FKP3_MKS4</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/wima/MKS4U011003C00KSSD/1928-1762-ND/9370670</datasheet>
+      <fields>
+        <field name="manf">WIMA</field>
+        <field name="part-num">MKS4U011003C00KSSD</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5B87AAAF</tstamp>
+    </comp>
+    <comp ref="R200">
+      <value>49.9 1%</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Componens</field>
+        <field name="part-num">ERJ-6ENF49R9V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5B883D44</tstamp>
+    </comp>
+    <comp ref="R201">
+      <value>49.9 1%</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Componens</field>
+        <field name="part-num">ERJ-6ENF49R9V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5B883E10</tstamp>
+    </comp>
+    <comp ref="R202">
+      <value>49.9 1%</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Componens</field>
+        <field name="part-num">ERJ-6ENF49R9V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5B883E48</tstamp>
+    </comp>
+    <comp ref="R203">
+      <value>49.9 1%</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Componens</field>
+        <field name="part-num">ERJ-6ENF49R9V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5B883E7C</tstamp>
+    </comp>
+    <comp ref="D200">
+      <value>WE-TVS_5V</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23-6</footprint>
+      <fields>
+        <field name="manf">Wurth Electronics</field>
+        <field name="part-num">824015</field>
+      </fields>
+      <libsource lib="myLib" part="WE-TVS_824015" description=""/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5B8942EE</tstamp>
+    </comp>
+    <comp ref="R206">
+      <value>0R</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Componens</field>
+        <field name="part-num">ERJ-6GEY0R00V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5BA1789C</tstamp>
+    </comp>
+    <comp ref="L210">
+      <value>Ferrite_Bead</value>
+      <footprint>Inductors_SMD:L_0603</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/murata-electronics-north-america/BLM18PG121SN1D/490-1037-1-ND/584485</datasheet>
+      <fields>
+        <field name="manf">Murata</field>
+        <field name="part-num">BLM18PG121SN1D</field>
+      </fields>
+      <libsource lib="Device" part="Ferrite_Bead" description="Ferrite bead"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5BB134BB</tstamp>
+    </comp>
+    <comp ref="C210">
+      <value>0.1µF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechanics</field>
+        <field name="part-num">CL10B104KO8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5BB2FCE2</tstamp>
+    </comp>
+    <comp ref="C211">
+      <value>0.1µF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechanics</field>
+        <field name="part-num">CL10B104KO8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5BB41F76</tstamp>
+    </comp>
+    <comp ref="C212">
+      <value>0.1µF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechanics</field>
+        <field name="part-num">CL10B104KO8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5BB43CE2</tstamp>
+    </comp>
+    <comp ref="C213">
+      <value>0.1µF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechanics</field>
+        <field name="part-num">CL10B104KO8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5BB45C06</tstamp>
+    </comp>
+    <comp ref="C214">
+      <value>0.1µF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechanics</field>
+        <field name="part-num">CL10B104KO8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5BB5064E</tstamp>
+    </comp>
+    <comp ref="C215">
+      <value>0.1µF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechanics</field>
+        <field name="part-num">CL10B104KO8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5BB5065D</tstamp>
+    </comp>
+    <comp ref="C216">
+      <value>0.1µF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechanics</field>
+        <field name="part-num">CL10B104KO8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5BB5066C</tstamp>
+    </comp>
+    <comp ref="C217">
+      <value>0.1µF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechanics</field>
+        <field name="part-num">CL10B104KO8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5BB5067B</tstamp>
+    </comp>
+    <comp ref="C218">
+      <value>0.1µF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechanics</field>
+        <field name="part-num">CL10B104KO8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5BB564C9</tstamp>
+    </comp>
+    <comp ref="L211">
+      <value>Ferrite_Bead</value>
+      <footprint>Inductors_SMD:L_0603</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/murata-electronics-north-america/BLM18PG121SN1D/490-1037-1-ND/584485</datasheet>
+      <fields>
+        <field name="manf">Murata</field>
+        <field name="part-num">BLM18PG121SN1D</field>
+      </fields>
+      <libsource lib="Device" part="Ferrite_Bead" description="Ferrite bead"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5BB6068B</tstamp>
+    </comp>
+    <comp ref="C207">
+      <value>0.1µF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechanics</field>
+        <field name="part-num">CL10B104KO8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5BB60694</tstamp>
+    </comp>
+    <comp ref="L212">
+      <value>Ferrite_Bead</value>
+      <footprint>Inductors_SMD:L_0603</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/murata-electronics-north-america/BLM18PG121SN1D/490-1037-1-ND/584485</datasheet>
+      <fields>
+        <field name="manf">Murata</field>
+        <field name="part-num">BLM18PG121SN1D</field>
+      </fields>
+      <libsource lib="Device" part="Ferrite_Bead" description="Ferrite bead"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5BB650D3</tstamp>
+    </comp>
+    <comp ref="C222">
+      <value>0.1µF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechanics</field>
+        <field name="part-num">CL10B104KO8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5BB650DB</tstamp>
+    </comp>
+    <comp ref="C219">
+      <value>0.1µF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechanics</field>
+        <field name="part-num">CL10B104KO8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5BB7111B</tstamp>
+    </comp>
+    <comp ref="C220">
+      <value>0.1µF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechanics</field>
+        <field name="part-num">CL10B104KO8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5BB7112A</tstamp>
+    </comp>
+    <comp ref="C221">
+      <value>0.1µF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechanics</field>
+        <field name="part-num">CL10B104KO8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5BB71139</tstamp>
+    </comp>
+    <comp ref="R213">
+      <value>12k 1%</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Componens</field>
+        <field name="part-num">ERJ-6ENF1202V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5BAAE0A2</tstamp>
+    </comp>
+    <comp ref="R214">
+      <value>12k 1%</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Componens</field>
+        <field name="part-num">ERJ-6ENF1202V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5BAAE125</tstamp>
+    </comp>
+    <comp ref="R212">
+      <value>0R</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Componens</field>
+        <field name="part-num">ERJ-6GEY0R00V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5BAD710F</tstamp>
+    </comp>
+    <comp ref="C204">
+      <value>33pF 50V</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/samsung-electro-mechanics/CL10C330FB8NNNC/1276-2262-1-ND/3890348</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechanics</field>
+        <field name="part-num">CL10C330FB8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5BADE1C5</tstamp>
+    </comp>
+    <comp ref="R215">
+      <value>open</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">DNP</field>
+        <field name="part-num">DNP</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5BADE69F</tstamp>
+    </comp>
+    <comp ref="Y201">
+      <value>25.000MHz 18pF</value>
+      <footprint>Crystals:Crystal_SMD_HC49-SD</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/abracon-llc/ABLS2-25.000MHZ-D4YF-T/535-9883-1-ND/2001506</datasheet>
+      <fields>
+        <field name="manf">Abracon LLC</field>
+        <field name="part-num">ABLS2-25.000MHZ-D4YF-T</field>
+      </fields>
+      <libsource lib="Device" part="Crystal" description="Two pin crystal"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5BADEE66</tstamp>
+    </comp>
+    <comp ref="U230">
+      <value>93AA56A</value>
+      <footprint>Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/microchip-technology/93AA56AT-I-SN/93AA56AT-I-SNCT-ND/8637200</datasheet>
+      <fields>
+        <field name="manf">Microchip Technology</field>
+        <field name="part-num">93AA56AT-I/SN</field>
+      </fields>
+      <libsource lib="Memory_EEPROM" part="93AAxxA" description="Serial EEPROM, 93 Series, 1.8V, DIP-8/SOIC-8"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5BBECFF0</tstamp>
+    </comp>
+    <comp ref="C230">
+      <value>0.1µF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechanics</field>
+        <field name="part-num">CL10B104KO8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5BC7B498</tstamp>
+    </comp>
+    <comp ref="R230">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Componens</field>
+        <field name="part-num">ERJ-6ENF1002V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5BCC5A2B</tstamp>
+    </comp>
+    <comp ref="U201">
+      <value>LAN9500Ai</value>
+      <footprint>EigeneFootprints:QFN50P800X800X120-56N</footprint>
+      <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/00001875C.pdf</datasheet>
+      <fields>
+        <field name="manf">Microchip Technology</field>
+        <field name="part-num">LAN9500A-ABZJ-TR</field>
+      </fields>
+      <libsource lib="myLib" part="LAN9500" description=""/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5BF5C50E</tstamp>
+    </comp>
+    <comp ref="C202">
+      <value>22n/200V</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/avx-corporation/08051C223K4T2A/478-9378-1-ND/4901452</datasheet>
+      <fields>
+        <field name="manf">AVX Corporation</field>
+        <field name="part-num">08052C223KAT2A</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5BAE889E</tstamp>
+    </comp>
+    <comp ref="C205">
+      <value>33pF 50V</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/samsung-electro-mechanics/CL10C330FB8NNNC/1276-2262-1-ND/3890348</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechanics</field>
+        <field name="part-num">CL10C330FB8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5BB1471C</tstamp>
+    </comp>
+    <comp ref="R252">
+      <value>0R</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Componens</field>
+        <field name="part-num">ERJ-6GEY0R00V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5BABCD01</tstamp>
+    </comp>
+    <comp ref="R253">
+      <value>0R</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Componens</field>
+        <field name="part-num">ERJ-6GEY0R00V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5BABCF2F</tstamp>
+    </comp>
+    <comp ref="R251">
+      <value>0R</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Componens</field>
+        <field name="part-num">ERJ-6GEY0R00V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5CA66CE3</tstamp>
+    </comp>
+    <comp ref="D260">
+      <value>LED_ARGB</value>
+      <footprint>LEDs:LED_Cree-PLCC4_3.2x2.8mm_CCW</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/cree-inc/CLV1L-FKB-CHMMQEHBB7673673/CLV1L-FKB-CHMMQEHBB7673673CT-ND/7648419</datasheet>
+      <fields>
+        <field name="manf">Cree Inc.</field>
+        <field name="part-num">CLV1L-FKB-CHMMQEHBB7673673</field>
+      </fields>
+      <libsource lib="Device" part="LED_ARGB" description="RGB LED, anode/red/green/blue"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5CD280AE</tstamp>
+    </comp>
+    <comp ref="R262">
+      <value>62</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/panasonic-electronic-components/ERJ-3GEYJ241V/P240GCT-ND/134760</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Components</field>
+        <field name="part-num">ERJ-3GEYJ620V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5CD280B8</tstamp>
+    </comp>
+    <comp ref="R260">
+      <value>240</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/panasonic-electronic-components/ERJ-3GEYJ241V/P240GCT-ND/134760</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Components</field>
+        <field name="part-num">ERJ-3GEYJ241V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5CD280C1</tstamp>
+    </comp>
+    <comp ref="R261">
+      <value>62</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/panasonic-electronic-components/ERJ-3GEYJ620V/P62GCT-ND/134695</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Components</field>
+        <field name="part-num">ERJ-3GEYJ620V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5CD280CB</tstamp>
+    </comp>
+    <comp ref="C206">
+      <value>0.1µF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechanics</field>
+        <field name="part-num">CL10B104KO8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/UsbAndEthernet/" tstamps="/5B7F9482/"/>
+      <tstamp>5CD47D2C</tstamp>
+    </comp>
+    <comp ref="D300">
+      <value>D_Bridge_+-AA</value>
+      <footprint>Diodes_SMD:Diode_Bridge_TO-269AA</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/micro-commercial-co/MB110S-TP/MB110S-TPMSCT-ND/2075340</datasheet>
+      <fields>
+        <field name="manf">Micro Commercial Co</field>
+        <field name="part-num">MB110S-TP</field>
+      </fields>
+      <libsource lib="Device" part="D_Bridge_+-AA" description="Diode bridge, +ve/-ve/AC/AC"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5C084F67</tstamp>
+    </comp>
+    <comp ref="FL100">
+      <value>EMI_Filter_Common_WE</value>
+      <footprint>EigeneFootprints:CommonModeChoke_WuerthType-WE-SL5</footprint>
+      <datasheet>https://www.digikey.ch/de/ptm/w/wurth-electronics-inc/suppression-of-common-mode-noise?pn_sku=732-1496-1-ND&amp;part_id=1639508</datasheet>
+      <fields>
+        <field name="manf">WE</field>
+        <field name="part-num">744272392</field>
+      </fields>
+      <libsource lib="myLib" part="EMI_Filter_Common_WE" description="EMI 2-inductor-filter"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5C084F70</tstamp>
+    </comp>
+    <comp ref="D301">
+      <value>TVS 58V</value>
+      <footprint>Diodes_SMD:D_SMA</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/diodes-incorporated/SMAJ58A-13-F/SMAJ58A-13-FDICT-ND/2242795</datasheet>
+      <fields>
+        <field name="manf">Diodes Incorporated</field>
+        <field name="part-num">SMAJ58A-13-F</field>
+      </fields>
+      <libsource lib="Diode" part="1N630xA" description="1500W unidirectional TRANSZORB® Transient Voltage Suppressor, DO-201AE"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5C084F86</tstamp>
+    </comp>
+    <comp ref="C300">
+      <value>0.1µF  100V</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/tdk-corporation/CGA4J2X7R2A104K125AA/445-5827-1-ND/2443867</datasheet>
+      <fields>
+        <field name="manf">TDK Corporation</field>
+        <field name="part-num">CGA4J2X7R2A104K125AA</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5C084F8D</tstamp>
+    </comp>
+    <comp ref="U300">
+      <value>LTC4267</value>
+      <footprint>Housings_SSOP:SSOP-16_3.9x4.9mm_Pitch0.635mm</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/linear-technology-analog-devices/LTC4267CGN-TRPBF/LTC4267CGN-TRPBFCT-ND/8019541</datasheet>
+      <fields>
+        <field name="manf">Linear Technology/Analog Devices</field>
+        <field name="part-num">LTC4267CGN#TRPBF</field>
+      </fields>
+      <libsource lib="myLib" part="LTC4267" description=""/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5C084F95</tstamp>
+    </comp>
+    <comp ref="X2">
+      <value>Phoenix_1847479</value>
+      <footprint>Connectors_Phoenix:PhoenixContact_MC-GF_03x5.08mm_Angled_ThreadedFlange</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/phoenix-contact/1847479/277-7461-ND/3596799</datasheet>
+      <fields>
+        <field name="manf">PhoenixContact</field>
+        <field name="part-num">1847479</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x03_Male" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5C084F9C</tstamp>
+    </comp>
+    <comp ref="R303">
+      <value>open</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">DNP</field>
+        <field name="part-num">DNP</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5C084FA5</tstamp>
+    </comp>
+    <comp ref="D304">
+      <value>D_Schottky</value>
+      <footprint>TO_SOT_Packages_SMD:TO-252-3_TabPin2</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/stmicroelectronics/STPS1045B-TR/497-6572-1-ND/1865318</datasheet>
+      <fields>
+        <field name="manf">STMicroelectronics</field>
+        <field name="part-num">STPS1045B-TR</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky_AKA" description="Schottky diode, anode on pins 1 and 3"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5C084FF8</tstamp>
+    </comp>
+    <comp ref="C301">
+      <value>10µF 63V</value>
+      <footprint>Capacitors_SMD:CP_Elec_6.3x5.8</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/nichicon/GYA1J100MCQ1GS/493-16371-1-ND/7427999</datasheet>
+      <fields>
+        <field name="manf">Nichicon</field>
+        <field name="part-num">GYA1J100MCQ1GS</field>
+      </fields>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5C085001</tstamp>
+    </comp>
+    <comp ref="C302">
+      <value>1µF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/tdk-corporation/CGA4J3X7S2A105M125AE/445-7961-1-ND/2782529</datasheet>
+      <fields>
+        <field name="manf">TDK Corporation</field>
+        <field name="part-num">CGA4J3X7S2A105M125AE</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5C08500F</tstamp>
+    </comp>
+    <comp ref="T300">
+      <value>WE_750310013</value>
+      <footprint>EigeneFootprints:WE_EP13</footprint>
+      <datasheet>http://katalog.we-online.de/pbs/datasheet/750310013.pdf</datasheet>
+      <fields>
+        <field name="manf">Wurth Electrionik</field>
+        <field name="part-num">750310013</field>
+      </fields>
+      <libsource lib="myLib" part="POE_TRANS" description=""/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5C085026</tstamp>
+    </comp>
+    <comp ref="Q301">
+      <value>Q_NMOS_GDSD</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-223</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/FD/FDT86246L.pdf</datasheet>
+      <fields>
+        <field name="manf">On Semiconductor</field>
+        <field name="part-num">FDT86246L</field>
+      </fields>
+      <libsource lib="Device" part="Q_NMOS_GDSD" description="N-MOSFET transistor, gate/drain/source, drain connected to mounting plane"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5C085035</tstamp>
+    </comp>
+    <comp ref="R305">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Componens</field>
+        <field name="part-num">ERJ-6ENF1002V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5C085041</tstamp>
+    </comp>
+    <comp ref="R304">
+      <value>0.05 1%</value>
+      <footprint>Resistors_SMD:R_1206</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/stackpole-electronics-inc/CSNL1206FT50L0/CSNL1206FT50L0CT-ND/5226376</datasheet>
+      <fields>
+        <field name="manf">Stackpole Electronics Inc.</field>
+        <field name="part-num">CSNL1206FT50L0</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5C08504A</tstamp>
+    </comp>
+    <comp ref="U330">
+      <value>PS2911</value>
+      <footprint>EigeneFootprints:DIP-4_SMD_Opto</footprint>
+      <datasheet>https://www.digikey.ch/products/de?keywords=PS2911-1-M-AX</datasheet>
+      <fields>
+        <field name="manf">CEL</field>
+        <field name="part-num">PS2911-1-M-AX</field>
+      </fields>
+      <libsource lib="Isolator" part="TLP785" description="DC Optocoupler, Vce 80V, CTR 50-200%, DIP4"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5C08505D</tstamp>
+    </comp>
+    <comp ref="D330">
+      <value>Fast Recovery</value>
+      <footprint>Diodes_SMD:D_SOD-523</footprint>
+      <datasheet>https://www.digikey.com/product-detail/en/micro-commercial-co/BAS516-TP/BAS516-TPMSCT-ND/7681649</datasheet>
+      <fields>
+        <field name="manf">Micro Commercial Co</field>
+        <field name="part-num">BAS516-TP</field>
+      </fields>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5C085066</tstamp>
+    </comp>
+    <comp ref="R330">
+      <value>6k8</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Componens</field>
+        <field name="part-num">ERJ-6ENF6801V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5C08506E</tstamp>
+    </comp>
+    <comp ref="C303">
+      <value>330µF</value>
+      <footprint>Capacitors_SMD:CP_Elec_6.3x5.8</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/wurth-electronics-inc/875105245015/732-6415-1-ND/5147966</datasheet>
+      <fields>
+        <field name="manf">Wurth Electronics Inc.</field>
+        <field name="part-num">875105245015</field>
+      </fields>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5C085086</tstamp>
+    </comp>
+    <comp ref="C304">
+      <value>10µF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechannics</field>
+        <field name="part-num">CL21B106KOQNNNE</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5C08508D</tstamp>
+    </comp>
+    <comp ref="C305">
+      <value>10µF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechannics</field>
+        <field name="part-num">CL21B106KOQNNNE</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5C085094</tstamp>
+    </comp>
+    <comp ref="R332">
+      <value>100k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/panasonic-electronic-components/ERA-6AEB104V/P100KDACT-ND/1465995</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Componens</field>
+        <field name="part-num">ERJ-6ENF1003V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5C0850C0</tstamp>
+    </comp>
+    <comp ref="R333">
+      <value>33k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Componens</field>
+        <field name="part-num">ERJ-6ENF3302V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5C0850C7</tstamp>
+    </comp>
+    <comp ref="R331">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Componens</field>
+        <field name="part-num">ERJ-6ENF1001V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5C0850CE</tstamp>
+    </comp>
+    <comp ref="C334">
+      <value>6.8nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/wurth-electronics-inc/885012207121/732-12095-1-ND/9346115</datasheet>
+      <fields>
+        <field name="manf">Wurth Electronics Inc.</field>
+        <field name="part-num">885012207121</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5C0850E7</tstamp>
+    </comp>
+    <comp ref="R334">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Componens</field>
+        <field name="part-num">ERJ-6ENF1002V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5C085171</tstamp>
+    </comp>
+    <comp ref="R322">
+      <value>220k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Componens</field>
+        <field name="part-num">ERJ-6ENF2203V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5C085179</tstamp>
+    </comp>
+    <comp ref="R320">
+      <value>220k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Componens</field>
+        <field name="part-num">ERJ-6ENF2203V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5C085197</tstamp>
+    </comp>
+    <comp ref="D321">
+      <value>9.1V</value>
+      <footprint>Diodes_SMD:D_SOD-323</footprint>
+      <datasheet>https://www.digikey.com/product-detail/en/on-semiconductor/MM3Z9V1ST1G/MM3Z9V1ST1GOSCT-ND/5213279</datasheet>
+      <fields>
+        <field name="manf">ON Semiconductor</field>
+        <field name="part-num">MM3Z9V1ST1G</field>
+      </fields>
+      <libsource lib="Device" part="D_Zener" description="Zener diode"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5C0851A5</tstamp>
+    </comp>
+    <comp ref="Q320">
+      <value>Q_NPN_BEC</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <datasheet>https://www.digikey.com/product-detail/en/diodes-incorporated/FMMT493TA/FMMT493CT-ND/92663</datasheet>
+      <fields>
+        <field name="manf">Diodes Incorporated</field>
+        <field name="part-num">FMMT493TA</field>
+      </fields>
+      <libsource lib="Device" part="Q_NPN_BEC" description="NPN transistor, base/emitter/collector"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5C0851CA</tstamp>
+    </comp>
+    <comp ref="R321">
+      <value>100</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Componens</field>
+        <field name="part-num">ERJ-6ENF1000V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5C0851E9</tstamp>
+    </comp>
+    <comp ref="D331">
+      <value>TLV431BCDBZR</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/tlv431a.pdf</datasheet>
+      <fields>
+        <field name="manf">Texas Instruments</field>
+        <field name="part-num">TLV431BCDBZR</field>
+      </fields>
+      <libsource lib="myLib" part="TLV431BCDBZR" description="Shunt Regulator, SOT-23"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5C085217</tstamp>
+    </comp>
+    <comp ref="C321">
+      <value>10µF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechannics</field>
+        <field name="part-num">CL21B106KOQNNNE</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5B9BF95D</tstamp>
+    </comp>
+    <comp ref="C320">
+      <value>47nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/wurth-electronics-inc/885012207070/732-8059-1-ND/5454686</datasheet>
+      <fields>
+        <field name="manf">Wurth Electronics Inc.</field>
+        <field name="part-num">885012207070</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5B9C9542</tstamp>
+    </comp>
+    <comp ref="C342">
+      <value>0.1µF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechanics</field>
+        <field name="part-num">CL10B104KO8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5BA30977</tstamp>
+    </comp>
+    <comp ref="U340">
+      <value>LP38693MP-3.3</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-223-5</footprint>
+      <fields>
+        <field name="manf">Texas Instruments</field>
+        <field name="part-num">LP38693MP-3.3/NOPB</field>
+      </fields>
+      <libsource lib="myLib" part="LP38693MP-3.3" description=""/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5BA3098C</tstamp>
+    </comp>
+    <comp ref="C340">
+      <value>10µF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechannics</field>
+        <field name="part-num">CL21B106KOQNNNE</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5BA503FE</tstamp>
+    </comp>
+    <comp ref="C341">
+      <value>10µF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechannics</field>
+        <field name="part-num">CL21B106KOQNNNE</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5BA507AA</tstamp>
+    </comp>
+    <comp ref="F301">
+      <value>0.35A</value>
+      <footprint>EigeneFootprints:FuseHolder_Schurter_0031.7701.11</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/schurter-inc/0031.7701.11/486-1991-ND/640027</datasheet>
+      <fields>
+        <field name="manf">Schurter Inc.</field>
+        <field name="part-num">0031.7701.11;3404.0043.11</field>
+      </fields>
+      <libsource lib="Device" part="Fuse" description="Fuse"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5BC5C6A6</tstamp>
+    </comp>
+    <comp ref="D306">
+      <value>D_Bridge_+-AA</value>
+      <footprint>Diodes_SMD:Diode_Bridge_TO-269AA</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/micro-commercial-co/MB110S-TP/MB110S-TPMSCT-ND/2075340</datasheet>
+      <fields>
+        <field name="manf">Micro Commercial Co</field>
+        <field name="part-num">MB110S-TP</field>
+      </fields>
+      <libsource lib="Device" part="D_Bridge_+-AA" description="Diode bridge, +ve/-ve/AC/AC"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5BBCC16A</tstamp>
+    </comp>
+    <comp ref="TP301">
+      <value>R304_Shunt</value>
+      <footprint>Measurement_Points:Measurement_Point_Round-SMD-Pad_Small</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">DNP</field>
+        <field name="part-num">DNP</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5BCB6A7D</tstamp>
+    </comp>
+    <comp ref="TP320">
+      <value>TP_Pvcc</value>
+      <footprint>Measurement_Points:Measurement_Point_Round-SMD-Pad_Small</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">DNP</field>
+        <field name="part-num">DNP</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5BCD794C</tstamp>
+    </comp>
+    <comp ref="TP331">
+      <value>TP_Opto5V</value>
+      <footprint>Measurement_Points:Measurement_Point_Round-SMD-Pad_Small</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">DNP</field>
+        <field name="part-num">DNP</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5BCF76E3</tstamp>
+    </comp>
+    <comp ref="TP340">
+      <value>TP_3.3V</value>
+      <footprint>Measurement_Points:Measurement_Point_Round-SMD-Pad_Small</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">DNP</field>
+        <field name="part-num">DNP</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5BD04D1D</tstamp>
+    </comp>
+    <comp ref="TP330">
+      <value>TP_U300_run</value>
+      <footprint>Measurement_Points:Measurement_Point_Round-SMD-Pad_Small</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">DNP</field>
+        <field name="part-num">DNP</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5BD15DBC</tstamp>
+    </comp>
+    <comp ref="TP341">
+      <value>TP_5V</value>
+      <footprint>Measurement_Points:Measurement_Point_Round-SMD-Pad_Small</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">DNP</field>
+        <field name="part-num">DNP</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5BD5286F</tstamp>
+    </comp>
+    <comp ref="C306">
+      <value>1n/2kV</value>
+      <footprint>Capacitors_ThroughHole:C_Rect_L13.0mm_W4.0mm_P10.00mm_FKS3_FKP3_MKS4</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/wima/MKS4U011003C00KSSD/1928-1762-ND/9370670</datasheet>
+      <fields>
+        <field name="manf">WIMA</field>
+        <field name="part-num">MKS4U011003C00KSSD</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5CBBC8B8</tstamp>
+    </comp>
+    <comp ref="C307">
+      <value>1500µF</value>
+      <footprint>CP_Elec_10x10</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/nichicon/UCD0J152MNL1GS/493-6342-1-ND/3438856</datasheet>
+      <fields>
+        <field name="manf">Nichicon</field>
+        <field name="part-num">UCD0J152MNL1GS</field>
+      </fields>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5D7924E3</tstamp>
+    </comp>
+    <comp ref="C308">
+      <value>1500µF</value>
+      <footprint>CP_Elec_10x10</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/nichicon/UCD0J152MNL1GS/493-6342-1-ND/3438856</datasheet>
+      <fields>
+        <field name="manf">Nichicon</field>
+        <field name="part-num">UCD0J152MNL1GS</field>
+      </fields>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/PoE und Speisung/" tstamps="/5B7F9562/"/>
+      <tstamp>5D7946D3</tstamp>
+    </comp>
+    <comp ref="U401">
+      <value>G3VM-61VR(TR05)</value>
+      <footprint>EigeneFootprints:SOP-4_3.9x4.4mm_Pitch2.54mm</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/omron-electronics-inc-emc-div/G3VM-61VR-TR05/Z10319CT-ND/8602730</datasheet>
+      <fields>
+        <field name="manf">Omron Electronics Inc-EMC Div</field>
+        <field name="part-num">G3VM-61VR(TR05)</field>
+      </fields>
+      <libsource lib="Relay_SolidState" part="ASSR-1218" description="Form A, Solid State Relay (Photo MOSFET) 60V, 0.2A, 10Ohm, SO-4"/>
+      <sheetpath names="/Digitale Ausgänge/" tstamps="/5BBFA11B/"/>
+      <tstamp>5BC169F3</tstamp>
+    </comp>
+    <comp ref="R401">
+      <value>200</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">	Panasonic Electronic Components</field>
+        <field name="part-num">ERJ-6ENF2000V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Digitale Ausgänge/" tstamps="/5BBFA11B/"/>
+      <tstamp>5BC1B51E</tstamp>
+    </comp>
+    <comp ref="X21">
+      <value>Phoenix_1843266</value>
+      <footprint>Connectors_Phoenix:PhoenixContact_MCV-GF_06x3.50mm_Vertical_ThreadedFlange_MountHole</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/phoenix-contact/1843813/277-6088-ND/2527947</datasheet>
+      <fields>
+        <field name="manf">Phoenix Contact</field>
+        <field name="part-num">1843266</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x06_Male" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Digitale Ausgänge/" tstamps="/5BBFA11B/"/>
+      <tstamp>5BC1BB4C</tstamp>
+    </comp>
+    <comp ref="U402">
+      <value>G3VM-61VR(TR05)</value>
+      <footprint>EigeneFootprints:SOP-4_3.9x4.4mm_Pitch2.54mm</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/omron-electronics-inc-emc-div/G3VM-61VR-TR05/Z10319CT-ND/8602730</datasheet>
+      <fields>
+        <field name="manf">Omron Electronics Inc-EMC Div</field>
+        <field name="part-num">G3VM-61VR(TR05)</field>
+      </fields>
+      <libsource lib="Relay_SolidState" part="ASSR-1218" description="Form A, Solid State Relay (Photo MOSFET) 60V, 0.2A, 10Ohm, SO-4"/>
+      <sheetpath names="/Digitale Ausgänge/" tstamps="/5BBFA11B/"/>
+      <tstamp>5BC1BE34</tstamp>
+    </comp>
+    <comp ref="R402">
+      <value>200</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">	Panasonic Electronic Components</field>
+        <field name="part-num">ERJ-6ENF2000V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Digitale Ausgänge/" tstamps="/5BBFA11B/"/>
+      <tstamp>5BC1BE44</tstamp>
+    </comp>
+    <comp ref="U403">
+      <value>G3VM-61VR(TR05)</value>
+      <footprint>EigeneFootprints:SOP-4_3.9x4.4mm_Pitch2.54mm</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/omron-electronics-inc-emc-div/G3VM-61VR-TR05/Z10319CT-ND/8602730</datasheet>
+      <fields>
+        <field name="manf">Omron Electronics Inc-EMC Div</field>
+        <field name="part-num">G3VM-61VR(TR05)</field>
+      </fields>
+      <libsource lib="Relay_SolidState" part="ASSR-1218" description="Form A, Solid State Relay (Photo MOSFET) 60V, 0.2A, 10Ohm, SO-4"/>
+      <sheetpath names="/Digitale Ausgänge/" tstamps="/5BBFA11B/"/>
+      <tstamp>5BC1BF6F</tstamp>
+    </comp>
+    <comp ref="R403">
+      <value>200</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">	Panasonic Electronic Components</field>
+        <field name="part-num">ERJ-6ENF2000V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Digitale Ausgänge/" tstamps="/5BBFA11B/"/>
+      <tstamp>5BC1BF7F</tstamp>
+    </comp>
+    <comp ref="D401">
+      <value>TVS_45V</value>
+      <footprint>Diodes_SMD:D_SMA</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/vishay-semiconductor-diodes-division/SMAJ45CA-E3-61/SMAJ45CA-E3-61GICT-ND/5639153</datasheet>
+      <fields>
+        <field name="manf">Vishay</field>
+        <field name="part-num">SMAJ45CA-E3/61</field>
+      </fields>
+      <libsource lib="Device" part="D_TVS" description="Bidirectional transient-voltage-suppression diode"/>
+      <sheetpath names="/Digitale Ausgänge/" tstamps="/5BBFA11B/"/>
+      <tstamp>5BC36889</tstamp>
+    </comp>
+    <comp ref="D402">
+      <value>TVS_45V</value>
+      <footprint>Diodes_SMD:D_SMA</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/vishay-semiconductor-diodes-division/SMAJ45CA-E3-61/SMAJ45CA-E3-61GICT-ND/5639153</datasheet>
+      <fields>
+        <field name="manf">Vishay</field>
+        <field name="part-num">SMAJ45CA-E3/61</field>
+      </fields>
+      <libsource lib="Device" part="D_TVS" description="Bidirectional transient-voltage-suppression diode"/>
+      <sheetpath names="/Digitale Ausgänge/" tstamps="/5BBFA11B/"/>
+      <tstamp>5CCFF812</tstamp>
+    </comp>
+    <comp ref="D403">
+      <value>TVS_45V</value>
+      <footprint>Diodes_SMD:D_SMA</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/vishay-semiconductor-diodes-division/SMAJ45CA-E3-61/SMAJ45CA-E3-61GICT-ND/5639153</datasheet>
+      <fields>
+        <field name="manf">Vishay</field>
+        <field name="part-num">SMAJ45CA-E3/61</field>
+      </fields>
+      <libsource lib="Device" part="D_TVS" description="Bidirectional transient-voltage-suppression diode"/>
+      <sheetpath names="/Digitale Ausgänge/" tstamps="/5BBFA11B/"/>
+      <tstamp>5CCFF84C</tstamp>
+    </comp>
+    <comp ref="X11">
+      <value>Phoenix_1843266</value>
+      <footprint>Connectors_Phoenix:PhoenixContact_MCV-GF_06x3.50mm_Vertical_ThreadedFlange_MountHole</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Phoenix Contact</field>
+        <field name="part-num">1843266</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x06_Male" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/RS232GalvIsol_0/" tstamps="/5C9D57EC/"/>
+      <tstamp>5CA75BDE</tstamp>
+    </comp>
+    <comp ref="U501">
+      <value>RFM-0505S</value>
+      <footprint>EigeneFootprints:RFM-xxxxS</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/recom-power/RFM-0505S/945-3159-ND/8550767</datasheet>
+      <fields>
+        <field name="manf">Recom Power</field>
+        <field name="part-num">RFM-0505S</field>
+      </fields>
+      <libsource lib="myLib" part="RFM-xxxxS" description=""/>
+      <sheetpath names="/RS232GalvIsol_0/" tstamps="/5C9D57EC/"/>
+      <tstamp>5CCAC945</tstamp>
+    </comp>
+    <comp ref="C501">
+      <value>10µF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/samsung-electro-mechanics/CL21B106KOQNNNE/1276-2872-1-ND/3890958</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechannics</field>
+        <field name="part-num">CL21B106KOQNNNE</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/RS232GalvIsol_0/" tstamps="/5C9D57EC/"/>
+      <tstamp>5CB860BF</tstamp>
+    </comp>
+    <comp ref="C502">
+      <value>10µF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechannics</field>
+        <field name="part-num">CL21B106KOQNNNE</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/RS232GalvIsol_0/" tstamps="/5C9D57EC/"/>
+      <tstamp>5CB861A3</tstamp>
+    </comp>
+    <comp ref="Q501">
+      <value>DMG1012UW-7</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-323_SC-70</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/diodes-incorporated/DMG1012UW-7/DMG1012UW-7DICT-ND/2183242</datasheet>
+      <fields>
+        <field name="manf">Diodes Incorporated</field>
+        <field name="part-num">DMG1012UW-7</field>
+      </fields>
+      <libsource lib="Device" part="Q_NMOS_GSD" description="N-MOSFET transistor, gate/source/drain"/>
+      <sheetpath names="/RS232GalvIsol_0/" tstamps="/5C9D57EC/"/>
+      <tstamp>5CB880A9</tstamp>
+    </comp>
+    <comp ref="R501">
+      <value>100k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/panasonic-electronic-components/ERA-6AEB104V/P100KDACT-ND/1465995</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Componens</field>
+        <field name="part-num">ERJ-6ENF1003V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/RS232GalvIsol_0/" tstamps="/5C9D57EC/"/>
+      <tstamp>5CB8B56C</tstamp>
+    </comp>
+    <comp ref="U502">
+      <value>MAX33250E_51E</value>
+      <footprint>EigeneFootprints:LGA-12</footprint>
+      <datasheet>https://media.digikey.com/pdf/Data%20Sheets/Maxim%20PDFs/MAX33250E_51E_Rev1_Nov2018.pdf</datasheet>
+      <fields>
+        <field name="manf">Maxim Integrated</field>
+        <field name="part-num">MAX33250EELC+</field>
+      </fields>
+      <libsource lib="myLib" part="MAX33250E_51E" description=""/>
+      <sheetpath names="/RS232GalvIsol_0/" tstamps="/5C9D57EC/"/>
+      <tstamp>5CB9252B</tstamp>
+    </comp>
+    <comp ref="C503">
+      <value>0.1µF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechanics</field>
+        <field name="part-num">CL10B104KO8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/RS232GalvIsol_0/" tstamps="/5C9D57EC/"/>
+      <tstamp>5CBAF081</tstamp>
+    </comp>
+    <comp ref="C504">
+      <value>0.1µF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechanics</field>
+        <field name="part-num">CL10B104KO8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/RS232GalvIsol_0/" tstamps="/5C9D57EC/"/>
+      <tstamp>5CBAF912</tstamp>
+    </comp>
+    <comp ref="X12">
+      <value>Phoenix_1843266</value>
+      <footprint>Connectors_Phoenix:PhoenixContact_MCV-GF_06x3.50mm_Vertical_ThreadedFlange_MountHole</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Phoenix Contact</field>
+        <field name="part-num">1843266</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x06_Male" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/RS232GalvIsol_2/" tstamps="/5CA7F87A/"/>
+      <tstamp>5CA75BDE</tstamp>
+    </comp>
+    <comp ref="U601">
+      <value>RFM-0505S</value>
+      <footprint>EigeneFootprints:RFM-xxxxS</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/recom-power/RFM-0505S/945-3159-ND/8550767</datasheet>
+      <fields>
+        <field name="manf">Recom Power</field>
+        <field name="part-num">RFM-0505S</field>
+      </fields>
+      <libsource lib="myLib" part="RFM-xxxxS" description=""/>
+      <sheetpath names="/RS232GalvIsol_2/" tstamps="/5CA7F87A/"/>
+      <tstamp>5CCAC945</tstamp>
+    </comp>
+    <comp ref="C601">
+      <value>10µF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/samsung-electro-mechanics/CL21B106KOQNNNE/1276-2872-1-ND/3890958</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechannics</field>
+        <field name="part-num">CL21B106KOQNNNE</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/RS232GalvIsol_2/" tstamps="/5CA7F87A/"/>
+      <tstamp>5CB860BF</tstamp>
+    </comp>
+    <comp ref="C602">
+      <value>10µF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechannics</field>
+        <field name="part-num">CL21B106KOQNNNE</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/RS232GalvIsol_2/" tstamps="/5CA7F87A/"/>
+      <tstamp>5CB861A3</tstamp>
+    </comp>
+    <comp ref="Q601">
+      <value>DMG1012UW-7</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-323_SC-70</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/diodes-incorporated/DMG1012UW-7/DMG1012UW-7DICT-ND/2183242</datasheet>
+      <fields>
+        <field name="manf">Diodes Incorporated</field>
+        <field name="part-num">DMG1012UW-7</field>
+      </fields>
+      <libsource lib="Device" part="Q_NMOS_GSD" description="N-MOSFET transistor, gate/source/drain"/>
+      <sheetpath names="/RS232GalvIsol_2/" tstamps="/5CA7F87A/"/>
+      <tstamp>5CB880A9</tstamp>
+    </comp>
+    <comp ref="R601">
+      <value>100k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/panasonic-electronic-components/ERA-6AEB104V/P100KDACT-ND/1465995</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Componens</field>
+        <field name="part-num">ERJ-6ENF1003V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/RS232GalvIsol_2/" tstamps="/5CA7F87A/"/>
+      <tstamp>5CB8B56C</tstamp>
+    </comp>
+    <comp ref="U602">
+      <value>MAX33250E_51E</value>
+      <footprint>EigeneFootprints:LGA-12</footprint>
+      <datasheet>https://media.digikey.com/pdf/Data%20Sheets/Maxim%20PDFs/MAX33250E_51E_Rev1_Nov2018.pdf</datasheet>
+      <fields>
+        <field name="manf">Maxim Integrated</field>
+        <field name="part-num">MAX33250EELC+</field>
+      </fields>
+      <libsource lib="myLib" part="MAX33250E_51E" description=""/>
+      <sheetpath names="/RS232GalvIsol_2/" tstamps="/5CA7F87A/"/>
+      <tstamp>5CB9252B</tstamp>
+    </comp>
+    <comp ref="C603">
+      <value>0.1µF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechanics</field>
+        <field name="part-num">CL10B104KO8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/RS232GalvIsol_2/" tstamps="/5CA7F87A/"/>
+      <tstamp>5CBAF081</tstamp>
+    </comp>
+    <comp ref="C604">
+      <value>0.1µF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechanics</field>
+        <field name="part-num">CL10B104KO8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/RS232GalvIsol_2/" tstamps="/5CA7F87A/"/>
+      <tstamp>5CBAF912</tstamp>
+    </comp>
+    <comp ref="X13">
+      <value>Phoenix_1843266</value>
+      <footprint>Connectors_Phoenix:PhoenixContact_MCV-GF_06x3.50mm_Vertical_ThreadedFlange_MountHole</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Phoenix Contact</field>
+        <field name="part-num">1843266</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x06_Male" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/sheet5CAA8AE_4/" tstamps="/5CAA8AEA/"/>
+      <tstamp>5CA75BDE</tstamp>
+    </comp>
+    <comp ref="U701">
+      <value>RFM-0505S</value>
+      <footprint>EigeneFootprints:RFM-xxxxS</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/recom-power/RFM-0505S/945-3159-ND/8550767</datasheet>
+      <fields>
+        <field name="manf">Recom Power</field>
+        <field name="part-num">RFM-0505S</field>
+      </fields>
+      <libsource lib="myLib" part="RFM-xxxxS" description=""/>
+      <sheetpath names="/sheet5CAA8AE_4/" tstamps="/5CAA8AEA/"/>
+      <tstamp>5CCAC945</tstamp>
+    </comp>
+    <comp ref="C701">
+      <value>10µF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/samsung-electro-mechanics/CL21B106KOQNNNE/1276-2872-1-ND/3890958</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechannics</field>
+        <field name="part-num">CL21B106KOQNNNE</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/sheet5CAA8AE_4/" tstamps="/5CAA8AEA/"/>
+      <tstamp>5CB860BF</tstamp>
+    </comp>
+    <comp ref="C702">
+      <value>10µF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechannics</field>
+        <field name="part-num">CL21B106KOQNNNE</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/sheet5CAA8AE_4/" tstamps="/5CAA8AEA/"/>
+      <tstamp>5CB861A3</tstamp>
+    </comp>
+    <comp ref="Q701">
+      <value>DMG1012UW-7</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-323_SC-70</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/diodes-incorporated/DMG1012UW-7/DMG1012UW-7DICT-ND/2183242</datasheet>
+      <fields>
+        <field name="manf">Diodes Incorporated</field>
+        <field name="part-num">DMG1012UW-7</field>
+      </fields>
+      <libsource lib="Device" part="Q_NMOS_GSD" description="N-MOSFET transistor, gate/source/drain"/>
+      <sheetpath names="/sheet5CAA8AE_4/" tstamps="/5CAA8AEA/"/>
+      <tstamp>5CB880A9</tstamp>
+    </comp>
+    <comp ref="R701">
+      <value>100k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/panasonic-electronic-components/ERA-6AEB104V/P100KDACT-ND/1465995</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Componens</field>
+        <field name="part-num">ERJ-6ENF1003V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/sheet5CAA8AE_4/" tstamps="/5CAA8AEA/"/>
+      <tstamp>5CB8B56C</tstamp>
+    </comp>
+    <comp ref="U702">
+      <value>MAX33250E_51E</value>
+      <footprint>EigeneFootprints:LGA-12</footprint>
+      <datasheet>https://media.digikey.com/pdf/Data%20Sheets/Maxim%20PDFs/MAX33250E_51E_Rev1_Nov2018.pdf</datasheet>
+      <fields>
+        <field name="manf">Maxim Integrated</field>
+        <field name="part-num">MAX33250EELC+</field>
+      </fields>
+      <libsource lib="myLib" part="MAX33250E_51E" description=""/>
+      <sheetpath names="/sheet5CAA8AE_4/" tstamps="/5CAA8AEA/"/>
+      <tstamp>5CB9252B</tstamp>
+    </comp>
+    <comp ref="C703">
+      <value>0.1µF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechanics</field>
+        <field name="part-num">CL10B104KO8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/sheet5CAA8AE_4/" tstamps="/5CAA8AEA/"/>
+      <tstamp>5CBAF081</tstamp>
+    </comp>
+    <comp ref="C704">
+      <value>0.1µF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechanics</field>
+        <field name="part-num">CL10B104KO8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/sheet5CAA8AE_4/" tstamps="/5CAA8AEA/"/>
+      <tstamp>5CBAF912</tstamp>
+    </comp>
+    <comp ref="X22">
+      <value>Phoenix_1843266</value>
+      <footprint>Connectors_Phoenix:PhoenixContact_MCV-GF_06x3.50mm_Vertical_ThreadedFlange_MountHole</footprint>
+      <fields>
+        <field name="manf">Phoenix Contact</field>
+        <field name="part-num">1843266</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x06_Male" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BAC6F0B</tstamp>
+    </comp>
+    <comp ref="R801">
+      <value>560k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805JR-07560KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB6D5F7</tstamp>
+    </comp>
+    <comp ref="D801">
+      <value>24V</value>
+      <footprint>Diodes_SMD:D_SOD-323F</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/nexperia-usa-inc/BZX84J-B24115/1727-2134-1-ND/5221782</datasheet>
+      <fields>
+        <field name="manf">Nexperia USA</field>
+        <field name="part-num">BZX84J-B24-115</field>
+      </fields>
+      <libsource lib="Device" part="D_Zener" description="Zener diode"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB6D612</tstamp>
+    </comp>
+    <comp ref="R802">
+      <value>560k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805JR-07560KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB6D623</tstamp>
+    </comp>
+    <comp ref="R804">
+      <value>43k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805FR-0743KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB6D62C</tstamp>
+    </comp>
+    <comp ref="C802">
+      <value>47nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/wurth-electronics-inc/885012207070/732-8059-1-ND/5454686</datasheet>
+      <fields>
+        <field name="manf">Wurth Electronics Inc.</field>
+        <field name="part-num">885012207070</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB6D63A</tstamp>
+    </comp>
+    <comp ref="R805">
+      <value>560k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805JR-07560KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB6D65B</tstamp>
+    </comp>
+    <comp ref="D802">
+      <value>24V</value>
+      <footprint>Diodes_SMD:D_SOD-323F</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/nexperia-usa-inc/BZX84J-B24115/1727-2134-1-ND/5221782</datasheet>
+      <fields>
+        <field name="manf">Nexperia USA</field>
+        <field name="part-num">BZX84J-B24-115</field>
+      </fields>
+      <libsource lib="Device" part="D_Zener" description="Zener diode"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB6D676</tstamp>
+    </comp>
+    <comp ref="R806">
+      <value>560k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805JR-07560KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB6D687</tstamp>
+    </comp>
+    <comp ref="R808">
+      <value>43k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805FR-0743KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB6D690</tstamp>
+    </comp>
+    <comp ref="C804">
+      <value>47nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/wurth-electronics-inc/885012207070/732-8059-1-ND/5454686</datasheet>
+      <fields>
+        <field name="manf">Wurth Electronics Inc.</field>
+        <field name="part-num">885012207070</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB6D69E</tstamp>
+    </comp>
+    <comp ref="R809">
+      <value>560k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805JR-07560KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB7D327</tstamp>
+    </comp>
+    <comp ref="D803">
+      <value>24V</value>
+      <footprint>Diodes_SMD:D_SOD-323F</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/nexperia-usa-inc/BZX84J-B24115/1727-2134-1-ND/5221782</datasheet>
+      <fields>
+        <field name="manf">Nexperia USA</field>
+        <field name="part-num">BZX84J-B24-115</field>
+      </fields>
+      <libsource lib="Device" part="D_Zener" description="Zener diode"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB7D342</tstamp>
+    </comp>
+    <comp ref="R810">
+      <value>560k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805JR-07560KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB7D353</tstamp>
+    </comp>
+    <comp ref="R812">
+      <value>43k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805FR-0743KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB7D35C</tstamp>
+    </comp>
+    <comp ref="C806">
+      <value>47nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/wurth-electronics-inc/885012207070/732-8059-1-ND/5454686</datasheet>
+      <fields>
+        <field name="manf">Wurth Electronics Inc.</field>
+        <field name="part-num">885012207070</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB7D36A</tstamp>
+    </comp>
+    <comp ref="R813">
+      <value>560k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805JR-07560KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB8287A</tstamp>
+    </comp>
+    <comp ref="D804">
+      <value>24V</value>
+      <footprint>Diodes_SMD:D_SOD-323F</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/nexperia-usa-inc/BZX84J-B24115/1727-2134-1-ND/5221782</datasheet>
+      <fields>
+        <field name="manf">Nexperia USA</field>
+        <field name="part-num">BZX84J-B24-115</field>
+      </fields>
+      <libsource lib="Device" part="D_Zener" description="Zener diode"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB82895</tstamp>
+    </comp>
+    <comp ref="R814">
+      <value>560k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805JR-07560KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB828A6</tstamp>
+    </comp>
+    <comp ref="R816">
+      <value>43k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805FR-0743KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB828AF</tstamp>
+    </comp>
+    <comp ref="C808">
+      <value>47nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/wurth-electronics-inc/885012207070/732-8059-1-ND/5454686</datasheet>
+      <fields>
+        <field name="manf">Wurth Electronics Inc.</field>
+        <field name="part-num">885012207070</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB828BD</tstamp>
+    </comp>
+    <comp ref="R817">
+      <value>560k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805JR-07560KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB8959C</tstamp>
+    </comp>
+    <comp ref="D805">
+      <value>24V</value>
+      <footprint>Diodes_SMD:D_SOD-323F</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/nexperia-usa-inc/BZX84J-B24115/1727-2134-1-ND/5221782</datasheet>
+      <fields>
+        <field name="manf">Nexperia USA</field>
+        <field name="part-num">BZX84J-B24-115</field>
+      </fields>
+      <libsource lib="Device" part="D_Zener" description="Zener diode"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB895B7</tstamp>
+    </comp>
+    <comp ref="R818">
+      <value>560k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805JR-07560KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB895C8</tstamp>
+    </comp>
+    <comp ref="R820">
+      <value>43k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805FR-0743KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB895D1</tstamp>
+    </comp>
+    <comp ref="C810">
+      <value>47nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/wurth-electronics-inc/885012207070/732-8059-1-ND/5454686</datasheet>
+      <fields>
+        <field name="manf">Wurth Electronics Inc.</field>
+        <field name="part-num">885012207070</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB895DF</tstamp>
+    </comp>
+    <comp ref="R833">
+      <value>560k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805JR-07560KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB47144</tstamp>
+    </comp>
+    <comp ref="R835">
+      <value>560k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805JR-07560KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB4713D</tstamp>
+    </comp>
+    <comp ref="R834">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Componens</field>
+        <field name="part-num">ERJ-6ENF1001V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB4712B</tstamp>
+    </comp>
+    <comp ref="C815">
+      <value>47nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/wurth-electronics-inc/885012207070/732-8059-1-ND/5454686</datasheet>
+      <fields>
+        <field name="manf">Wurth Electronics Inc.</field>
+        <field name="part-num">885012207070</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB47124</tstamp>
+    </comp>
+    <comp ref="R830">
+      <value>560k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805JR-07560KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB45831</tstamp>
+    </comp>
+    <comp ref="R832">
+      <value>560k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805JR-07560KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB4582A</tstamp>
+    </comp>
+    <comp ref="R831">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Componens</field>
+        <field name="part-num">ERJ-6ENF1001V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB45818</tstamp>
+    </comp>
+    <comp ref="C814">
+      <value>47nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/wurth-electronics-inc/885012207070/732-8059-1-ND/5454686</datasheet>
+      <fields>
+        <field name="manf">Wurth Electronics Inc.</field>
+        <field name="part-num">885012207070</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB45811</tstamp>
+    </comp>
+    <comp ref="R827">
+      <value>560k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805JR-07560KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB418E8</tstamp>
+    </comp>
+    <comp ref="R829">
+      <value>560k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805JR-07560KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB418E1</tstamp>
+    </comp>
+    <comp ref="R828">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Componens</field>
+        <field name="part-num">ERJ-6ENF1001V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB418CF</tstamp>
+    </comp>
+    <comp ref="C813">
+      <value>47nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/wurth-electronics-inc/885012207070/732-8059-1-ND/5454686</datasheet>
+      <fields>
+        <field name="manf">Wurth Electronics Inc.</field>
+        <field name="part-num">885012207070</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB418C8</tstamp>
+    </comp>
+    <comp ref="R824">
+      <value>560k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805JR-07560KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB4083B</tstamp>
+    </comp>
+    <comp ref="R826">
+      <value>560k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805JR-07560KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB40834</tstamp>
+    </comp>
+    <comp ref="R825">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Componens</field>
+        <field name="part-num">ERJ-6ENF1001V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB40822</tstamp>
+    </comp>
+    <comp ref="C812">
+      <value>47nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/wurth-electronics-inc/885012207070/732-8059-1-ND/5454686</datasheet>
+      <fields>
+        <field name="manf">Wurth Electronics Inc.</field>
+        <field name="part-num">885012207070</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BB4081B</tstamp>
+    </comp>
+    <comp ref="R821">
+      <value>560k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805JR-07560KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BAE5A18</tstamp>
+    </comp>
+    <comp ref="R823">
+      <value>560k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Yageo</field>
+        <field name="part-num">RC0805JR-07560KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BAE5A1F</tstamp>
+    </comp>
+    <comp ref="R822">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Componens</field>
+        <field name="part-num">ERJ-6ENF1001V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BAE6830</tstamp>
+    </comp>
+    <comp ref="C811">
+      <value>47nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.digikey.ch/product-detail/de/wurth-electronics-inc/885012207070/732-8059-1-ND/5454686</datasheet>
+      <fields>
+        <field name="manf">Wurth Electronics Inc.</field>
+        <field name="part-num">885012207070</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BAE6B13</tstamp>
+    </comp>
+    <comp ref="U801">
+      <value>74HC7014D-118</value>
+      <footprint>Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/74HC7014.pdf</datasheet>
+      <fields>
+        <field name="manf">Nexperia USA inc.</field>
+        <field name="part-num">74HC7014D-118</field>
+      </fields>
+      <libsource lib="74xx" part="74HC7014" description="Hex non-inverting buffer with precision Schmitt Trigger inputs, SOIC-14"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BC04B39</tstamp>
+    </comp>
+    <comp ref="C817">
+      <value>10µF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Samsung Electro-Mechannics</field>
+        <field name="part-num">CL21B106KOQNNNE</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BAEABFB</tstamp>
+    </comp>
+    <comp ref="X23">
+      <value>Phoenix_1843266</value>
+      <footprint>Connectors_Phoenix:PhoenixContact_MCV-GF_06x3.50mm_Vertical_ThreadedFlange_MountHole</footprint>
+      <datasheet>https://www.digikey.ch/products/de?keywords=1843855</datasheet>
+      <fields>
+        <field name="manf">Phoenix Contact</field>
+        <field name="part-num">1843266</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x06_Male" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5BADF138</tstamp>
+    </comp>
+    <comp ref="R800">
+      <value>0R</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="manf">Panasonic Electronic Componens</field>
+        <field name="part-num">ERJ-6GEY0R00V</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Analoge und Digitale Eingänge/" tstamps="/5C03B583/"/>
+      <tstamp>5CBE1998</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="74xx" part="74HC7014">
+      <description>Hex non-inverting buffer with precision Schmitt Trigger inputs, SOIC-14</description>
+      <docs>https://assets.nexperia.com/documents/data-sheet/74HC7014.pdf</docs>
+      <footprints>
+        <fp>SOIC*3.9x8.7mm*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74HC7014</field>
+        <field name="Footprint">Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+        <pin num="2" name="~" type="output"/>
+        <pin num="3" name="~" type="input"/>
+        <pin num="4" name="~" type="output"/>
+        <pin num="5" name="~" type="input"/>
+        <pin num="6" name="~" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="~" type="output"/>
+        <pin num="9" name="~" type="input"/>
+        <pin num="10" name="~" type="output"/>
+        <pin num="11" name="~" type="input"/>
+        <pin num="12" name="~" type="output"/>
+        <pin num="13" name="~" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x03_Male">
+      <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03_Male</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x06_Male">
+      <description>Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x06_Male</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="TestPoint">
+      <description>test point</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="CP">
+      <description>Polarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Crystal">
+      <description>Two pin crystal</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D">
+      <description>Diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Bridge_+-AA">
+      <description>Diode bridge, +ve/-ve/AC/AC</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>D*Bridge*</fp>
+        <fp>D*Rectifier*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Bridge_+-AA</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+        <pin num="3" name="~~" type="passive"/>
+        <pin num="4" name="~~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Schottky_AKA">
+      <description>Schottky diode, anode on pins 1 and 3</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky_AKA</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="input"/>
+        <pin num="2" name="K" type="passive"/>
+        <pin num="3" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_TVS">
+      <description>Bidirectional transient-voltage-suppression diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_TVS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A1" type="passive"/>
+        <pin num="2" name="A2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Zener">
+      <description>Zener diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Zener</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Ferrite_Bead">
+      <description>Ferrite bead</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+        <fp>*Ferrite*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">FB</field>
+        <field name="Value">Ferrite_Bead</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Fuse">
+      <description>Fuse</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>*Fuse*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">Fuse</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED_ARGB">
+      <description>RGB LED, anode/red/green/blue</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED_ARGB</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="RK" type="passive"/>
+        <pin num="3" name="GK" type="passive"/>
+        <pin num="4" name="BK" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Q_NMOS_GDSD">
+      <description>N-MOSFET transistor, gate/drain/source, drain connected to mounting plane</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_NMOS_GDSD</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="D" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+        <pin num="4" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Q_NMOS_GSD">
+      <description>N-MOSFET transistor, gate/source/drain</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_NMOS_GSD</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Q_NPN_BEC">
+      <description>NPN transistor, base/emitter/collector</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_NPN_BEC</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="input"/>
+        <pin num="2" name="E" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Diode" part="1.5KExxA">
+      <aliases>
+        <alias>1N62xxA</alias>
+        <alias>1N630xA</alias>
+      </aliases>
+      <description>1500W unidirectional TRANSZORB® Transient Voltage Suppressor, DO-201AE</description>
+      <docs>https://www.vishay.com/docs/88301/15ke.pdf</docs>
+      <footprints>
+        <fp>D?DO?201AE*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">1.5KExxA</field>
+        <field name="Footprint">Diode_THT:D_DO-201AE_P15.24mm_Horizontal</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A1" type="passive"/>
+        <pin num="2" name="A2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Isolator" part="TLP785">
+      <aliases>
+        <alias>SFH617A-1</alias>
+        <alias>SFH617A-2</alias>
+        <alias>SFH617A-3</alias>
+        <alias>SFH617A-4</alias>
+        <alias>SFH617A-1X001</alias>
+        <alias>SFH617A-2X001</alias>
+        <alias>SFH617A-3X001</alias>
+        <alias>SFH617A-4X001</alias>
+      </aliases>
+      <description>DC Optocoupler, Vce 80V, CTR 50-200%, DIP4</description>
+      <docs>https://toshiba.semicon-storage.com/info/docget.jsp?did=10569&amp;prodName=TLP785</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TLP785</field>
+        <field name="Footprint">Package_DIP:DIP-4_W7.62mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Memory_EEPROM" part="93AAxxA">
+      <aliases>
+        <alias>93AAxxB</alias>
+      </aliases>
+      <description>Serial EEPROM, 93 Series, 1.8V, DIP-8/SOIC-8</description>
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/20001749K.pdf</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>SOIC*3.9x4.9mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">93AAxxA</field>
+      </fields>
+      <pins>
+        <pin num="1" name="CS" type="input"/>
+        <pin num="2" name="SCLK" type="input"/>
+        <pin num="3" name="DI" type="input"/>
+        <pin num="4" name="DO" type="3state"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="NC" type="NotConnected"/>
+        <pin num="7" name="NC" type="NotConnected"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Relay_SolidState" part="ASSR-1218">
+      <description>Form A, Solid State Relay (Photo MOSFET) 60V, 0.2A, 10Ohm, SO-4</description>
+      <docs>https://docs.broadcom.com/docs/AV02-0173EN</docs>
+      <footprints>
+        <fp>SO*4.4x4.3mm*P2.54mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ASSR-1218</field>
+        <field name="Footprint">Package_SO:SO-4_4.4x4.3mm_P2.54mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SensorknotenPcb" part="749013011A">
+      <description>LAN-Übertrager WE-LAN PoE</description>
+      <docs>http://katalog.we-online.de/pbs/datasheet/749013011A.pdf</docs>
+      <fields>
+        <field name="Reference">T</field>
+        <field name="Value">749013011A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="RD+" type="BiDi"/>
+        <pin num="2" name="RCT" type="BiDi"/>
+        <pin num="3" name="RD-" type="BiDi"/>
+        <pin num="4" name="~" type="NotConnected"/>
+        <pin num="5" name="~" type="NotConnected"/>
+        <pin num="6" name="TD+" type="BiDi"/>
+        <pin num="7" name="TCT" type="BiDi"/>
+        <pin num="8" name="TD-" type="BiDi"/>
+        <pin num="9" name="TX-" type="BiDi"/>
+        <pin num="10" name="TXCT" type="BiDi"/>
+        <pin num="11" name="TX+" type="BiDi"/>
+        <pin num="12" name="~" type="NotConnected"/>
+        <pin num="13" name="~" type="NotConnected"/>
+        <pin num="14" name="RX-" type="BiDi"/>
+        <pin num="15" name="RXCT" type="BiDi"/>
+        <pin num="16" name="RX+" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="myLib" part="EMI_Filter_Common_WE">
+      <description>EMI 2-inductor-filter</description>
+      <docs>https://www.digikey.ch/de/ptm/w/wurth-electronics-inc/suppression-of-common-mode-noise?pn_sku=732-1496-1-ND&amp;part_id=1639508</docs>
+      <footprints>
+        <fp>L_*</fp>
+        <fp>L_CommonMode*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">FL</field>
+        <field name="Value">EMI_Filter_Common_WE</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="myLib" part="LAN9500">
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/00001875C.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LAN9500</field>
+      </fields>
+      <pins>
+        <pin num="1" name="nPHY_INT" type="input"/>
+        <pin num="2" name="TXN" type="output"/>
+        <pin num="3" name="TXP" type="output"/>
+        <pin num="4" name="VDD33A" type="power_in"/>
+        <pin num="5" name="RXN" type="input"/>
+        <pin num="6" name="RXP" type="input"/>
+        <pin num="7" name="VDD33A/NC" type="power_in"/>
+        <pin num="8" name="EXRES" type="input"/>
+        <pin num="9" name="VDD33A" type="power_in"/>
+        <pin num="10" name="VDDPLL" type="power_in"/>
+        <pin num="11" name="USBDM" type="input"/>
+        <pin num="12" name="USBDP" type="input"/>
+        <pin num="13" name="TEST2" type="input"/>
+        <pin num="14" name="NC" type="NotConnected"/>
+        <pin num="15" name="VDD33A" type="power_in"/>
+        <pin num="16" name="USBRBIAS" type="input"/>
+        <pin num="17" name="VDDUSBPLL" type="power_in"/>
+        <pin num="18" name="XI" type="input"/>
+        <pin num="19" name="XO" type="input"/>
+        <pin num="20" name="VBUS_DET" type="input"/>
+        <pin num="21" name="VDDCORE" type="power_out"/>
+        <pin num="22" name="MDC/GPIO2" type="input"/>
+        <pin num="23" name="MDIO/GPIO1" type="input"/>
+        <pin num="24" name="nRESET" type="input"/>
+        <pin num="25" name="VDD33IO" type="power_in"/>
+        <pin num="26" name="nFDX_LED/GPIO8" type="output"/>
+        <pin num="27" name="nLNKA_LED/GPIO9" type="output"/>
+        <pin num="28" name="nSPD_LED/GPIO10" type="output"/>
+        <pin num="29" name="EECLK/PWR_SEL" type="BiDi"/>
+        <pin num="30" name="EECS" type="output"/>
+        <pin num="31" name="EEDO/AUTOMDIX_EN" type="BiDi"/>
+        <pin num="32" name="EEDI" type="input"/>
+        <pin num="33" name="TEST3" type="input"/>
+        <pin num="34" name="PHY_SEL" type="input"/>
+        <pin num="35" name="VDD33IO" type="power_in"/>
+        <pin num="36" name="nTRST/RXD0" type="input"/>
+        <pin num="37" name="TDO/nPHY_RST" type="input"/>
+        <pin num="38" name="TCK/RXD1" type="input"/>
+        <pin num="39" name="TMS/RXD2" type="input"/>
+        <pin num="40" name="TDI/RXD3" type="input"/>
+        <pin num="41" name="RXCLK" type="input"/>
+        <pin num="42" name="RXDV" type="input"/>
+        <pin num="43" name="TXEN" type="input"/>
+        <pin num="44" name="RXER" type="input"/>
+        <pin num="45" name="CRS/GPIO3" type="input"/>
+        <pin num="46" name="COL/GPIO0" type="input"/>
+        <pin num="47" name="TXCLK" type="input"/>
+        <pin num="48" name="VDD33IO" type="power_in"/>
+        <pin num="49" name="TEST1" type="input"/>
+        <pin num="50" name="VDDCORE" type="power_in"/>
+        <pin num="51" name="VDD33IO" type="power_in"/>
+        <pin num="52" name="VDD33IO" type="power_in"/>
+        <pin num="53" name="TXD3/GPIO7/EEP_SIZE" type="input"/>
+        <pin num="54" name="TXD2/GPIO6/PORT_SWAP" type="input"/>
+        <pin num="55" name="TXD1/GPIO5/RMT_WKP" type="input"/>
+        <pin num="56" name="TXD0/GPIO4/EEP_DISABLE" type="input"/>
+        <pin num="57" name="VSS/Pad" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="myLib" part="LP38693MP-3.3">
+      <docs>http://www.ti.com/lit/ds/symlink/lp38693-q1.pdf</docs>
+      <footprints>
+        <fp>SOT-223-5</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LP38693MP-3.3</field>
+        <field name="Footprint">SOT150P696X180-5N</field>
+        <field name="Datasheet">None</field>
+        <field name="Feld4">500mA Low Dropout CMOS Linear Regulators Stable with Ceramic Output Capacitors 5-SOT-223 -40 to 125</field>
+        <field name="Feld5">Texas Instruments</field>
+        <field name="Feld6">LP38693MP-3.3/NOPB</field>
+        <field name="Feld7">SOT-223 Texas Instruments</field>
+        <field name="Feld8">Unavailable</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VEN" type="input"/>
+        <pin num="2" name="NC" type="NotConnected"/>
+        <pin num="3" name="VOUT" type="power_out"/>
+        <pin num="4" name="VIN" type="power_in"/>
+        <pin num="5" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="myLib" part="LTC4267">
+      <docs>http://www.analog.com/media/en/technical-documentation/data-sheets/4267fc.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LTC4267</field>
+      </fields>
+      <pins>
+        <pin num="1" name="PGND" type="power_in"/>
+        <pin num="2" name="Ith/RUN" type="BiDi"/>
+        <pin num="3" name="NGATE" type="BiDi"/>
+        <pin num="4" name="PVcc" type="power_in"/>
+        <pin num="5" name="RCLASS" type="BiDi"/>
+        <pin num="7" name="VPORTN" type="BiDi"/>
+        <pin num="8" name="PGND" type="power_in"/>
+        <pin num="9" name="PGND" type="power_in"/>
+        <pin num="10" name="Pout" type="power_out"/>
+        <pin num="11" name="~PWRGD" type="output"/>
+        <pin num="12" name="SIGDISA" type="BiDi"/>
+        <pin num="13" name="VPortP" type="power_in"/>
+        <pin num="14" name="SENSE" type="input"/>
+        <pin num="15" name="VFB" type="input"/>
+        <pin num="16" name="PGND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="myLib" part="M12-4_D">
+      <docs>https://www.mouser.ch/ProductDetail/Phoenix-Contact/1694237/?qs=sGAEpiMZZMv8kklI404QlSC7NXrW0bMV</docs>
+      <footprints>
+        <fp>Phoenix_SACC-DSIV-M12FS-</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">M12-4_D</field>
+        <field name="Footprint">EigeneFootprints:Phoenix_SACC-DSIV-M12FS-5CON-L180</field>
+        <field name="Datasheet">https://media.digikey.com/PDF/Data%20Sheets/Phoenix%20Contact%20PDFs/1694237.pdf</field>
+        <field name="part-num">1694237</field>
+        <field name="manf">Phoenix Conact</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+        <pin num="2" name="~" type="input"/>
+        <pin num="3" name="~" type="input"/>
+        <pin num="4" name="~" type="input"/>
+        <pin num="5" name="~" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="myLib" part="MAX33250E_51E">
+      <footprints>
+        <fp>LGA-12</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MAX33250E_51E</field>
+        <field name="Datasheet">https://media.digikey.com/pdf/Data%20Sheets/Maxim%20PDFs/MAX33250E_51E_Rev1_Nov2018.pdf</field>
+        <field name="part-num">MAX33250E</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCCA" type="power_in"/>
+        <pin num="2" name="T1IN" type="input"/>
+        <pin num="3" name="T2IN" type="input"/>
+        <pin num="4" name="R1OUT" type="output"/>
+        <pin num="5" name="R2OUT" type="output"/>
+        <pin num="6" name="GNDA" type="power_in"/>
+        <pin num="7" name="GNDB" type="power_in"/>
+        <pin num="8" name="R2IN" type="input"/>
+        <pin num="9" name="R2IN" type="input"/>
+        <pin num="10" name="T2OUT" type="output"/>
+        <pin num="11" name="T1OUT" type="output"/>
+        <pin num="12" name="VCCB" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="myLib" part="POE_TRANS">
+      <aliases>
+        <alias>WE_750310013</alias>
+      </aliases>
+      <fields>
+        <field name="Reference">T</field>
+        <field name="Value">POE_TRANS</field>
+      </fields>
+      <pins>
+        <pin num="3" name="AA" type="passive"/>
+        <pin num="4" name="AB" type="passive"/>
+        <pin num="7" name="~" type="passive"/>
+        <pin num="8" name="SB" type="passive"/>
+        <pin num="9" name="SA" type="passive"/>
+        <pin num="10" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="myLib" part="PocketBeagle">
+      <docs>https://github.com/beagleboard/pocketbeagle/wiki/System-Reference-Manual</docs>
+      <footprints>
+        <fp>PocketBeagle</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">PocketBeagle</field>
+      </fields>
+      <pins>
+        <pin num="101" name="Vin" type="power_in"/>
+        <pin num="102" name="Ain6(3.3V)/GPIO87" type="BiDi"/>
+        <pin num="103" name="USB1.V_EN" type="BiDi"/>
+        <pin num="104" name="PRU1.11" type="BiDi"/>
+        <pin num="105" name="USB1.VBUS" type="BiDi"/>
+        <pin num="106" name="SPI0.CS" type="BiDi"/>
+        <pin num="107" name="USB1.Vin" type="BiDi"/>
+        <pin num="108" name="SPI0.CLK" type="BiDi"/>
+        <pin num="109" name="USB1.D-" type="BiDi"/>
+        <pin num="110" name="SPI0.MISO" type="BiDi"/>
+        <pin num="111" name="USB1.D+" type="BiDi"/>
+        <pin num="112" name="SPI0.MOSI" type="BiDi"/>
+        <pin num="113" name="USB1.ID" type="BiDi"/>
+        <pin num="114" name="Vout_3.3V" type="power_out"/>
+        <pin num="115" name="GND" type="power_in"/>
+        <pin num="116" name="GND" type="power_in"/>
+        <pin num="117" name="Ain(1.8V)-" type="power_out"/>
+        <pin num="118" name="Ain(1.8V)+" type="power_out"/>
+        <pin num="119" name="Ain0" type="input"/>
+        <pin num="120" name="PRU0.16" type="BiDi"/>
+        <pin num="121" name="Ain1" type="input"/>
+        <pin num="122" name="GND" type="power_in"/>
+        <pin num="123" name="Ain2" type="input"/>
+        <pin num="124" name="Vout_5V" type="power_out"/>
+        <pin num="125" name="Ain3" type="input"/>
+        <pin num="126" name="I2C2_SDA" type="BiDi"/>
+        <pin num="127" name="Ain4" type="input"/>
+        <pin num="128" name="I2C2_SCL" type="BiDi"/>
+        <pin num="129" name="PRU0_1" type="BiDi"/>
+        <pin num="130" name="Uart0_TX" type="BiDi"/>
+        <pin num="131" name="PRU0_4" type="BiDi"/>
+        <pin num="132" name="Uart0_RX" type="BiDi"/>
+        <pin num="133" name="PRU0_1" type="BiDi"/>
+        <pin num="134" name="GPIO0.26" type="BiDi"/>
+        <pin num="135" name="P1.10" type="BiDi"/>
+        <pin num="136" name="PWM0A" type="BiDi"/>
+        <pin num="201" name="50(PWM1A)" type="BiDi"/>
+        <pin num="202" name="59(GPIO1.27)" type="BiDi"/>
+        <pin num="203" name="23(GPIO0.23)" type="BiDi"/>
+        <pin num="204" name="58(GPIO1.26)" type="BiDi"/>
+        <pin num="205" name="Uart4.Rx" type="BiDi"/>
+        <pin num="206" name="57(GPIO1.25)" type="BiDi"/>
+        <pin num="207" name="Uart4.Tx" type="BiDi"/>
+        <pin num="208" name="60(GPIO1.28)" type="BiDi"/>
+        <pin num="209" name="I2C1.SCL" type="BiDi"/>
+        <pin num="210" name="52(GPIO1.20)" type="BiDi"/>
+        <pin num="211" name="I2C1.SDA" type="BiDi"/>
+        <pin num="212" name="PWR.BTN" type="input"/>
+        <pin num="213" name="Vout_5V" type="power_out"/>
+        <pin num="214" name="Bat+(Bat.Vin)" type="power_in"/>
+        <pin num="215" name="GND" type="power_in"/>
+        <pin num="216" name="BAT-(Bat.Temp)" type="input"/>
+        <pin num="217" name="65(GPIO2.1)" type="BiDi"/>
+        <pin num="218" name="47(PRU2.0)" type="power_out"/>
+        <pin num="219" name="27(GPIO0.27)" type="BiDi"/>
+        <pin num="220" name="64(GPIO2.0)" type="BiDi"/>
+        <pin num="221" name="GND" type="power_in"/>
+        <pin num="222" name="46(GPIO1.14)" type="BiDi"/>
+        <pin num="223" name="Vout_3.3V" type="power_out"/>
+        <pin num="224" name="48(GPIO1.12)" type="BiDi"/>
+        <pin num="225" name="SPI1.MOSI" type="BiDi"/>
+        <pin num="226" name="~Reset" type="BiDi"/>
+        <pin num="227" name="SPI1.MISO" type="BiDi"/>
+        <pin num="228" name="PRU0.6" type="BiDi"/>
+        <pin num="229" name="SPI1.CLK" type="BiDi"/>
+        <pin num="230" name="PRU0.3" type="BiDi"/>
+        <pin num="231" name="SPI1.CS" type="BiDi"/>
+        <pin num="232" name="PRU0.2" type="BiDi"/>
+        <pin num="233" name="45(GPIO1.13)" type="BiDi"/>
+        <pin num="234" name="PRU0.5" type="BiDi"/>
+        <pin num="235" name="Ain5(3.3V)/GPIO86)" type="BiDi"/>
+        <pin num="236" name="Ain7" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="myLib" part="RFM-xxxxS">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">RFM-xxxxS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Vin-" type="power_in"/>
+        <pin num="2" name="Vin+" type="power_in"/>
+        <pin num="3" name="Vout-" type="power_out"/>
+        <pin num="4" name="Vout+" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="myLib" part="TLV431BCDBZR">
+      <description>Shunt Regulator, SOT-23</description>
+      <docs>http://www.ti.com/lit/ds/symlink/tlv431a.pdf</docs>
+      <footprints>
+        <fp>TO_SOT_Packages_SMD:SOT-23</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">TLV431BCDBZR</field>
+        <field name="Footprint">TO_SOT_Packages_SMD:SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="REF" type="passive"/>
+        <pin num="2" name="K" type="passive"/>
+        <pin num="3" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="myLib" part="WE-TVS_824015">
+      <docs>https://katalog.we-online.de/pbs/datasheet/824015.pdf</docs>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">WE-TVS_824015</field>
+        <field name="Footprint">TO_SOT_Packages_SMD:SOT-23-6</field>
+        <field name="Datasheet">Wurth Electronics</field>
+        <field name="part-num">824015</field>
+        <field name="Feld4">TVS Diode Array WE-TVS 4-Ch+VDD 5V SOT23</field>
+        <field name="Feld6">0.72 USD</field>
+        <field name="Feld7">SOT-23 Würth Elektronik</field>
+        <field name="Feld8">Good</field>
+      </fields>
+      <pins>
+        <pin num="1" name="I/O1" type="BiDi"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="I/O2" type="BiDi"/>
+        <pin num="4" name="I/O3" type="BiDi"/>
+        <pin num="5" name="VDD" type="power_in"/>
+        <pin num="6" name="I/O4" type="BiDi"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="74xx">
+      <uri>C:\Program Files\KiCad\share\kicad\library/74xx.lib</uri>
+    </library>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Connector.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="Diode">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Diode.lib</uri>
+    </library>
+    <library logical="Isolator">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Isolator.lib</uri>
+    </library>
+    <library logical="Memory_EEPROM">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Memory_EEPROM.lib</uri>
+    </library>
+    <library logical="Relay_SolidState">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Relay_SolidState.lib</uri>
+    </library>
+    <library logical="SensorknotenPcb">
+      <uri>C:\Users\lukas\git\nadiav2\Sensorknoten\SensorknotenPcb/SensorknotenPcb.lib</uri>
+    </library>
+    <library logical="myLib">
+      <uri>C:/Users/lukas/git/MyKicadLibrary/myLib.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/201_PWM1A">
+      <node ref="U101" pin="201"/>
+      <node ref="R403" pin="2"/>
+    </net>
+    <net code="2" name="Net-(U101-Pad124)">
+      <node ref="U101" pin="124"/>
+    </net>
+    <net code="3" name="/136_PWM0A">
+      <node ref="R401" pin="2"/>
+      <node ref="U101" pin="136"/>
+    </net>
+    <net code="4" name="/USB1.VBUS">
+      <node ref="R251" pin="2"/>
+      <node ref="R253" pin="1"/>
+      <node ref="U101" pin="105"/>
+    </net>
+    <net code="5" name="Net-(U101-Pad114)">
+      <node ref="U101" pin="114"/>
+    </net>
+    <net code="6" name="/203_GPIO-0.23">
+      <node ref="U101" pin="203"/>
+      <node ref="R402" pin="2"/>
+    </net>
+    <net code="7" name="Net-(D110-Pad2)">
+      <node ref="R110" pin="1"/>
+      <node ref="D110" pin="2"/>
+    </net>
+    <net code="8" name="Net-(D113-Pad3)">
+      <node ref="D113" pin="3"/>
+      <node ref="R114" pin="1"/>
+    </net>
+    <net code="9" name="Net-(D113-Pad2)">
+      <node ref="R113" pin="1"/>
+      <node ref="D113" pin="2"/>
+    </net>
+    <net code="10" name="Net-(D113-Pad4)">
+      <node ref="R115" pin="1"/>
+      <node ref="D113" pin="4"/>
+    </net>
+    <net code="11" name="/220_GPIO-2.0">
+      <node ref="R113" pin="2"/>
+      <node ref="U101" pin="220"/>
+    </net>
+    <net code="12" name="/222_GPIO-1.14">
+      <node ref="R114" pin="2"/>
+      <node ref="U101" pin="222"/>
+    </net>
+    <net code="13" name="/217_GPIO-2.1">
+      <node ref="R112" pin="2"/>
+      <node ref="U101" pin="217"/>
+    </net>
+    <net code="14" name="Net-(D110-Pad3)">
+      <node ref="R111" pin="1"/>
+      <node ref="D110" pin="3"/>
+    </net>
+    <net code="15" name="+3V3">
+      <node ref="C504" pin="1"/>
+      <node ref="U502" pin="1"/>
+      <node ref="U801" pin="14"/>
+      <node ref="U230" pin="8"/>
+      <node ref="C230" pin="1"/>
+      <node ref="U602" pin="1"/>
+      <node ref="C817" pin="1"/>
+      <node ref="C218" pin="1"/>
+      <node ref="C215" pin="1"/>
+      <node ref="C216" pin="1"/>
+      <node ref="D260" pin="1"/>
+      <node ref="L210" pin="2"/>
+      <node ref="U201" pin="25"/>
+      <node ref="U201" pin="24"/>
+      <node ref="U201" pin="49"/>
+      <node ref="U201" pin="48"/>
+      <node ref="C214" pin="1"/>
+      <node ref="U201" pin="35"/>
+      <node ref="C217" pin="1"/>
+      <node ref="C342" pin="1"/>
+      <node ref="C341" pin="1"/>
+      <node ref="R212" pin="1"/>
+      <node ref="U340" pin="3"/>
+      <node ref="TP340" pin="1"/>
+      <node ref="U201" pin="52"/>
+      <node ref="U201" pin="51"/>
+      <node ref="C604" pin="1"/>
+      <node ref="D113" pin="1"/>
+      <node ref="D110" pin="1"/>
+      <node ref="U702" pin="1"/>
+      <node ref="C704" pin="1"/>
+    </net>
+    <net code="16" name="Net-(D110-Pad4)">
+      <node ref="D110" pin="4"/>
+      <node ref="R112" pin="1"/>
+    </net>
+    <net code="17" name="GND">
+      <node ref="U403" pin="2"/>
+      <node ref="C342" pin="2"/>
+      <node ref="U401" pin="2"/>
+      <node ref="R230" pin="2"/>
+      <node ref="C230" pin="2"/>
+      <node ref="R823" pin="2"/>
+      <node ref="C604" pin="2"/>
+      <node ref="C811" pin="2"/>
+      <node ref="C817" pin="2"/>
+      <node ref="C206" pin="2"/>
+      <node ref="R835" pin="2"/>
+      <node ref="U230" pin="5"/>
+      <node ref="C340" pin="2"/>
+      <node ref="C341" pin="2"/>
+      <node ref="T300" pin="7"/>
+      <node ref="C204" pin="2"/>
+      <node ref="T300" pin="8"/>
+      <node ref="R333" pin="2"/>
+      <node ref="C306" pin="2"/>
+      <node ref="R252" pin="2"/>
+      <node ref="C308" pin="2"/>
+      <node ref="C205" pin="2"/>
+      <node ref="C307" pin="2"/>
+      <node ref="U101" pin="116"/>
+      <node ref="U101" pin="115"/>
+      <node ref="D331" pin="3"/>
+      <node ref="U201" pin="57"/>
+      <node ref="U402" pin="2"/>
+      <node ref="C305" pin="2"/>
+      <node ref="U340" pin="5"/>
+      <node ref="R214" pin="1"/>
+      <node ref="R213" pin="1"/>
+      <node ref="C303" pin="2"/>
+      <node ref="C304" pin="2"/>
+      <node ref="C211" pin="2"/>
+      <node ref="U201" pin="33"/>
+      <node ref="C504" pin="2"/>
+      <node ref="U101" pin="122"/>
+      <node ref="C214" pin="2"/>
+      <node ref="R701" pin="2"/>
+      <node ref="C213" pin="2"/>
+      <node ref="U702" pin="6"/>
+      <node ref="U201" pin="13"/>
+      <node ref="C218" pin="2"/>
+      <node ref="C212" pin="2"/>
+      <node ref="C207" pin="2"/>
+      <node ref="Q501" pin="2"/>
+      <node ref="C220" pin="2"/>
+      <node ref="C219" pin="2"/>
+      <node ref="R501" pin="2"/>
+      <node ref="Q601" pin="2"/>
+      <node ref="R601" pin="2"/>
+      <node ref="D200" pin="2"/>
+      <node ref="C210" pin="2"/>
+      <node ref="U602" pin="6"/>
+      <node ref="U502" pin="6"/>
+      <node ref="C222" pin="2"/>
+      <node ref="Q701" pin="2"/>
+      <node ref="C221" pin="2"/>
+      <node ref="C216" pin="2"/>
+      <node ref="C814" pin="2"/>
+      <node ref="U801" pin="7"/>
+      <node ref="U101" pin="215"/>
+      <node ref="R829" pin="2"/>
+      <node ref="X23" pin="6"/>
+      <node ref="R800" pin="2"/>
+      <node ref="C704" pin="2"/>
+      <node ref="C217" pin="2"/>
+      <node ref="C813" pin="2"/>
+      <node ref="U101" pin="221"/>
+      <node ref="R826" pin="2"/>
+      <node ref="C812" pin="2"/>
+      <node ref="C815" pin="2"/>
+      <node ref="C215" pin="2"/>
+      <node ref="R832" pin="2"/>
+    </net>
+    <net code="18" name="/223_Vout_33V">
+      <node ref="U101" pin="223"/>
+    </net>
+    <net code="19" name="/224_GPIO-1.12">
+      <node ref="U101" pin="224"/>
+      <node ref="R115" pin="2"/>
+    </net>
+    <net code="20" name="/202_GPIO-1.27">
+      <node ref="U101" pin="202"/>
+      <node ref="U702" pin="5"/>
+    </net>
+    <net code="21" name="/210_GPIO-1.20">
+      <node ref="U101" pin="210"/>
+      <node ref="R601" pin="1"/>
+      <node ref="Q601" pin="1"/>
+    </net>
+    <net code="22" name="/131_PRU-0.4">
+      <node ref="U101" pin="131"/>
+      <node ref="U602" pin="5"/>
+    </net>
+    <net code="23" name="/134_GPIO-0.26">
+      <node ref="R501" pin="1"/>
+      <node ref="Q501" pin="1"/>
+      <node ref="U101" pin="134"/>
+    </net>
+    <net code="24" name="/130_UART0.TX">
+      <node ref="U101" pin="130"/>
+      <node ref="U502" pin="2"/>
+    </net>
+    <net code="25" name="/106_SPI0.CS">
+      <node ref="U101" pin="106"/>
+      <node ref="U502" pin="3"/>
+    </net>
+    <net code="26" name="/132_UART0.RX">
+      <node ref="U101" pin="132"/>
+      <node ref="U502" pin="4"/>
+    </net>
+    <net code="27" name="/206_GPIO-1.25">
+      <node ref="U702" pin="3"/>
+      <node ref="U101" pin="206"/>
+    </net>
+    <net code="28" name="/213_Vout_5V">
+      <node ref="U101" pin="213"/>
+    </net>
+    <net code="29" name="/209_I2C1.SCL">
+      <node ref="R110" pin="2"/>
+      <node ref="U101" pin="209"/>
+    </net>
+    <net code="30" name="/211_I2C1.SDA">
+      <node ref="R111" pin="2"/>
+      <node ref="U101" pin="211"/>
+    </net>
+    <net code="31" name="/USB1.DRVVBUS">
+      <node ref="U101" pin="103"/>
+    </net>
+    <net code="32" name="/228_PRU-0.6">
+      <node ref="U801" pin="2"/>
+      <node ref="U101" pin="228"/>
+    </net>
+    <net code="33" name="/112_SPI0.MOSI">
+      <node ref="U502" pin="5"/>
+      <node ref="U101" pin="112"/>
+    </net>
+    <net code="34" name="/133_PRU-0.1">
+      <node ref="U101" pin="133"/>
+      <node ref="U801" pin="10"/>
+    </net>
+    <net code="35" name="/234_PRU-0.5">
+      <node ref="U101" pin="234"/>
+      <node ref="U801" pin="8"/>
+    </net>
+    <net code="36" name="/232_PRU-0.2">
+      <node ref="U801" pin="6"/>
+      <node ref="U101" pin="232"/>
+    </net>
+    <net code="37" name="/230_PRU-0.3">
+      <node ref="U101" pin="230"/>
+      <node ref="U801" pin="4"/>
+    </net>
+    <net code="38" name="/204_GPIO-1.26">
+      <node ref="U101" pin="204"/>
+      <node ref="Q701" pin="1"/>
+      <node ref="R701" pin="1"/>
+    </net>
+    <net code="39" name="/207_UART4.TX">
+      <node ref="U702" pin="2"/>
+      <node ref="U101" pin="207"/>
+    </net>
+    <net code="40" name="/235_Ain5_3.3V">
+      <node ref="U101" pin="235"/>
+    </net>
+    <net code="41" name="/102_AIN6_3.3V">
+      <node ref="U101" pin="102"/>
+    </net>
+    <net code="42" name="/135_P1.10">
+      <node ref="U101" pin="135"/>
+    </net>
+    <net code="43" name="/104_PRU-1.11">
+      <node ref="U101" pin="104"/>
+    </net>
+    <net code="44" name="/225_SPI1.MOSI">
+      <node ref="U101" pin="225"/>
+    </net>
+    <net code="45" name="/227_SPI1.MISO">
+      <node ref="U101" pin="227"/>
+    </net>
+    <net code="46" name="/USB1.ID">
+      <node ref="U101" pin="113"/>
+      <node ref="R252" pin="1"/>
+    </net>
+    <net code="47" name="/127_AIN4_1.8V">
+      <node ref="C810" pin="1"/>
+      <node ref="R820" pin="2"/>
+      <node ref="R818" pin="1"/>
+      <node ref="U101" pin="127"/>
+    </net>
+    <net code="48" name="/125_AIN3_1.8V">
+      <node ref="U101" pin="125"/>
+      <node ref="C808" pin="1"/>
+      <node ref="R814" pin="1"/>
+      <node ref="R816" pin="2"/>
+    </net>
+    <net code="49" name="/229_SPI1.CLK">
+      <node ref="U101" pin="229"/>
+    </net>
+    <net code="50" name="/129_PRU-0.7">
+      <node ref="U101" pin="129"/>
+    </net>
+    <net code="51" name="/205_UART4.RX">
+      <node ref="U702" pin="4"/>
+      <node ref="U101" pin="205"/>
+    </net>
+    <net code="52" name="/218_PRU-0.15">
+      <node ref="U101" pin="218"/>
+      <node ref="U602" pin="3"/>
+    </net>
+    <net code="53" name="/110_SPI0.MISO">
+      <node ref="U101" pin="110"/>
+      <node ref="U602" pin="2"/>
+    </net>
+    <net code="54" name="/208_GPIO-1.28">
+      <node ref="U101" pin="208"/>
+    </net>
+    <net code="55" name="/236_AIN7_1.8V">
+      <node ref="U101" pin="236"/>
+    </net>
+    <net code="56" name="/USB1.D-">
+      <node ref="U101" pin="109"/>
+      <node ref="U201" pin="11"/>
+    </net>
+    <net code="57" name="/USB1.D+">
+      <node ref="U101" pin="111"/>
+      <node ref="U201" pin="12"/>
+    </net>
+    <net code="58" name="/128_I2C2.SCL">
+      <node ref="U101" pin="128"/>
+    </net>
+    <net code="59" name="/119_AIN0_1.8V">
+      <node ref="R802" pin="1"/>
+      <node ref="R804" pin="2"/>
+      <node ref="C802" pin="1"/>
+      <node ref="U101" pin="119"/>
+    </net>
+    <net code="60" name="/231_SPI1.CS">
+      <node ref="U101" pin="231"/>
+    </net>
+    <net code="61" name="/108_SPI0.CLK">
+      <node ref="U101" pin="108"/>
+      <node ref="U602" pin="4"/>
+    </net>
+    <net code="62" name="/123_AIN2_1.8V">
+      <node ref="R810" pin="1"/>
+      <node ref="R812" pin="2"/>
+      <node ref="C806" pin="1"/>
+      <node ref="U101" pin="123"/>
+    </net>
+    <net code="63" name="/126_I2C2.SDA">
+      <node ref="U101" pin="126"/>
+    </net>
+    <net code="64" name="GNDA">
+      <node ref="R812" pin="1"/>
+      <node ref="C804" pin="2"/>
+      <node ref="U101" pin="117"/>
+      <node ref="C806" pin="2"/>
+      <node ref="R800" pin="1"/>
+      <node ref="D802" pin="2"/>
+      <node ref="D804" pin="2"/>
+      <node ref="R816" pin="1"/>
+      <node ref="D803" pin="2"/>
+      <node ref="R804" pin="1"/>
+      <node ref="C808" pin="2"/>
+      <node ref="D801" pin="2"/>
+      <node ref="D805" pin="2"/>
+      <node ref="R808" pin="1"/>
+      <node ref="C802" pin="2"/>
+      <node ref="R820" pin="1"/>
+      <node ref="C810" pin="2"/>
+      <node ref="X22" pin="6"/>
+    </net>
+    <net code="65" name="/121_AIN1_1.8V">
+      <node ref="R808" pin="2"/>
+      <node ref="U101" pin="121"/>
+      <node ref="C804" pin="1"/>
+      <node ref="R806" pin="1"/>
+    </net>
+    <net code="66" name="/118_VREF+">
+      <node ref="U101" pin="118"/>
+    </net>
+    <net code="67" name="/120_PRU-0.16">
+      <node ref="U101" pin="120"/>
+    </net>
+    <net code="68" name="/USB1.VIN">
+      <node ref="R253" pin="2"/>
+      <node ref="U101" pin="107"/>
+    </net>
+    <net code="69" name="+5V">
+      <node ref="R332" pin="1"/>
+      <node ref="C305" pin="1"/>
+      <node ref="U501" pin="2"/>
+      <node ref="C501" pin="1"/>
+      <node ref="C303" pin="1"/>
+      <node ref="C304" pin="1"/>
+      <node ref="C307" pin="1"/>
+      <node ref="D304" pin="2"/>
+      <node ref="C308" pin="1"/>
+      <node ref="TP341" pin="1"/>
+      <node ref="R251" pin="1"/>
+      <node ref="C601" pin="1"/>
+      <node ref="U340" pin="1"/>
+      <node ref="C701" pin="1"/>
+      <node ref="U340" pin="4"/>
+      <node ref="U701" pin="2"/>
+      <node ref="U101" pin="101"/>
+      <node ref="R331" pin="1"/>
+      <node ref="C340" pin="1"/>
+      <node ref="U601" pin="2"/>
+    </net>
+    <net code="70" name="/233_GPIO-1.13">
+      <node ref="U101" pin="233"/>
+    </net>
+    <net code="71" name="/219_GPIO-0.27">
+      <node ref="U101" pin="219"/>
+    </net>
+    <net code="72" name="/216_BAT.TEMP">
+      <node ref="U101" pin="216"/>
+    </net>
+    <net code="73" name="/212_PWR.BTN">
+      <node ref="U101" pin="212"/>
+    </net>
+    <net code="74" name="/PoE und Speisung/DataPairT">
+      <node ref="FL100" pin="4"/>
+      <node ref="T200" pin="10"/>
+      <node ref="C201" pin="1"/>
+    </net>
+    <net code="75" name="/226_Reset">
+      <node ref="U101" pin="226"/>
+    </net>
+    <net code="76" name="/PoE und Speisung/DataPairR">
+      <node ref="FL100" pin="1"/>
+      <node ref="C202" pin="1"/>
+      <node ref="T200" pin="15"/>
+    </net>
+    <net code="77" name="/214_VIN.BAT">
+      <node ref="U101" pin="214"/>
+    </net>
+    <net code="78" name="/UsbAndEthernet/EECLK">
+      <node ref="U230" pin="2"/>
+      <node ref="U201" pin="29"/>
+    </net>
+    <net code="79" name="/UsbAndEthernet/EEDO">
+      <node ref="U201" pin="31"/>
+      <node ref="U230" pin="3"/>
+    </net>
+    <net code="80" name="/UsbAndEthernet/EEDI">
+      <node ref="U230" pin="4"/>
+      <node ref="U201" pin="32"/>
+    </net>
+    <net code="81" name="Net-(U230-Pad7)">
+      <node ref="U230" pin="7"/>
+    </net>
+    <net code="82" name="Net-(U201-Pad56)">
+      <node ref="U201" pin="56"/>
+    </net>
+    <net code="83" name="Net-(U230-Pad6)">
+      <node ref="U230" pin="6"/>
+    </net>
+    <net code="84" name="/UsbAndEthernet/VDDUSBPLL">
+      <node ref="U201" pin="17"/>
+      <node ref="L211" pin="1"/>
+      <node ref="C207" pin="1"/>
+    </net>
+    <net code="85" name="/UsbAndEthernet/VDDPLL">
+      <node ref="L212" pin="1"/>
+      <node ref="C222" pin="1"/>
+      <node ref="U201" pin="10"/>
+    </net>
+    <net code="86" name="/UsbAndEthernet/VDDCORE">
+      <node ref="L211" pin="2"/>
+      <node ref="U201" pin="21"/>
+      <node ref="U201" pin="50"/>
+      <node ref="L212" pin="2"/>
+      <node ref="C221" pin="1"/>
+      <node ref="C219" pin="1"/>
+      <node ref="C220" pin="1"/>
+    </net>
+    <net code="87" name="/UsbAndEthernet/EECS">
+      <node ref="U230" pin="1"/>
+      <node ref="R230" pin="1"/>
+      <node ref="U201" pin="30"/>
+    </net>
+    <net code="88" name="Net-(R213-Pad2)">
+      <node ref="U201" pin="8"/>
+      <node ref="R213" pin="2"/>
+    </net>
+    <net code="89" name="Net-(R214-Pad2)">
+      <node ref="R214" pin="2"/>
+      <node ref="U201" pin="16"/>
+    </net>
+    <net code="90" name="Net-(R212-Pad2)">
+      <node ref="R212" pin="2"/>
+      <node ref="U201" pin="20"/>
+    </net>
+    <net code="91" name="Net-(U201-Pad34)">
+      <node ref="U201" pin="34"/>
+    </net>
+    <net code="92" name="Net-(U201-Pad1)">
+      <node ref="U201" pin="1"/>
+    </net>
+    <net code="93" name="/UsbAndEthernet/nFDX_LED">
+      <node ref="U201" pin="26"/>
+      <node ref="R260" pin="2"/>
+    </net>
+    <net code="94" name="Net-(U201-Pad53)">
+      <node ref="U201" pin="53"/>
+    </net>
+    <net code="95" name="Net-(U201-Pad54)">
+      <node ref="U201" pin="54"/>
+    </net>
+    <net code="96" name="Net-(C205-Pad1)">
+      <node ref="R215" pin="1"/>
+      <node ref="C205" pin="1"/>
+      <node ref="Y201" pin="2"/>
+      <node ref="U201" pin="18"/>
+    </net>
+    <net code="97" name="Net-(C204-Pad1)">
+      <node ref="C204" pin="1"/>
+      <node ref="U201" pin="19"/>
+      <node ref="Y201" pin="1"/>
+      <node ref="R215" pin="2"/>
+    </net>
+    <net code="98" name="Net-(U201-Pad55)">
+      <node ref="U201" pin="55"/>
+    </net>
+    <net code="99" name="Net-(D260-Pad2)">
+      <node ref="D260" pin="2"/>
+      <node ref="R260" pin="1"/>
+    </net>
+    <net code="100" name="Net-(D260-Pad3)">
+      <node ref="D260" pin="3"/>
+      <node ref="R261" pin="1"/>
+    </net>
+    <net code="101" name="Net-(D260-Pad4)">
+      <node ref="R262" pin="1"/>
+      <node ref="D260" pin="4"/>
+    </net>
+    <net code="102" name="Earth_Protective">
+      <node ref="X1" pin="5"/>
+      <node ref="C203" pin="2"/>
+      <node ref="X2" pin="3"/>
+    </net>
+    <net code="103" name="Net-(U201-Pad14)">
+      <node ref="U201" pin="14"/>
+    </net>
+    <net code="104" name="Net-(U201-Pad40)">
+      <node ref="U201" pin="40"/>
+    </net>
+    <net code="105" name="Net-(U201-Pad36)">
+      <node ref="U201" pin="36"/>
+    </net>
+    <net code="106" name="Net-(U201-Pad37)">
+      <node ref="U201" pin="37"/>
+    </net>
+    <net code="107" name="Net-(U201-Pad38)">
+      <node ref="U201" pin="38"/>
+    </net>
+    <net code="108" name="Net-(U201-Pad39)">
+      <node ref="U201" pin="39"/>
+    </net>
+    <net code="109" name="Net-(U201-Pad41)">
+      <node ref="U201" pin="41"/>
+    </net>
+    <net code="110" name="Net-(U201-Pad42)">
+      <node ref="U201" pin="42"/>
+    </net>
+    <net code="111" name="Net-(U201-Pad43)">
+      <node ref="U201" pin="43"/>
+    </net>
+    <net code="112" name="Net-(U201-Pad44)">
+      <node ref="U201" pin="44"/>
+    </net>
+    <net code="113" name="Net-(U201-Pad45)">
+      <node ref="U201" pin="45"/>
+    </net>
+    <net code="114" name="Net-(U201-Pad46)">
+      <node ref="U201" pin="46"/>
+    </net>
+    <net code="115" name="Net-(U201-Pad47)">
+      <node ref="U201" pin="47"/>
+    </net>
+    <net code="116" name="Net-(U201-Pad23)">
+      <node ref="U201" pin="23"/>
+    </net>
+    <net code="117" name="Net-(U201-Pad22)">
+      <node ref="U201" pin="22"/>
+    </net>
+    <net code="118" name="/UsbAndEthernet/nLNKA_LED">
+      <node ref="U201" pin="27"/>
+      <node ref="R261" pin="2"/>
+    </net>
+    <net code="119" name="/UsbAndEthernet/nSPD_LED">
+      <node ref="R262" pin="2"/>
+      <node ref="U201" pin="28"/>
+    </net>
+    <net code="120" name="Net-(R206-Pad2)">
+      <node ref="T200" pin="7"/>
+      <node ref="R206" pin="2"/>
+      <node ref="T200" pin="2"/>
+    </net>
+    <net code="121" name="Net-(C201-Pad2)">
+      <node ref="C201" pin="2"/>
+      <node ref="R204" pin="1"/>
+    </net>
+    <net code="122" name="/UsbAndEthernet/Td-">
+      <node ref="D200" pin="1"/>
+      <node ref="U201" pin="2"/>
+      <node ref="T200" pin="8"/>
+      <node ref="R200" pin="2"/>
+    </net>
+    <net code="123" name="/UsbAndEthernet/Td+">
+      <node ref="T200" pin="6"/>
+      <node ref="D200" pin="3"/>
+      <node ref="U201" pin="3"/>
+      <node ref="R201" pin="2"/>
+    </net>
+    <net code="124" name="/UsbAndEthernet/Rd-">
+      <node ref="R202" pin="2"/>
+      <node ref="U201" pin="5"/>
+      <node ref="T200" pin="3"/>
+      <node ref="D200" pin="4"/>
+    </net>
+    <net code="125" name="/UsbAndEthernet/Rd+">
+      <node ref="D200" pin="6"/>
+      <node ref="T200" pin="1"/>
+      <node ref="U201" pin="6"/>
+      <node ref="R203" pin="2"/>
+    </net>
+    <net code="126" name="Net-(T200-Pad13)">
+      <node ref="T200" pin="13"/>
+    </net>
+    <net code="127" name="Net-(T200-Pad4)">
+      <node ref="T200" pin="4"/>
+    </net>
+    <net code="128" name="Net-(T200-Pad5)">
+      <node ref="T200" pin="5"/>
+    </net>
+    <net code="129" name="Net-(T200-Pad12)">
+      <node ref="T200" pin="12"/>
+    </net>
+    <net code="130" name="Net-(C203-Pad1)">
+      <node ref="C203" pin="1"/>
+      <node ref="R205" pin="2"/>
+      <node ref="R204" pin="2"/>
+    </net>
+    <net code="131" name="Net-(C202-Pad2)">
+      <node ref="C202" pin="2"/>
+      <node ref="R205" pin="1"/>
+    </net>
+    <net code="132" name="/UsbAndEthernet/Tx-">
+      <node ref="X1" pin="3"/>
+      <node ref="T200" pin="9"/>
+    </net>
+    <net code="133" name="/UsbAndEthernet/Tx+">
+      <node ref="T200" pin="11"/>
+      <node ref="X1" pin="1"/>
+    </net>
+    <net code="134" name="/UsbAndEthernet/Rx-">
+      <node ref="X1" pin="4"/>
+      <node ref="T200" pin="14"/>
+    </net>
+    <net code="135" name="/UsbAndEthernet/Rx+">
+      <node ref="T200" pin="16"/>
+      <node ref="X1" pin="2"/>
+    </net>
+    <net code="136" name="/UsbAndEthernet/VDD33A">
+      <node ref="R202" pin="1"/>
+      <node ref="C211" pin="1"/>
+      <node ref="U201" pin="4"/>
+      <node ref="R201" pin="1"/>
+      <node ref="R200" pin="1"/>
+      <node ref="D200" pin="5"/>
+      <node ref="C212" pin="1"/>
+      <node ref="C213" pin="1"/>
+      <node ref="U201" pin="15"/>
+      <node ref="C210" pin="1"/>
+      <node ref="C206" pin="1"/>
+      <node ref="U201" pin="9"/>
+      <node ref="U201" pin="7"/>
+      <node ref="L210" pin="1"/>
+      <node ref="R203" pin="1"/>
+      <node ref="R206" pin="1"/>
+    </net>
+    <net code="137" name="GNDPWR">
+      <node ref="C321" pin="2"/>
+      <node ref="U300" pin="10"/>
+      <node ref="U300" pin="1"/>
+      <node ref="R304" pin="2"/>
+      <node ref="C302" pin="2"/>
+      <node ref="U300" pin="9"/>
+      <node ref="U300" pin="8"/>
+      <node ref="C301" pin="2"/>
+      <node ref="U300" pin="16"/>
+      <node ref="U300" pin="15"/>
+      <node ref="C306" pin="1"/>
+      <node ref="C320" pin="2"/>
+      <node ref="U330" pin="3"/>
+      <node ref="D321" pin="2"/>
+    </net>
+    <net code="138" name="Net-(U340-Pad2)">
+      <node ref="U340" pin="2"/>
+    </net>
+    <net code="139" name="Net-(Q320-Pad3)">
+      <node ref="R321" pin="2"/>
+      <node ref="Q320" pin="3"/>
+    </net>
+    <net code="140" name="/PoE und Speisung/Pvcc">
+      <node ref="R322" pin="2"/>
+      <node ref="TP320" pin="1"/>
+      <node ref="Q320" pin="2"/>
+      <node ref="U300" pin="4"/>
+      <node ref="R330" pin="1"/>
+      <node ref="C321" pin="1"/>
+    </net>
+    <net code="141" name="Net-(C320-Pad1)">
+      <node ref="D321" pin="1"/>
+      <node ref="C320" pin="1"/>
+      <node ref="R320" pin="2"/>
+      <node ref="Q320" pin="1"/>
+    </net>
+    <net code="142" name="/PoE und Speisung/VportP">
+      <node ref="R321" pin="1"/>
+      <node ref="F301" pin="1"/>
+      <node ref="C301" pin="1"/>
+      <node ref="U300" pin="13"/>
+      <node ref="C302" pin="1"/>
+      <node ref="T300" pin="3"/>
+      <node ref="C300" pin="1"/>
+      <node ref="R322" pin="1"/>
+      <node ref="D301" pin="1"/>
+      <node ref="R320" pin="1"/>
+    </net>
+    <net code="143" name="Net-(Q301-Pad1)">
+      <node ref="U300" pin="3"/>
+      <node ref="Q301" pin="1"/>
+    </net>
+    <net code="144" name="/PoE und Speisung/run">
+      <node ref="U300" pin="2"/>
+      <node ref="D330" pin="2"/>
+    </net>
+    <net code="145" name="Net-(Q301-Pad2)">
+      <node ref="Q301" pin="2"/>
+    </net>
+    <net code="146" name="Net-(D330-Pad1)">
+      <node ref="R330" pin="2"/>
+      <node ref="TP330" pin="1"/>
+      <node ref="U330" pin="4"/>
+      <node ref="D330" pin="1"/>
+    </net>
+    <net code="147" name="/PoE und Speisung/nPWRGD">
+      <node ref="U300" pin="11"/>
+    </net>
+    <net code="148" name="Net-(D300-Pad1)">
+      <node ref="F301" pin="2"/>
+      <node ref="D306" pin="1"/>
+      <node ref="D300" pin="1"/>
+    </net>
+    <net code="149" name="Net-(D306-Pad4)">
+      <node ref="D306" pin="4"/>
+      <node ref="X2" pin="2"/>
+    </net>
+    <net code="150" name="Net-(D306-Pad3)">
+      <node ref="D306" pin="3"/>
+      <node ref="X2" pin="1"/>
+    </net>
+    <net code="151" name="Net-(Q301-Pad4)">
+      <node ref="T300" pin="4"/>
+      <node ref="Q301" pin="4"/>
+    </net>
+    <net code="152" name="Net-(D304-Pad1)">
+      <node ref="T300" pin="9"/>
+      <node ref="T300" pin="10"/>
+      <node ref="D304" pin="1"/>
+      <node ref="D304" pin="3"/>
+    </net>
+    <net code="153" name="Net-(R305-Pad2)">
+      <node ref="R305" pin="2"/>
+      <node ref="U300" pin="14"/>
+    </net>
+    <net code="154" name="Net-(Q301-Pad3)">
+      <node ref="R305" pin="1"/>
+      <node ref="TP301" pin="1"/>
+      <node ref="Q301" pin="3"/>
+      <node ref="R304" pin="1"/>
+    </net>
+    <net code="155" name="Net-(D300-Pad4)">
+      <node ref="FL100" pin="3"/>
+      <node ref="D300" pin="4"/>
+    </net>
+    <net code="156" name="Net-(D300-Pad3)">
+      <node ref="FL100" pin="2"/>
+      <node ref="D300" pin="3"/>
+    </net>
+    <net code="157" name="/PoE und Speisung/VportN">
+      <node ref="D300" pin="2"/>
+      <node ref="U300" pin="12"/>
+      <node ref="D306" pin="2"/>
+      <node ref="U300" pin="7"/>
+      <node ref="R303" pin="2"/>
+      <node ref="C300" pin="2"/>
+      <node ref="D301" pin="2"/>
+    </net>
+    <net code="158" name="Net-(R303-Pad1)">
+      <node ref="U300" pin="5"/>
+      <node ref="R303" pin="1"/>
+    </net>
+    <net code="159" name="Net-(D331-Pad2)">
+      <node ref="D331" pin="2"/>
+      <node ref="TP331" pin="1"/>
+      <node ref="U330" pin="2"/>
+      <node ref="R334" pin="2"/>
+    </net>
+    <net code="160" name="Net-(C334-Pad1)">
+      <node ref="C334" pin="1"/>
+      <node ref="R332" pin="2"/>
+      <node ref="R333" pin="1"/>
+      <node ref="D331" pin="1"/>
+    </net>
+    <net code="161" name="Net-(C334-Pad2)">
+      <node ref="R334" pin="1"/>
+      <node ref="C334" pin="2"/>
+    </net>
+    <net code="162" name="Net-(R331-Pad2)">
+      <node ref="U330" pin="1"/>
+      <node ref="R331" pin="2"/>
+    </net>
+    <net code="163" name="/Digitale Ausgänge/Out0">
+      <node ref="X21" pin="2"/>
+      <node ref="D401" pin="2"/>
+      <node ref="U401" pin="3"/>
+    </net>
+    <net code="164" name="/Digitale Ausgänge/In2">
+      <node ref="U403" pin="4"/>
+      <node ref="D403" pin="1"/>
+      <node ref="X21" pin="5"/>
+    </net>
+    <net code="165" name="/Digitale Ausgänge/In0">
+      <node ref="D401" pin="1"/>
+      <node ref="U401" pin="4"/>
+      <node ref="X21" pin="1"/>
+    </net>
+    <net code="166" name="/Digitale Ausgänge/Out2">
+      <node ref="U403" pin="3"/>
+      <node ref="D403" pin="2"/>
+      <node ref="X21" pin="6"/>
+    </net>
+    <net code="167" name="/Digitale Ausgänge/Out1">
+      <node ref="U402" pin="3"/>
+      <node ref="X21" pin="4"/>
+      <node ref="D402" pin="2"/>
+    </net>
+    <net code="168" name="Net-(R401-Pad1)">
+      <node ref="R401" pin="1"/>
+      <node ref="U401" pin="1"/>
+    </net>
+    <net code="169" name="Net-(R403-Pad1)">
+      <node ref="R403" pin="1"/>
+      <node ref="U403" pin="1"/>
+    </net>
+    <net code="170" name="/Digitale Ausgänge/In1">
+      <node ref="D402" pin="1"/>
+      <node ref="X21" pin="3"/>
+      <node ref="U402" pin="4"/>
+    </net>
+    <net code="171" name="Net-(R402-Pad1)">
+      <node ref="U402" pin="1"/>
+      <node ref="R402" pin="1"/>
+    </net>
+    <net code="172" name="/Analoge und Digitale Eingänge/Ain3">
+      <node ref="X22" pin="4"/>
+      <node ref="R813" pin="1"/>
+    </net>
+    <net code="173" name="Net-(D804-Pad1)">
+      <node ref="R813" pin="2"/>
+      <node ref="R814" pin="2"/>
+      <node ref="D804" pin="1"/>
+    </net>
+    <net code="174" name="/Analoge und Digitale Eingänge/Ain4">
+      <node ref="R817" pin="1"/>
+      <node ref="X22" pin="5"/>
+    </net>
+    <net code="175" name="Net-(D805-Pad1)">
+      <node ref="R818" pin="2"/>
+      <node ref="R817" pin="2"/>
+      <node ref="D805" pin="1"/>
+    </net>
+    <net code="176" name="/Analoge und Digitale Eingänge/Ain1">
+      <node ref="R805" pin="1"/>
+      <node ref="X22" pin="2"/>
+    </net>
+    <net code="177" name="Net-(D801-Pad1)">
+      <node ref="R801" pin="2"/>
+      <node ref="D801" pin="1"/>
+      <node ref="R802" pin="2"/>
+    </net>
+    <net code="178" name="/Analoge und Digitale Eingänge/Ain0">
+      <node ref="R801" pin="1"/>
+      <node ref="X22" pin="1"/>
+    </net>
+    <net code="179" name="/Analoge und Digitale Eingänge/Ain2">
+      <node ref="R809" pin="1"/>
+      <node ref="X22" pin="3"/>
+    </net>
+    <net code="180" name="Net-(D803-Pad1)">
+      <node ref="D803" pin="1"/>
+      <node ref="R809" pin="2"/>
+      <node ref="R810" pin="2"/>
+    </net>
+    <net code="181" name="Net-(D802-Pad1)">
+      <node ref="D802" pin="1"/>
+      <node ref="R806" pin="2"/>
+      <node ref="R805" pin="2"/>
+    </net>
+    <net code="182" name="Net-(U801-Pad12)">
+      <node ref="U801" pin="12"/>
+    </net>
+    <net code="183" name="Net-(U801-Pad13)">
+      <node ref="U801" pin="13"/>
+    </net>
+    <net code="184" name="Net-(R821-Pad1)">
+      <node ref="R823" pin="1"/>
+      <node ref="R822" pin="2"/>
+      <node ref="R821" pin="1"/>
+    </net>
+    <net code="185" name="Net-(C811-Pad1)">
+      <node ref="U801" pin="1"/>
+      <node ref="C811" pin="1"/>
+      <node ref="R822" pin="1"/>
+    </net>
+    <net code="186" name="/Analoge und Digitale Eingänge/Din2">
+      <node ref="R827" pin="2"/>
+      <node ref="X23" pin="3"/>
+    </net>
+    <net code="187" name="/Analoge und Digitale Eingänge/Din0">
+      <node ref="X23" pin="1"/>
+      <node ref="R821" pin="2"/>
+    </net>
+    <net code="188" name="/Analoge und Digitale Eingänge/Din4">
+      <node ref="X23" pin="5"/>
+      <node ref="R833" pin="2"/>
+    </net>
+    <net code="189" name="/Analoge und Digitale Eingänge/Din3">
+      <node ref="R830" pin="2"/>
+      <node ref="X23" pin="4"/>
+    </net>
+    <net code="190" name="/Analoge und Digitale Eingänge/Din1">
+      <node ref="X23" pin="2"/>
+      <node ref="R824" pin="2"/>
+    </net>
+    <net code="191" name="Net-(R830-Pad1)">
+      <node ref="R831" pin="2"/>
+      <node ref="R832" pin="1"/>
+      <node ref="R830" pin="1"/>
+    </net>
+    <net code="192" name="Net-(C814-Pad1)">
+      <node ref="U801" pin="9"/>
+      <node ref="C814" pin="1"/>
+      <node ref="R831" pin="1"/>
+    </net>
+    <net code="193" name="Net-(R833-Pad1)">
+      <node ref="R833" pin="1"/>
+      <node ref="R835" pin="1"/>
+      <node ref="R834" pin="2"/>
+    </net>
+    <net code="194" name="Net-(C815-Pad1)">
+      <node ref="R834" pin="1"/>
+      <node ref="C815" pin="1"/>
+      <node ref="U801" pin="11"/>
+    </net>
+    <net code="195" name="Net-(R824-Pad1)">
+      <node ref="R825" pin="2"/>
+      <node ref="R826" pin="1"/>
+      <node ref="R824" pin="1"/>
+    </net>
+    <net code="196" name="Net-(C812-Pad1)">
+      <node ref="R825" pin="1"/>
+      <node ref="C812" pin="1"/>
+      <node ref="U801" pin="3"/>
+    </net>
+    <net code="197" name="Net-(R827-Pad1)">
+      <node ref="R827" pin="1"/>
+      <node ref="R829" pin="1"/>
+      <node ref="R828" pin="2"/>
+    </net>
+    <net code="198" name="Net-(C813-Pad1)">
+      <node ref="U801" pin="5"/>
+      <node ref="C813" pin="1"/>
+      <node ref="R828" pin="1"/>
+    </net>
+    <net code="199" name="/RS232GalvIsol_0/RxIsol">
+      <node ref="X11" pin="2"/>
+      <node ref="U502" pin="9"/>
+    </net>
+    <net code="200" name="/RS232GalvIsol_0/CtsIsol">
+      <node ref="U502" pin="8"/>
+      <node ref="X11" pin="1"/>
+    </net>
+    <net code="201" name="/RS232GalvIsol_0/DtrIsol">
+      <node ref="X11" pin="4"/>
+      <node ref="U502" pin="10"/>
+    </net>
+    <net code="202" name="/RS232GalvIsol_0/TxIsol">
+      <node ref="U502" pin="11"/>
+      <node ref="X11" pin="3"/>
+    </net>
+    <net code="203" name="/RS232GalvIsol_0/5V_isol">
+      <node ref="C502" pin="1"/>
+      <node ref="X11" pin="6"/>
+      <node ref="U501" pin="4"/>
+      <node ref="U502" pin="12"/>
+      <node ref="C503" pin="1"/>
+    </net>
+    <net code="204" name="/RS232GalvIsol_0/GND_isol">
+      <node ref="U501" pin="3"/>
+      <node ref="U502" pin="7"/>
+      <node ref="C502" pin="2"/>
+      <node ref="C503" pin="2"/>
+      <node ref="X11" pin="5"/>
+    </net>
+    <net code="205" name="Net-(C501-Pad2)">
+      <node ref="U501" pin="1"/>
+      <node ref="C501" pin="2"/>
+      <node ref="Q501" pin="3"/>
+    </net>
+    <net code="206" name="Net-(C601-Pad2)">
+      <node ref="U601" pin="1"/>
+      <node ref="Q601" pin="3"/>
+      <node ref="C601" pin="2"/>
+    </net>
+    <net code="207" name="/RS232GalvIsol_2/TxIsol">
+      <node ref="U602" pin="11"/>
+      <node ref="X12" pin="3"/>
+    </net>
+    <net code="208" name="/RS232GalvIsol_2/DtrIsol">
+      <node ref="U602" pin="10"/>
+      <node ref="X12" pin="4"/>
+    </net>
+    <net code="209" name="/RS232GalvIsol_2/GND_isol">
+      <node ref="X12" pin="5"/>
+      <node ref="C602" pin="2"/>
+      <node ref="U601" pin="3"/>
+      <node ref="U602" pin="7"/>
+      <node ref="C603" pin="2"/>
+    </net>
+    <net code="210" name="/RS232GalvIsol_2/5V_isol">
+      <node ref="C602" pin="1"/>
+      <node ref="U601" pin="4"/>
+      <node ref="X12" pin="6"/>
+      <node ref="C603" pin="1"/>
+      <node ref="U602" pin="12"/>
+    </net>
+    <net code="211" name="/RS232GalvIsol_2/CtsIsol">
+      <node ref="U602" pin="8"/>
+      <node ref="X12" pin="1"/>
+    </net>
+    <net code="212" name="/RS232GalvIsol_2/RxIsol">
+      <node ref="U602" pin="9"/>
+      <node ref="X12" pin="2"/>
+    </net>
+    <net code="213" name="/sheet5CAA8AE_4/TxIsol">
+      <node ref="X13" pin="3"/>
+      <node ref="U702" pin="11"/>
+    </net>
+    <net code="214" name="/sheet5CAA8AE_4/RxIsol">
+      <node ref="U702" pin="9"/>
+      <node ref="X13" pin="2"/>
+    </net>
+    <net code="215" name="/sheet5CAA8AE_4/DtrIsol">
+      <node ref="X13" pin="4"/>
+      <node ref="U702" pin="10"/>
+    </net>
+    <net code="216" name="/sheet5CAA8AE_4/CtsIsol">
+      <node ref="X13" pin="1"/>
+      <node ref="U702" pin="8"/>
+    </net>
+    <net code="217" name="/sheet5CAA8AE_4/5V_isol">
+      <node ref="U702" pin="12"/>
+      <node ref="X13" pin="6"/>
+      <node ref="C703" pin="1"/>
+      <node ref="C702" pin="1"/>
+      <node ref="U701" pin="4"/>
+    </net>
+    <net code="218" name="/sheet5CAA8AE_4/GND_isol">
+      <node ref="U701" pin="3"/>
+      <node ref="X13" pin="5"/>
+      <node ref="U702" pin="7"/>
+      <node ref="C702" pin="2"/>
+      <node ref="C703" pin="2"/>
+    </net>
+    <net code="219" name="Net-(C701-Pad2)">
+      <node ref="Q701" pin="3"/>
+      <node ref="U701" pin="1"/>
+      <node ref="C701" pin="2"/>
+    </net>
+  </nets>
+</export>

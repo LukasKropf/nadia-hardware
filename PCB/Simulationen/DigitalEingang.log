@@ -1,0 +1,20 @@
+Circuit: * C:\Users\lukas\git\bte5520_bte5530_kropl2_baumd3\Sensorknoten\SensorknotenPcb\Simulationen\DigitalEingang.asc
+
+
+Date: Tue Apr 30 17:25:02 2019
+Total elapsed time: 0.098 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 4022
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 9
+fillins = 0
+solver = Normal
+Matrix Compiler1: 260 bytes object code size  0.2/0.2/[0.1]
+Matrix Compiler2: 565 bytes object code size  0.1/0.3/[0.1]
+

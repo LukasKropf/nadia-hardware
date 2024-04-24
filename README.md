@@ -20,9 +20,9 @@ flowchart LR
     I[micro-SD Karte] --- B
     
 ```
-
-![NADIA Foto](./bilder/119364.jpg)
-![NADIA PCB](./bilder/nadiaV2_OL.jpg)
+|NADIA im Gehäuse | NADIA PCB |
+|-|-|
+| ![NADIA Foto](./bilder/119364.jpg) |![NADIA PCB](./bilder/nadiaV2_OL.jpg)|
 
 ## Rechnerplatine
 

@@ -21,7 +21,7 @@ flowchart LR
     
 ```
 
-![NADIA Foto](./bilder/119364.JPG)
+![NADIA Foto](./bilder/119364.jpg)
 ![NADIA PCB](./bilder/nadiaV2_OL.jpg)
 
 ## Rechnerplatine
